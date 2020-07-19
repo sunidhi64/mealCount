@@ -1,4 +1,4 @@
-const express = require('rxpress');
+const express = require('express');
 const cors = require('cors');
 const mongoose = require('mongoose');
 
@@ -10,13 +10,13 @@ const port = process.env.PORT || 3000;
 app.use(cors());
 app.use(express.json());
 
-const uri = process.env.FOOD_MANGEMENT;
+const uri = process.env.FOOD_URI;
 mongoose.connect(uri, {useUnifiedTopology: true, useNewUrlParser: true, useCreateIndex: true});
 const connection = mongoose.connection;
 
-connect.once('open', () => {
+connection.once('open', () => {
     console.log("MongoDB database connected");
-});
+})
 
 const studentsRouter = require('./routes/students');
 const messauthRouter = require('./routes/messauth');

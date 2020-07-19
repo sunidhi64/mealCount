@@ -1,15 +1,14 @@
 const mongoose = require('mongoose');
 
-const Schema = mongoose.Schems;
+const Schema = mongoose.Schema;
 
 const studentSchema = new Schema({
     firstName  : { type: String, required: true },
-    lastName   : { type: String },
-    email      : { type: String, required: true, unique: true },
-    rollNo     : { type: String, required: true },
-    phoneNo    : { type: Number, required: true },
+    lastName   : { type: String, required: true },
+    password   : { type: String, required: true },
+    messAuth   : { type: mongoose.Schema.Types.ObjectId, ref: 'messauth' },
     choice     : { type: Boolean },
-    choiceType : { type:String  },
+    choiceType : { type: String  },
 });
 
 // url for student
@@ -17,6 +16,7 @@ studentSchema.virtual('url').get(function() {
     return '/studentinfo/' + this._id;
 });
 
-module.exports = mongoose.model('student', studentSchema);
+const student = mongoose.model('student', studentSchema);
+module.exports = student;
 
 
