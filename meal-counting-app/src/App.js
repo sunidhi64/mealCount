@@ -1,6 +1,6 @@
 import React from "react"
 
-import Tellme from "./Tellme"
+import Tellme from "./components/Tellme"
 function App() {
       return(
               <div>
