@@ -4,7 +4,7 @@ import {Redirect} from 'react-router-dom';
 import { Route, Link, browserHistory } from 'react-router-dom';
 
 import Messauth from "./messauth"
-
+import StudentLogin from "
 class Tellme extends Component {
     render(){
 
