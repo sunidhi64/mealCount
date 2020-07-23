@@ -17,11 +17,11 @@ class StuLogin extends Component {
 	render() {
 		return(
 			<body>
-			  <div class="content">
+			  
 			  <div class="loginbox">
-			  <img src="https://cdn3.iconfinder.com/data/icons/essential-rounded/64/Rounded-31-512.png"  width="100px"/>
+			  <img src="https://cdn3.iconfinder.com/data/icons/essential-rounded/64/Rounded-31-512.png"  width="150px"/>
 			  </div>
-			  </div>
+			  
 			</body>
 
 		)
