@@ -1,7 +1,7 @@
 import React from "react";
 import {Switch, Route } from 'react-router-dom';
 import {BrowserRouter as Router} from 'react-router-dom';
-import Demo from "./components/demo";
+import StuLogin from "./components/StuLogin.js";
 import Messauth from "./components/messauth";
 
 import Tellme from "./components/Tellme"
