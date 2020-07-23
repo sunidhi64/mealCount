@@ -1,6 +1,6 @@
-import React, { Components } from "react"
+import React, { Component } from "react"
 import "./StuLogin.css"
-class StuLogin extends Components {
+class StuLogin extends Component {
 	constructor() {
 		super() 
 		this.state={
