@@ -3,11 +3,11 @@ import "./StuLogin.css"
 class StuLogin extends Components {
 	constructor() {
 		super() 
-			this.state={
-				username = ""
-				password = ""
-			}
-			this.handleChange=this.handleChange.bind(this)
+		this.state={
+		    username = "",
+		    password = ""
+		}
+		this.handleChange=this.handleChange.bind(this)
 	}
 	handleChange(event){
 		this.setState({
