@@ -21,7 +21,7 @@ class Tellme extends Component {
             <pre>  Meal Counting App</pre>
             <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
             <div className="WhoRu">
-            <h2>Let's Get Started!</h2>
+            <h2>Let's Get Started !</h2>
             <div className="StuLogin">
                 <Link to="/studentlogin">
                     Student?
