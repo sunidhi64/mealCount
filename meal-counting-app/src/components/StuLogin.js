@@ -19,7 +19,7 @@ class StuLogin extends Component {
 			<body>
 			  <div class="content">
 			  <div class="loginbox">
-			  <img src="https://img.pngio.com/app-icon-set-login-icon-svg-png-icon-free-download-311846-login-icon-png-980_980.png"  />
+			  <img src="https://cdn3.iconfinder.com/data/icons/essential-rounded/64/Rounded-31-512.png"  />
 			  </div>
 			  </div>
 			</body>
