@@ -4,7 +4,7 @@ import axios from "axios";
 export default class Register extends Component{
     constructor(){
         super()
-        this.state = {
+        this.state={
             firstName: "",
             lastName: "",
             password: "",
@@ -15,7 +15,7 @@ export default class Register extends Component{
     }
 
     handleChange(event){
-        const {name, value} = event.target
+        const {name, value}=event.target
         this.setState({
         [name]: value
     })
@@ -23,7 +23,7 @@ export default class Register extends Component{
 
     handleSubmit() {
         event.preventDefault();
-            const user = {
+            const user={
                 firstName: this.state.firstName,
                 lastName: this.state.lastName,
                 password: this.state.password,
@@ -34,7 +34,7 @@ export default class Register extends Component{
               .then(res=>{
                           console.log(res);
                           console.log(res.data);
-                          window.location = "/dashboard" //This line of code will redirect you once the submission is succeed
+                          window.location="/dashboard" //This line of code will redirect you once the submission is succeed
                         })
           }
 
@@ -44,7 +44,7 @@ export default class Register extends Component{
     render(){
         return(
             <main>
-                <form onSubmit = { this.handleSubmit }>
+                <form onSubmit={ this.handleSubmit }>
                     <lable Login />
                     <input
                         type="text"
