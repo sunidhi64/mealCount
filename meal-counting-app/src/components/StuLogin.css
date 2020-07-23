@@ -47,6 +47,7 @@ h1 {
 	width: 100%;
 	margin-bottom: 20px;
 	margin-left:20px;
+	margin-right:20px;
 }
 .loginbox input[type="text"], input[type = "password"] {
 	border:none;
