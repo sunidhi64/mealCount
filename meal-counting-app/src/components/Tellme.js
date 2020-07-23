@@ -21,16 +21,16 @@ class Tellme extends Component {
             <pre>  Meal Counting App</pre>
             <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
             <div className="WhoRu">
-            <h2>"Let's Get Started"</h2>
+            <h2>Let's Get Started</h2>
             <div className="StuLogin">
                 <Link to="/studentlogin">
                     Student?
                 </Link>
 
-            </div>
+            </div><br/>
             <div className="MessLogin">
                 <Link to="/messauth">
-                    MessLogin
+                    Mess Authority?
                 </Link>
             </div>
             </div>
