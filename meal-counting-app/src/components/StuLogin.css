@@ -4,6 +4,7 @@ body {
         background-image:url(https://webstockreview.net/images/feast-clipart-business-luncheon-1.png);
 	background-size: cover;
 	background-position:center;
+	background-attachment:fixed;
 	font-family:sans-serif;
 
 }
