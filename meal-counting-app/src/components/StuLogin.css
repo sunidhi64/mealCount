@@ -12,7 +12,7 @@ body {
 .loginbox {
 	width: 300px;
 	height:390px;
-	padding: 70px 30px;
+	
 	background-color:white;
 	color:black;
 	top:50%;
@@ -21,6 +21,7 @@ body {
 	transform:translate(-50%, -50%);
 	box-sizing:border-box;
 	border-radius:30px;
+	padding: 70px 30px;
 
 }
 .icon {
@@ -29,7 +30,7 @@ body {
         border-radius: 50%;
 	position:absolute;
 	top:-50px;
-	left: calc(50% - 50px) 
+	left: calc(50% - 50px); 
 }
 h1 {
 	margin:0;
