@@ -26,3 +26,4 @@ class StuLogin extends Components {
 	}
 	
 }
+export default StuLogin
