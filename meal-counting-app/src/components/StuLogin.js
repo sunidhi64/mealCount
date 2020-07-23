@@ -4,8 +4,8 @@ class StuLogin extends Components {
 	constructor() {
 		super() 
 		this.state={
-		    username = "",
-		    password = ""
+		    username: "",
+		    password: ""
 		}
 		this.handleChange=this.handleChange.bind(this)
 	}
