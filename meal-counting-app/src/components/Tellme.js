@@ -4,7 +4,7 @@ import {Redirect} from 'react-router-dom';
 import { Route, Link, browserHistory } from 'react-router-dom';
 
 import Messauth from "./messauth"
-
+import StuLogin from "./StuLogin.js"
 class Tellme extends Component {
     render(){
 
@@ -23,7 +23,7 @@ class Tellme extends Component {
             <div className="WhoRu">
             <h2>Let's Get Started !</h2>
             <div className="StuLogin">
-                <Link to="/StudentLogin">
+                <Link to="/StuLogin">
                     Student?
                 </Link>
 
