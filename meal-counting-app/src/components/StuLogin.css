@@ -17,9 +17,9 @@ body {
 	color:black;
 	top:50%;
 	left:50%;
-	position:absolute;
+	position:relative;
 	transform:translate(-50%, -50%);
-	
+	box-sizing:border-box;
 	
 	padding-left: 30px;
 
