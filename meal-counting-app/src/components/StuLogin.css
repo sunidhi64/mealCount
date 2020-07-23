@@ -21,7 +21,7 @@ body {
 	transform:translate(-50%, -50%);
 	box-sizing:border-box;
 	border-radius:30px;
-	padding: 70px 30px;
+	padding-left: 30px;
 
 }
 .icon {
