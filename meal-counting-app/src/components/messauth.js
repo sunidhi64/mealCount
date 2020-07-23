@@ -1,6 +1,6 @@
 import React, {Component} from "react";
 import "./register"
-import ".messauth.css"
+import "./messauth.css"
 class Messauth extends Component {
     constructor() {
         super()
