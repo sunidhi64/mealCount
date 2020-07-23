@@ -5,7 +5,8 @@ class StuLogin extends Component {
 		super() 
 		this.state={
 		    username: "",
-		    password: ""
+		    password: "",
+		    
 		}
 		this.handleChange=this.handleChange.bind(this)
 	}
@@ -20,6 +21,15 @@ class StuLogin extends Component {
 			  
 			  <div class="loginbox">
 			  <img src="https://cdn3.iconfinder.com/data/icons/essential-rounded/64/Rounded-31-512.png" class="icon"/>
+			    <h1>Login Here</h1>
+			    <form>
+			      
+			      <p>Username</p>
+			      <input type="text" name="username" placeholder="Enter Username" onChange="this.handleChange"/>
+			      <p>Password</p>
+			      <input type="password" name="password" placeholder="Enter Password" onChange="this.handleChange"/>
+			      <input type="sumbit" value="Login" name=""/>
+			    </form>
 			  </div>
 			  
 			</body>
