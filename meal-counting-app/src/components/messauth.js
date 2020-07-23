@@ -1,6 +1,6 @@
 import React, {Component} from "react";
 import "./register"
-
+import ".messauth.css"
 class Messauth extends Component {
     constructor() {
         super()
@@ -21,7 +21,7 @@ class Messauth extends Component {
     render(){
         return(
             <div>
-                <form>
+		<form class="loginbox">
                     <lable Login />
                     <input
                         type="text"
