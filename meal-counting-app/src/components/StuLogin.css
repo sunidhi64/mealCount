@@ -1,4 +1,4 @@
-body {
+.stu body {
 	margin:0;
 	padding:0;
         background:url(https://webstockreview.net/images/feast-clipart-business-luncheon-1.png);
@@ -9,7 +9,7 @@ body {
 
 }
 
-.loginbox {
+.stu .loginbox {
 	width: 320px;
 	height:420px;
 	
@@ -25,7 +25,7 @@ body {
         padding: 70px 30px;
 
 }
-.icon {
+.stu .icon {
 	width:100px;
 	height:100px;
         border-radius: 50%;
@@ -33,23 +33,23 @@ body {
 	top:-50px;
 	left: calc(50% - 50px); 
 }
-h1 {
+.stu  h1 {
 	margin:0;
 	padding: 0 0 20px;
 	text-align:center;
 	font-size:22px;
 }
-.loginbox p{
+.stu  .loginbox p{
 	margin:0;
 	padding:0; 
 	font-weight:bold;
 }
-.loginbox input{
+.stu  .loginbox input{
 	width: 100%;
 	margin-bottom: 20px;
 	
 }
-.loginbox input[type="text"], input[type = "password"] {
+.stu  .loginbox input[type="text"], input[type = "password"] {
 	border:none;
 	border-bottom: 1px solid #fff;
 	background:transparent; 
@@ -59,10 +59,10 @@ h1 {
 	font-size:16px;
 	
 }
-.loginbox input[type = "password"] {
+.stu .loginbox input[type = "password"] {
 	margin-bottom:30px;
 }
-.loginbox input[type="submit"] {
+.stu .loginbox input[type="submit"] {
 	border:none;
 	outline:none;
 	height:40px;
@@ -71,12 +71,12 @@ h1 {
 	font-size:18px;
 	border-radius: 20px;
 }
-.loginbox input[type="submit"]:hover {
+.stu .loginbox input[type="submit"]:hover {
 	cursor:pointer;
 	background: green;
 	color: black;
 }
-form {
+.stu form {
 	margin-left: 20px;
 	margin-right: 20px;
 }

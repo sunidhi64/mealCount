@@ -21,7 +21,7 @@ class Messauth extends Component {
     }
     render(){
         return(
-            <div>
+            <div class="messauth">
 		<form class="loginbox">
                     <lable Login />
                     <input

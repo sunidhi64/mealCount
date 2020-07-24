@@ -17,7 +17,7 @@ class Messauth2 extends Component {
 	}
 	render(){
 	    return(
-	      	   <body>
+	      	   <body class="messauth2">
 		     <div class="container" id = "container">
 		     <div class="form-container sign-up-container">
 		      <form action="#">
@@ -40,7 +40,7 @@ class Messauth2 extends Component {
 		    <div class="overlay-panel overlay-left">
 		    <h1>Welcome Back!</h1>
 		    <p>To keep connected with us please login with your personal info</p>
-		    <button class="ghost" id="signIn">Login<button>
+		    <button class="ghost" id="signIn">Login</button>
 		    </div>
 		    <div class="overlay-panel overlay-right">
 		    <h1>Hello, Friend!</h1>
@@ -52,4 +52,7 @@ class Messauth2 extends Component {
 		    </div>
 
 		   </body>
+	    )
 }
+}
+export default Messauth2

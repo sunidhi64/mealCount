@@ -17,7 +17,7 @@ class StuLogin extends Component {
 	}
 	render() {
 		return( 
-			<body>
+			<body class="stu">
 			  
 			  <div class="loginbox">
 			  <img src="https://cdn3.iconfinder.com/data/icons/essential-rounded/64/Rounded-31-512.png" class="icon" alt="student icon"/>
