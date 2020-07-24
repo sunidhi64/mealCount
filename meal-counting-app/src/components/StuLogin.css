@@ -73,4 +73,7 @@ h1 {
 	background:#ffc107;
 	color: #000;
 }
-
+form {
+	margin-left: 20px;
+	margin-right: 20px;
+}
