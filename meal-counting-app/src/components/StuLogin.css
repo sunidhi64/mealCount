@@ -8,11 +8,9 @@ body {
 	font-family:sans-serif;
 
 }
+
 .loginbox {
-	padding: 70px 20px;
-}
-.loginbox {
-	width: 350px;
+	width: 32px;
 	height:360px;
 	
 	background-color:white;
@@ -23,7 +21,7 @@ body {
 	transform:translate(-50%, -50%);
 	box-sizing:border-box;
 	
-	padding-left: 30px;
+	padding: 70px 30px;
 
 }
 .icon {
@@ -74,9 +72,4 @@ h1 {
 	background-color:#ffc107;
 	color: black;
 }
-.username {
-	margin:20px;
-}
-.password {
-	margin:20px;
-}
+
