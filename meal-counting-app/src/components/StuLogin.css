@@ -10,11 +10,11 @@ body {
 }
 
 .loginbox {
-	width: 32px;
+	width: 320px;
 	height:360px;
 	
-	background-color:white;
-	color:black;
+	background: black;
+	color:white;
 	top:50%;
 	left:50%;
 	position:absolute;
