@@ -18,6 +18,6 @@ class Messauth2 extends Component {
 	render(){
 	    return(
 	      	   <body>
-		    <div class="container
+		    <div class="container"
 		   </body>
 }
