@@ -1,7 +1,6 @@
 import React, {Component} from "react";
-import { Link } from 'react-router-dom';
 import "./register"
-import "./messauth.css"
+
 class Messauth extends Component {
     constructor() {
         super()
@@ -11,6 +10,7 @@ class Messauth extends Component {
         }
         
         this.handleChange=this.handleChange.bind(this)
+        this.handleLogin=this.handleLogin.bind(this)
     }
 
 
@@ -18,11 +18,25 @@ class Messauth extends Component {
         this.setState({
             [event.target.name]: event.target.value
         })
+
     }
+
+    handleLogin(event){
+        event.preventDefault();
+        const user = {
+                password: this.state.password,
+                username: this.state.username,
+ 
+                    }
+        const { history } = this.props;
+        history.push('/dashboard/' + this.props.match.params.id)
+    }
+
+
     render(){
         return(
             <div>
-		<form class="loginbox">
+                <form onSubmit={this.handleLogin}>
                     <lable Login />
                     <input
                         type="text"
@@ -46,7 +60,7 @@ class Messauth extends Component {
                 </form>
                 <br />
                 <div>
-                    <Link to='/register'>Register</Link>
+                   <a href="./register">Register</a>
                 </div>
             </div>
         )
