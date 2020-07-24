@@ -74,4 +74,9 @@ h1 {
 	background-color:#ffc107;
 	color: black;
 }
-
+.username {
+	margin:20px;
+}
+.password {
+	margin:20px;
+}

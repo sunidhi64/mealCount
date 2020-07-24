@@ -26,9 +26,9 @@ class StuLogin extends Component {
 			    <form>
 			      
 			      <p>Username</p>
-			      <input type="text" name="username" placeholder="Enter Username" onChange="this.handleChange"/>
+			      <input type="text" name="username" placeholder="Enter Username" onChange="this.handleChange" class="username"/>
 			      <p>Password</p>
-			      <input type="password" name="password" placeholder="Enter Password" onChange="this.handleChange"/>
+			      <input type="password" name="password" placeholder="Enter Password" onChange="this.handleChange" class="password"/>
 			      <input type="submit" value="Login" name=""/>
 			    </form>
 			  </div>
