@@ -20,7 +20,7 @@ class StuLogin extends Component {
 			<body>
 			  
 			  <div class="loginbox">
-			  <img src="https://cdn3.iconfinder.com/data/icons/essential-rounded/64/Rounded-31-512.png" class="icon"/>
+			  <img src="https://cdn3.iconfinder.com/data/icons/essential-rounded/64/Rounded-31-512.png" class="icon" alt="student icon">
 			    <br/><br/>
 			    <h1>Login Here</h1>
 			    <form>
