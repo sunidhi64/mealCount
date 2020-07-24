@@ -18,6 +18,38 @@ class Messauth2 extends Component {
 	render(){
 	    return(
 	      	   <body>
-		    <div class="container"
+		     <div class="container" id = "container">
+		     <div class="form-container sign-up-container">
+		      <form action="#">
+		      <h1>Create Account</h1>
+		      <input type="text" placeholder="Name" name="username" onChange={this.handleChange}/>
+		      <input type="password" placeholder="Password" name="password" onChange={this.handleChange}/>
+		      <button>Register</button>
+		    </form>
+		     </div>
+		    <div class="form-container sign-in-container">
+		    <form action="#">
+		    <h1>Login</h1>
+		    <input type="text" placeholder="Name" name="username" onChange={this.handleChange}/>
+		    <input type="password" placeholder="Password" name="password" onChange={this.handleChange}/>
+		    <button>Login</button>
+		    </form>
+		    </div>
+		    <div class="overlay-container">
+		    <div class="overlay">
+		    <div class="overlay-panel overlay-left">
+		    <h1>Welcome Back!</h1>
+		    <p>To keep connected with us please login with your personal info</p>
+		    <button class="ghost" id="signIn">Login<button>
+		    </div>
+		    <div class="overlay-panel overlay-right">
+		    <h1>Hello, Friend!</h1>
+		    <p>Enter your personal details and start journey with us</p>
+		    <button class="ghost" id="signUp">Register</button>
+		    </div>
+		    </div>
+		    </div>
+		    </div>
+
 		   </body>
 }

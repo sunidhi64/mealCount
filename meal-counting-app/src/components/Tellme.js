@@ -3,7 +3,7 @@ import "./Tellme.css"
 import {Redirect} from 'react-router-dom';
 import { Route, Link, browserHistory } from 'react-router-dom';
 
-import Messauth from "./messauth"
+import Messauth2 from "./messauth2.js"
 import StuLogin from "./StuLogin.js"
 class Tellme extends Component {
     render(){
@@ -29,7 +29,7 @@ class Tellme extends Component {
 
             </div><br/>
             <div className="MessLogin">
-                <Link to="/messauth">
+                <Link to="/messauth2">
                     Mess Authority?
                 </Link>
             </div>
