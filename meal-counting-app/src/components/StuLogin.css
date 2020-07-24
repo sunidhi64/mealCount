@@ -20,8 +20,8 @@ body {
 	position:absolute;
 	transform:translate(-50%, -50%);
 	box-sizing:border-box;
-	border-radius :50px;
-	padding: 70px 30px;
+	border-radius: 50px;
+	text-align: center;
 
 }
 .icon {
