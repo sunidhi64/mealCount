@@ -13,14 +13,14 @@ body {
 	width: 320px;
 	height:360px;
 	
-	background: black;
-	color:white;
+	background: #000;
+	color: #fff;
 	top:50%;
 	left:50%;
 	position:absolute;
 	transform:translate(-50%, -50%);
 	box-sizing:border-box;
-	border-radius:50px;
+	border-radius :50px;
 	padding: 70px 30px;
 
 }
@@ -40,7 +40,7 @@ h1 {
 }
 .loginbox p{
 	margin:0;
-	padding:0;
+	padding:0; 
 	font-weight:bold;
 }
 .loginbox input{
@@ -50,11 +50,11 @@ h1 {
 }
 .loginbox input[type="text"], input[type = "password"] {
 	border:none;
-	border-bottom: 1px solid white;
-	background:transparent;
+	border-bottom: 1px solid #fff;
+	background:transparent; 
 	outline: none;
 	height:40px;
-	color:white;
+	color:#fff;
 	font-size:16px;
 	
 }
@@ -63,13 +63,13 @@ h1 {
 	outline:none;
 	height:40px;
 	background:pink;
-	color:black;
+	color:#fff ;
 	font-size:18px;
 	border-radius: 20px;
 }
 .loginbox input[type="submit"]:hover {
 	cursor:pointer;
-	background-color:#ffc107;
-	color: black;
+	background:#ffc107;
+	color: #000;
 }
 
