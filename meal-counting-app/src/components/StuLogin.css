@@ -11,7 +11,7 @@ body {
 
 .loginbox {
 	width: 320px;
-	height:360px;
+	height:420px;
 	
 	background: #000;
 	color: #fff;
@@ -22,6 +22,7 @@ body {
 	box-sizing:border-box;
 	border-radius: 50px;
 	text-align: center;
+        padding: 70px 30px;
 
 }
 .icon {
