@@ -16,25 +16,25 @@ class StuLogin extends Component {
 		})
 	}
 	render() {
-		return( <div>
+		return( 
 			<body>
 			  
 			  <div class="loginbox">
-			  <img src="https://cdn3.iconfinder.com/data/icons/essential-rounded/64/Rounded-31-512.png" class="icon" alt="student icon">
+			  <img src="https://cdn3.iconfinder.com/data/icons/essential-rounded/64/Rounded-31-512.png" class="icon" alt="student icon"/>
 			    <br/><br/>
 			    <h1>Login Here</h1>
 			    <form>
 			      
 			      <p>Username</p>
-			      <input type="text" name="username" placeholder="Enter Username"  onChange="this.handleChange"/>
+			      <input type="text" name="username" placeholder="Enter Username"  onChange={this.handleChange}/>
 			      <p>Password</p>
-			      <input type="password" name="password" placeholder="Enter Password"  onChange="this.handleChange"/>
+			      <input type="password" name="password" placeholder="Enter Password"  onChange={this.handleChange}/>
 			      <input type="submit" value="Login" name=""/>
 			    </form>
 			  </div>
 			  
 			</body>
-                        </div>
+                        
 
 		)
 	}
