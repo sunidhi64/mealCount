@@ -63,15 +63,15 @@ h1 {
 	border:none;
 	outline:none;
 	height:40px;
-	background:pink;
-	color:#fff ;
+	background: white;
+	color: black ;
 	font-size:18px;
 	border-radius: 20px;
 }
 .loginbox input[type="submit"]:hover {
 	cursor:pointer;
-	background:#ffc107;
-	color: #000;
+	background: green;
+	color: black;
 }
 form {
 	margin-left: 20px;
