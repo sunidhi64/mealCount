@@ -12,7 +12,7 @@ class Tellme extends Component {
             <body className="Tellme-body">
            <header className="v-header container">
             <div className="fullscreen-video-wrap">
-                <video autoPlay loop muted className="video-bg">
+                <video autoPlay loop muted className="Tellme-video">
                 <source src={"https://media.istockphoto.com/videos/teenage-students-being-served-meal-in-school-canteen-video-id942400270"} type="video/mp4" /> 
                 </video> 
             </div>
