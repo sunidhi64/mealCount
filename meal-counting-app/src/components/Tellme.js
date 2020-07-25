@@ -9,10 +9,10 @@ class Tellme extends Component {
     render(){
 
         return(
-            <body class="Tellme-body">
+            <body className="Tellme-body">
            <header className="v-header container">
             <div className="fullscreen-video-wrap">
-                <video className="Tellme-video" autoPlay loop muted className="video-bg">
+                <video autoPlay loop muted className="video-bg">
                 <source src={"https://media.istockphoto.com/videos/teenage-students-being-served-meal-in-school-canteen-video-id942400270"} type="video/mp4" /> 
                 </video> 
             </div>
