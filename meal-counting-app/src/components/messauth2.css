@@ -49,7 +49,7 @@
   text-align: center;
 }
 
-.mform-mcontainer input{
+.mform-mcontainer .minput{
   background: #000;
   border: none;
   padding: 12px 15px;

@@ -22,16 +22,16 @@ class Messauth2 extends Component {
 		     <div class="mform-mcontainer sign-up-mcontainer">
 		      <form action="#" class="mform">
 		      <h1 class="mh1">Create Account</h1>
-		      <input type="text" placeholder="Name" name="username" onChange={this.handleChange}/>
-		      <input type="password" placeholder="Password" name="password" onChange={this.handleChange}/>
+		      <input type="text" placeholder="Name" name="username" onChange={this.handleChange}class="minput"/>
+		      <input type="password" placeholder="Password" name="password" onChange={this.handleChange}class="minput"/>
 		      <button>Register</button>
 		    </form>
 		     </div>
 		    <div class="mform-mcontainer sign-in-mcontainer">
 		    <form action="#" class="mform">
 		    <h1 class="mh1">Login</h1>
-		    <input type="text" placeholder="Name" name="username" onChange={this.handleChange}/>
-		    <input type="password" placeholder="Password" name="password" onChange={this.handleChange}/>
+		    <input type="text" placeholder="Name" name="username" onChange={this.handleChange}class="minput"/>
+		    <input type="password" placeholder="Password" name="password" onChange={this.handleChange}class="minput"/>
 		    <button class="mbutton">Login</button>
 		    </form>
 		    </div>
