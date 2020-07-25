@@ -23,13 +23,13 @@ class Tellme extends Component {
             <div className="WhoRu">
             <h2>Let's Get Started !</h2><br/>
             <div className="StuLogin">
-                <Link to="/StuLogin">
+                <Link to="/StuLogin" className="Tellme-a">
                     Student?
                 </Link>
 
             </div><br/>
             <div className="MessLogin">
-                <Link to="/messauth2">
+                <Link to="/messauth2" className="Tellme-a">
                     Mess Authority?
                 </Link>
             </div>

@@ -71,14 +71,14 @@ color: lightcyan;
 padding-bottom: 30px;
 }
 
-a {
+.Tellme-a {
 font-size: 22px;
 }
-.StuLogin a{
+.StuLogin .Tellme-a{
 text-decoration: none;
 color: coral;
 }
-.StuLogin a:hover{
+.StuLogin .Tellme-a:hover{
 background-color:whitesmoke;
 width: auto;
 border-radius: 15px;
@@ -88,7 +88,7 @@ text-align: center;
 font-weight: bold;
 color:coral;
 }																				     
-.StuLogin a:active{
+.StuLogin .Tellme-a:active{
 background-color:whitesmoke;
 width: auto;
 border-radius: 15px;
@@ -98,15 +98,15 @@ text-align: center;
 font-weight: bold;
 color:coral;
 }
-.StuLogin a:visited{
+.StuLogin .Tellme-a:visited{
 text-decoration: none;
 color:coral;
 }
-.MessLogin a{
+.MessLogin .Tellme-a{
 text-decoration: none;
 color: coral;
 }
-.MessLogin a:hover{
+.MessLogin .Tellme-a:hover{
 background-color:whitesmoke;
 width: auto;
 border-radius: 15px;
@@ -116,7 +116,7 @@ text-align: center;
 font-weight: bold;
 color:coral;
 }
-.MessLogin a:active {
+.MessLogin .Tellme-a:active {
 background-color:whitesmoke;
 width: auto;
 border-radius: 15px;
@@ -126,7 +126,7 @@ text-align: center;
 font-weight: bold;
 color:coral;
 }
-.MessLogin a:visited {
+.MessLogin .Tellme-a:visited {
 text-decoration: none;
 color:coral;
 }
