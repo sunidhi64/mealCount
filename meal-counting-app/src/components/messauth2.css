@@ -15,19 +15,19 @@
   margin:-20px 0 50px;
 }
 
-.mh1 {
+h1 {
   font-weight:bold;
   margin: 0;
 }
 
-.mp {
+p {
   font-size:14px;
   font-weight:100;
   line-height: 20px;
   letter-spacing:0.5px;
   margin:20px 0 30px;
 }
-.mcontainer {
+.container {
   background: #fff;
   border-radius: 10px;
   box-shadow:  0 14px 28px rgba(0,0,0,0.25),0 10px 10px rgba(0,0,0,0.22);
@@ -38,7 +38,7 @@
   min-height:480px;
 }
 
-.mform-mcontainer .mform {
+.form-container form {
   background:#fff;
   display:flex;
   flex-direction:column;
@@ -49,7 +49,7 @@
   text-align: center;
 }
 
-.mform-mcontainer .minput{
+.form-container input{
   background: #000;
   border: none;
   padding: 12px 15px;
@@ -57,7 +57,7 @@
   width: 100%;
 }
 
-.mbutton {
+button {
   border-radius: 20px;
   border:1px solid #ff4b2b;
   background: #ff4b2b;
@@ -70,29 +70,29 @@
   transition: transform 80ms ease-in;
 }
 
-.mbutton:active {
+button:active {
   transform: scale(0.95);
 }
-.mbutton:focus {
+button:focus {
   outline:none;
 }
-.mbutton .ghost {
+button .ghost {
   background: transparent;
   border-color:#fff;
 }
-.mform-mcontainer {
+.form-container {
   position:absolute;
   top: 0;
   height: 100%;
   transition: all 0.6s ease-in-out;
 }
 
-.sign-in-mcontainer {
+.sign-in-container {
   left:0;
   width:50%;
   z-index:2;
 }
-.sign-up-mcontainer {
+.sign-up-container {
   left : 0;
   width: 50%;
   opacity: 0;
