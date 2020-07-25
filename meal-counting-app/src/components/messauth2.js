@@ -17,8 +17,15 @@ class Messauth2 extends Component {
 	}
 	render(){
 	    return(
+		<div>
+			<head>
+				<link rel = "stylesheet"
+				href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+				integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+				crossOrigin="anonymous"/>
+			</head>
 		<body class="messauth2">
-			<div class="Mess-container" id = "container">
+			<div class="Mess-container" id = "Mess-container">
 				<div class="form-container sign-up-container">
 					<form action="#" class="form">
 						<h1>Create Account</h1>
@@ -50,8 +57,8 @@ class Messauth2 extends Component {
 		    		</div>
 		    	</div>
 		    </div>
-
-		   </body>
+		</body>
+		</div>
 	    )
 }
 }
