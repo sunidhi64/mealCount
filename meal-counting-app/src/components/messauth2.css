@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-.messauth2 body {
+.messauth2 {
   font-family: 'Montserrat'. sans-serif;
   background: #f6f5f7;
   display: flex;
@@ -15,19 +15,19 @@
   margin:-20px 0 50px;
 }
 
-.messauth2 h1 {
+.mh1 {
   font-weight:bold;
   margin: 0;
 }
 
-.messauth2  p {
+.mp {
   font-size:14px;
   font-weight:100;
   line-height: 20px;
   letter-spacing:0.5px;
   margin:20px 0 30px;
 }
-.messauth2  .container {
+.mcontainer {
   background: #fff;
   border-radius: 10px;
   box-shadow:  0 14px 28px rgba(0,0,0,0.25),0 10px 10px rgba(0,0,0,0.22);
@@ -38,7 +38,7 @@
   min-height:480px;
 }
 
-.messauth2 .form-container form{
+.mform-mcontainer .mform {
   background:#fff;
   display:flex;
   flex-direction:column;
@@ -49,7 +49,7 @@
   text-align: center;
 }
 
-.messauth2 .form-container input{
+.mform-mcontainer input{
   background: #000;
   border: none;
   padding: 12px 15px;
@@ -57,7 +57,7 @@
   width: 100%;
 }
 
-.messauth2 button {
+.mbutton {
   border-radius: 20px;
   border:1px solid #ff4b2b;
   background: #ff4b2b;
@@ -70,29 +70,29 @@
   transition: transform 80ms ease-in;
 }
 
-.messauth2 button:active {
+.mbutton:active {
   transform: scale(0.95);
 }
-.messauth2 button:focus {
+.mbutton:focus {
   outline:none;
 }
- .messauth2  button.ghost {
+.mbutton .ghost {
   background: transparent;
   border-color:#fff;
 }
-.messauth2 .form-container {
+.mform-mcontainer {
   position:absolute;
   top: 0;
   height: 100%;
   transition: all 0.6s ease-in-out;
 }
 
-.messauth2  .sign-in-container {
+.sign-in-mcontainer {
   left:0;
   width:50%;
   z-index:2;
 }
-.messauth2  .sign-up-container {
+.sign-up-mcontainer {
   left : 0;
   width: 50%;
   opacity: 0;

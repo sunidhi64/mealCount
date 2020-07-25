@@ -18,33 +18,33 @@ class Messauth2 extends Component {
 	render(){
 	    return(
 	      	   <body class="messauth2">
-		     <div class="container" id = "container">
-		     <div class="form-container sign-up-container">
-		      <form action="#">
-		      <h1>Create Account</h1>
+		     <div class="mcontainer" id = "mcontainer">
+		     <div class="mform-mcontainer sign-up-mcontainer">
+		      <form action="#" class="mform">
+		      <h1 class="mh1">Create Account</h1>
 		      <input type="text" placeholder="Name" name="username" onChange={this.handleChange}/>
 		      <input type="password" placeholder="Password" name="password" onChange={this.handleChange}/>
 		      <button>Register</button>
 		    </form>
 		     </div>
-		    <div class="form-container sign-in-container">
-		    <form action="#">
-		    <h1>Login</h1>
+		    <div class="mform-mcontainer sign-in-mcontainer">
+		    <form action="#" class="mform">
+		    <h1 class="mh1">Login</h1>
 		    <input type="text" placeholder="Name" name="username" onChange={this.handleChange}/>
 		    <input type="password" placeholder="Password" name="password" onChange={this.handleChange}/>
-		    <button>Login</button>
+		    <button class="mbutton">Login</button>
 		    </form>
 		    </div>
 		    <div class="overlay-container">
 		    <div class="overlay">
 		    <div class="overlay-panel overlay-left">
-		    <h1>Welcome Back!</h1>
-		    <p>To keep connected with us please login with your personal info</p>
+		    <h1 class="mh1">Welcome Back!</h1>
+		    <p class="mp">To keep connected with us please login with your personal info</p>
 		    <button class="ghost" id="signIn">Login</button>
 		    </div>
 		    <div class="overlay-panel overlay-right">
-		    <h1>Hello, Friend!</h1>
-		    <p>Enter your personal details and start journey with us</p>
+		    <h1 class="mh1">Hello, Friend!</h1>
+		    <p class="mp">Enter your personal details and start journey with us</p>
 		    <button class="ghost" id="signUp">Register</button>
 		    </div>
 		    </div>
