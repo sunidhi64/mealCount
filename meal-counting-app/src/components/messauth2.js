@@ -18,7 +18,7 @@ class Messauth2 extends Component {
 	render(){
 	    return(
 		<body class="messauth2">
-			<div class="container" id = "container">
+			<div class="Mess-container" id = "container">
 				<div class="form-container sign-up-container">
 					<form action="#" class="form">
 						<h1>Create Account</h1>
