@@ -70,9 +70,4 @@ class Messauth2 extends Component {
 	    )
 }
 }
-export default Messauth2
-
-
-
-
-
+export default Messauth2;
