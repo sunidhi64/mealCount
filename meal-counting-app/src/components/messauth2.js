@@ -6,6 +6,8 @@ class Messauth2 extends Component {
 	constructor() {
 	    super()
 	    this.state = {
+		firstname:"",
+		lastname:"",
 		username: "",
 		password: "",
 		
@@ -36,18 +38,20 @@ class Messauth2 extends Component {
 			<div class="Mess-container" id = "Mess-container">
 				<div class="form-container sign-up-container">
 					<form action="#" class="form">
-						<h1>Create Account</h1>
-						<input type="text" placeholder="Name" name="username" onChange={this.handleChange}/>
+						<h1>Create Account</h1><br/>
+						<input type="text" placeholder="First Name" name="firstname" onChange={this.handleChange}/>
+						<input type="text" placeholder="Last Name" name="lastname" onChange={this.handleChange}/>
+						<input type="text" placeholder="User Name" name="username" onChange={this.handleChange}/>
 						<input type="password" placeholder="Password" name="password" onChange={this.handleChange}/>
-						<button>Register</button>
+						<br/><button>Register</button>
 					</form>
 				</div>
 				<div class="form-container sign-in-container">
 					<form action="#">
-		    			<h1 >Login</h1>
-		    			<input type="text" placeholder="Name" name="username" onChange={this.handleChange}/>
+		    			<h1 >Login</h1><br/>
+		    			<input type="text" placeholder="User Name" name="username" onChange={this.handleChange}/>
 		    			<input type="password" placeholder="Password" name="password" onChange={this.handleChange}/>
-		    			<button>Login</button>
+		    			<br/><button>Login</button>
 		    		</form>
 		    	</div>
 		    	<div class="overlay-container">
@@ -58,7 +62,7 @@ class Messauth2 extends Component {
 		    				<button class="ghost" id="signIn" onClick={()=>{container.classList.remove('right-panel-active')}}>Login</button>
 		    			</div>
 		    			<div class="overlay-panel overlay-right">
-		    				<h1>Hello, Friend!</h1>
+		    				<h1>Hello!</h1>
 		    				<p>Enter your personal details and start journey with us</p>
 		    				<button class="ghost" id="signUp" onClick={()=>{container.classList.add('right-panel-active')}}>Register</button>
 		    			</div>
