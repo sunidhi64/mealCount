@@ -5,17 +5,25 @@ class Messauth2 extends Component {
 	    super()
 	    this.state = {
 		username: "",
-		password: ""
+		password: "",
+		
 	    }
-	    this.handleChange=this.handleChange.bind(this)
+		this.handleChange=this.handleChange.bind(this);
+		
 	}
-
+	
 	handleChange(event){
 	    this.setState({
 		[event.target.name]: event.target.value
 	    })
 	}
+	
 	render(){
+		const signUpButton = document.getElementById('signUp');
+		const signInButton = document.getElementById('signIn');
+		const container = document.getElementById('container');
+		signUpButton.addEventListener('click',() => container.classList.add('right-panel-active'));
+		signInButton.addEventListener('click',() => container.classList.remove('right-panel-active'));
 	    return(
 		<div>
 			<head>
@@ -57,7 +65,9 @@ class Messauth2 extends Component {
 		    		</div>
 		    	</div>
 		    </div>
+			
 		</body>
+		
 		</div>
 	    )
 }
