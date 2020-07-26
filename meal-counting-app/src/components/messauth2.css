@@ -140,22 +140,26 @@ button.ghost {
 .overlay-left {
   transform: translateX(-20%);
 }
-.container.right-panel-active .sign-in-container{
+.Mess-container.right-panel-active .sign-in-container{
   transform: translateX(100%);
 }
 
-.container.right-panel-active .overlay-container{
+.Mess-container.right-panel-active .overlay-container{
   transform: translateX(-100%);
 }
 
-.container.right-panel-active .sign-up-container{
+.Mess-container.right-panel-active .sign-up-container{
   transform: translateX(100%);
   opacity:1;
   z-index:5;
 }
+.Mess-container.right-panel-active .overlay{
+  transform: translateX(50%)
+}
 
-
-
+.Mess-container.right-panel-active .overlay-left{
+  transform: translateX(0);
+}
 
 
 

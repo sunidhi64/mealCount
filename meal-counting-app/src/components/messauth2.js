@@ -1,5 +1,7 @@
 import React, {Component} from "react";
 import "./messauth2.css"
+
+
 class Messauth2 extends Component {
 	constructor() {
 	    super()
@@ -19,11 +21,9 @@ class Messauth2 extends Component {
 	}
 	
 	render(){
-		const signUpButton = document.getElementById('signUp');
-		const signInButton = document.getElementById('signIn');
-		const container = document.getElementById('container');
-		signUpButton.addEventListener('click',() => container.classList.add('right-panel-active'));
-		signInButton.addEventListener('click',() => container.classList.remove('right-panel-active'));
+		
+		const container = document.getElementById('Mess-container');
+		
 	    return(
 		<div>
 			<head>
@@ -55,12 +55,12 @@ class Messauth2 extends Component {
 		    			<div class="overlay-panel overlay-left">
 		    				<h1>Welcome Back!</h1>
 		    				<p>To keep connected with us please login with your personal info</p>
-		    				<button class="ghost" id="signIn">Login</button>
+		    				<button class="ghost" id="signIn" onClick={()=>{container.classList.remove('right-panel-active')}}>Login</button>
 		    			</div>
 		    			<div class="overlay-panel overlay-right">
 		    				<h1>Hello, Friend!</h1>
 		    				<p>Enter your personal details and start journey with us</p>
-		    				<button class="ghost" id="signUp">Register</button>
+		    				<button class="ghost" id="signUp" onClick={()=>{container.classList.add('right-panel-active')}}>Register</button>
 		    			</div>
 		    		</div>
 		    	</div>
@@ -71,5 +71,27 @@ class Messauth2 extends Component {
 		</div>
 	    )
 }
+
+	newMethod() {
+		const signUpButton = document.getElementById('signUp');
+		const signInButton = document.getElementById('signIn');
+		const container = document.getElementById('Mess-container');
+		signUpButton.addEventListener('click', () => { container.classList.add('right-panel-active'); });
+		signInButton.addEventListener('click', () => { container.classList.remove('right-panel-active'); });
+	}
 }
 export default Messauth2
+function newFunction() {
+	const signUpButton = document.getElementById('signUp');
+	const signInButton = document.getElementById('signIn');
+	const container = document.getElementById('Mess-container');
+	signUpButton.addEventListener('click', () => { container.children.add('right-panel-active'); });
+}
+
+function newFunction() {
+	const signUpButton = document.getElementById('signUp');
+	const signInButton = document.getElementById('signIn');
+	const container = document.getElementById('Mess-container');
+	signUpButton.addEventListener('click', () => { container.children.add('right-panel-active'); });
+}
+
