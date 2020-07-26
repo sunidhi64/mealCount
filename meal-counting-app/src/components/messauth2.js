@@ -65,33 +65,14 @@ class Messauth2 extends Component {
 		    		</div>
 		    	</div>
 		    </div>
-			
 		</body>
-		
 		</div>
 	    )
 }
-
-	newMethod() {
-		const signUpButton = document.getElementById('signUp');
-		const signInButton = document.getElementById('signIn');
-		const container = document.getElementById('Mess-container');
-		signUpButton.addEventListener('click', () => { container.classList.add('right-panel-active'); });
-		signInButton.addEventListener('click', () => { container.classList.remove('right-panel-active'); });
-	}
 }
 export default Messauth2
-function newFunction() {
-	const signUpButton = document.getElementById('signUp');
-	const signInButton = document.getElementById('signIn');
-	const container = document.getElementById('Mess-container');
-	signUpButton.addEventListener('click', () => { container.children.add('right-panel-active'); });
-}
 
-function newFunction() {
-	const signUpButton = document.getElementById('signUp');
-	const signInButton = document.getElementById('signIn');
-	const container = document.getElementById('Mess-container');
-	signUpButton.addEventListener('click', () => { container.children.add('right-panel-active'); });
-}
+
+
+
 
