@@ -1,18 +1,21 @@
 import React, {Component} from "react";
-import "./messauth2.css"
+import "./messauth2.css";
+import axios from "axios";
 
 
 class Messauth2 extends Component {
 	constructor() {
 	    super()
 	    this.state = {
-		firstname:"",
-		lastname:"",
+		firstName:"",
+		lastName:"",
 		username: "",
-		password: "",
+		password: ""
 		
 	    }
 		this.handleChange=this.handleChange.bind(this);
+		this.handleLogin=this.handleLogin.bind(this);
+		this.handleSubmit=this.handleSubmit.bind(this);
 		
 	}
 	
@@ -21,6 +24,49 @@ class Messauth2 extends Component {
 		[event.target.name]: event.target.value
 	    })
 	}
+
+
+    handleLogin(event){
+        event.preventDefault();
+        const user = {
+            username:  this.state.username,
+            password:  this.state.password
+        }
+        const { history } = this.props;
+        axios.post("http://localhost:3000/messauth/login", user)
+            .then(result => {
+                if (result.status === 200) {
+                    history.push('/dashboard/')
+                }
+            })
+            .catch(e => {
+
+            });
+        
+    }
+
+    handleSubmit(event){
+        event.preventDefault();
+        const user = {
+            firstName: this.state.firstName,
+            lastName: this.state.lastName,
+            username: this.state.username,
+            password: this.state.password
+        }
+        const { history } = this.props;
+        axios.post("http://localhost:3000/messauth/register", user)
+            .then(result => {
+                if (result.status === 200) {
+                    history.push('/dashboard/')
+                }
+            })
+            .catch(e => {
+
+            });
+
+    }
+
+
 	
 	render(){
 		
@@ -37,7 +83,7 @@ class Messauth2 extends Component {
 		<body class="messauth2">
 			<div class="Mess-container" id = "Mess-container">
 				<div class="form-container sign-up-container">
-					<form action="#" class="form">
+					<form action="#" class="form" onSubmit={this.handleSubmit}>
 						<h1>Create Account</h1><br/>
 						<input type="text" placeholder="First Name" name="firstname" onChange={this.handleChange}/>
 						<input type="text" placeholder="Last Name" name="lastname" onChange={this.handleChange}/>
@@ -47,7 +93,7 @@ class Messauth2 extends Component {
 					</form>
 				</div>
 				<div class="form-container sign-in-container">
-					<form action="#">
+					<form action="#" onSubmit={this.handleLogin}>
 		    			<h1 >Login</h1><br/>
 		    			<input type="text" placeholder="User Name" name="username" onChange={this.handleChange}/>
 		    			<input type="password" placeholder="Password" name="password" onChange={this.handleChange}/>
