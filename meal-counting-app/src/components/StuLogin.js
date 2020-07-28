@@ -1,5 +1,5 @@
 import React, {Component} from "react";
-import "./StuLogin.css";
+import "./stuLogin.css";
 
 
 
@@ -25,31 +25,10 @@ class StuLogin extends Component {
     render() {
         return(
             <div>
-                <body class="StuLogin">
-                    <div class="StuLogin-container" id="StuLogin-container">
-                        <div class="Stu-form-container Stu-sign-in-container">
-					    <form action="#" onSubmit={this.handleLogin}>
-		    			    <h1 >Login</h1><br/>
-		    			    <input type="text" placeholder="User Name" name="username" onChange={this.handleChange}/>
-		    			    <input type="password" placeholder="Password" name="password" onChange={this.handleChange}/>
-		    			    <br/><button>Login</button>
-		    		    </form>
-		    	        </div>
-                    </div>
-                    <div class="Stu-overlay-container">
-                        <div class="Stu-overlay">
-                        <div class="Stu-overlay-panel Stu-overlay-right">
-		    				<h1>Hello!</h1>
-		    				<p>Enter your personal details and start journey with us</p>
-		    				
-		    			</div>
-                        </div>
-                    </div>
-
-                </body>
+                <h1>helloworld</h1>
             </div>
         )
     }
 
 }
-export default StuLogin
+export default StuLogin;

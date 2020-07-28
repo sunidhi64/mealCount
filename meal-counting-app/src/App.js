@@ -6,7 +6,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 import Navbar from "./components/navigation";
 import Student from "./components/studentDashboard";
-import StuLogin from "./components/StuLogin.js";
+import StuLogin from "./components/stuLogin.js";
 import Messauth2 from "./components/messauth2.js";
 import Register from "./components/register";
 import Menu from "./components/menu";
@@ -22,7 +22,7 @@ function App() {
                     <Route path='/student/MessMenu' component={Student} />
                     <Route path='/student/attendance' component={Attendance} />
                     <Route path='/student/suggestions' component={Suggestions} />
-                    <Route path='/StuLogin' component={StuLogin} />
+                    <Route path='/stuLogin' component={StuLogin} />
                     <Route path='/register' component={Register} />
                     <Route path='/messauth2' component={Messauth2} />
                     <Route path='/' component={Tellme} />
