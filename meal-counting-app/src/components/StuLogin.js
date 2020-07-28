@@ -1,5 +1,5 @@
 import React, {Component} from "react";
-import "./stuLogin.css";
+import "./StuLogin.css";
 
 
 
@@ -12,8 +12,8 @@ class StuLogin extends Component {
 		
 	    }
 		this.handleChange=this.handleChange.bind(this);
-		this.handleLogin=this.handleLogin.bind(this);
-		this.handleSubmit=this.handleSubmit.bind(this);
+		//this.handleLogin=this.handleLogin.bind(this);
+		//this.handleSubmit=this.handleSubmit.bind(this);
 		
 	}
 	

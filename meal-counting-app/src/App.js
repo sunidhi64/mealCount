@@ -6,7 +6,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 import Navbar from "./components/navigation";
 import Student from "./components/studentDashboard";
-import StuLogin from "./components/stuLogin.js";
+import StuLogin from "./components/StuLogin.js";
 import Messauth2 from "./components/messauth2.js";
 import Register from "./components/register";
 import Menu from "./components/menu";
