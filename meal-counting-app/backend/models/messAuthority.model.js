@@ -3,10 +3,11 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 const messAuthSchema = new Schema({
-    firstname: {type: String},
-    lastname: {type: String},
+    firstName: {type: String},
+    lastName: {type: String},
+    username: {type: String},
     password: {type: String},
-    students: [{type: Schema.Types.ObjectId, ref: 'student' }]
+   // students: [{type: Schema.Types.ObjectId, ref: 'student' }]
 });
 
 

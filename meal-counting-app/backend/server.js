@@ -15,18 +15,18 @@ mongoose.connect(uri, {useUnifiedTopology: true, useNewUrlParser: true, useCreat
 const connection = mongoose.connection;
 
 connection.once('open', () => {
-    console.log("MongoDB database connected");
+        console.log("MongoDB database connected");
 })
 
 const studentsRouter = require('./routes/students');
 const messauthRouter = require('./routes/messauth');
 
 app.use('/students', studentsRouter);
-app.use('./messauth', messauthRouter);
+app.use('/messauth', messauthRouter);
 
 
 app.listen(port, () => {
-    console.log(`Server is running on port: ${port}`);
+        console.log(`Server is running on port: ${port}`);
 });
 
 

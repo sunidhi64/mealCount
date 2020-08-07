@@ -1,6 +1,30 @@
 const router = require('express').Router();
-let messAuthority = require('../models/messAuthority.model');
-let Student = require('../models/student.model');
+let MessAuthority = require('../models/messAuthority.model');
+//let Student = require('../models/student.model');
+
+
+
+
+router.route('/register').post((req, res) => {
+    const firstName = req.body.firstName;
+    const lastName = req.body.lastName;
+    const username = req.body.username;
+    const password = req.body.password;
+
+    const newUser = new MessAuthority({
+        firstName,
+        lastName,
+        username,
+        password,
+    });
+
+
+    newUser.save()
+    .then(() => res.json('User Added'))
+    .catch(err => res.status(400).json('error: ' + err));
+    
+});
+
 
 router.route('/id:/registerstudent').post(function(req, res) {
     const firstName = req.body.firstName;
@@ -18,25 +42,6 @@ router.route('/id:/registerstudent').post(function(req, res) {
 
 });
 
-router.route('/register').post(function(req, res) {
-    const firstname = req.body.firstName;
-    const lastname = req.body.lastName;
-    const password = req.body.password;
-
-    const newuser = new (messAuthority);
-    newuser.firstname = firstname;
-    newuser.lastname = lastname;
-    newuser.password = password;
-
-
-    newuser.save(function(err, savedStudent) {
-        if(err) {
-            console.log(err);
-            return res.status(500).send();
-        }
-        return res.status(200).send();
-    })
-});
 
 router.route('/login').post(function(req, res) {
     const firstname = req.body.firstname;
