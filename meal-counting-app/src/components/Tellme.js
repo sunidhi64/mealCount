@@ -29,7 +29,7 @@ class Tellme extends Component {
 
             </div><br/>
             <div className="MessLogin">
-                <Link to="/messauthlogin" className="Tellme-a">
+                <Link to="/messauth/login" className="Tellme-a">
                     Mess Authority?
                 </Link>
             </div>

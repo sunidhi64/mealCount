@@ -41,7 +41,7 @@ class Messauthlogin extends Component {
                         <div class="Messauthlogin-overlay-panel Messauthlogin-overlay-right">
 		    				<h1>Hello!</h1>
 		    				<p>Enter your personal details and start journey with us</p>
-                            <Link to="/messauthregister" className="Messauthlogin-link">Register</Link>
+                            <Link to="/messauth/register" className="Messauthlogin-link">Register</Link>
 		    			</div>
                         </div>
                     </div>

@@ -24,8 +24,8 @@ function App() {
                     <Route path='/student/suggestions' component={Suggestions} />
                     <Route path='/stuLogin' component={StuLogin} />
                     <Route path='/register' component={Register} />
-                    <Route path='/messauthlogin' component={Messauthlogin} />
-                    <Route path='/messauthregister' component={Messauthregister}/>
+                    <Route path='/messauth/login' component={Messauthlogin} />
+                    <Route path='/messauth/register' component={Messauthregister}/>
                     <Route path='/' component={Tellme} />
                 </Switch>
             </Router>
