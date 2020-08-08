@@ -12,6 +12,7 @@ import Register from "./components/register";
 import Menu from "./components/menu";
 import Attendance from "./components/attendance";
 import Suggestions from "./components/suggestions";
+import Dashboard from "./components/dashboard";
 import Messauthregister from "./components/messauthregister.js";
 import Tellme from "./components/Tellme"
 function App() {
@@ -26,6 +27,7 @@ function App() {
                     <Route path='/register' component={Register} />
                     <Route path='/messauth/login' component={Messauthlogin} />
                     <Route path='/messauth/register' component={Messauthregister}/>
+                    <Route path='/student/dashboard' component={Navbar}/>
                     <Route path='/' component={Tellme} />
                 </Switch>
             </Router>

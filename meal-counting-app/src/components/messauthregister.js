@@ -49,7 +49,7 @@ class Messauthregister extends Component {
                 <body className="Messauthregister">
                     <div className="Messauthregister-container" id="Messauthregister-container">
                         <div className="Messauthregister-form-container Messauthregister-sign-in-container">
-					    <form action="#" >
+					    <form action="#" onSubmit={this.handleSubmit}>
 		    			    <h1 >Create Account</h1><br/>
                             <input type="text" placeholder="First Name" name="firstName" onChange={this.handleChange}/>
                             <input type="text" placeholder="Last Name" name="lastName" onChange={this.handleChange}/>
