@@ -1,0 +1,138 @@
+*{
+    box-sizing: border-box;
+}
+
+.Tellme-body{
+margin:0;
+font-size:1rem;
+color:#333;
+overflow-x: hidden;
+text-align: center;
+}
+.v-header {
+height:100vh;
+display:flex;
+color:lightcyan;
+}
+.container {
+max-width: 960px;
+padding-left: 1rem;
+padding-right:1rem;
+margin:auto;
+text-align: center;
+}
+.fullscreen-video-wrap{ 
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100vh;
+overflow: hidden;
+}
+.Tellme-video{
+min-width:100%;
+min-height:100%;
+}
+.header-overlay {
+height:100vh;
+width:100vw;
+position:absolute;
+top:0;
+left:0;
+background:#404040;
+z-index: 1;
+opacity: 0.75;
+}
+.header-content {
+z-index: 2;
+text-align: center;
+display:block;
+}
+.Tellme-pre{
+font-size: 80px;
+font-family: "Comic Sans MS",cursive, sans-serif;
+text-align: center;
+font-weight: bold;
+margin: 0px 20px 20px 20px;
+}
+.WhoRu {
+text-align: center;
+font-family:"Comic Sans MS",cursive, sans-serif;
+z-index:3;
+font-size: 20px;										       
+background-color: #383838;
+padding:10px;
+border-radius: 50px;
+position :relative;
+width: 400px;
+left:250px;
+bottom:150px;
+color: lightcyan;
+padding-bottom: 30px;
+}
+
+.Tellme-a {
+font-size: 22px;
+}
+.StuLogin .Tellme-a{
+text-decoration: none;
+color: coral;
+}
+.StuLogin .Tellme-a:hover{
+background-color:whitesmoke;
+width: auto;
+border-radius: 15px;
+padding: 5px;
+width:auto;
+text-align: center;
+font-weight: bold;
+color:coral;
+}																				     
+.StuLogin .Tellme-a:active{
+background-color:whitesmoke;
+width: auto;
+border-radius: 15px;
+padding: 5px;
+width:auto;
+text-align: center;
+font-weight: bold;
+color:coral;
+}
+.StuLogin .Tellme-a:visited{
+text-decoration: none;
+color:coral;
+}
+.MessLogin .Tellme-a{
+text-decoration: none;
+color: coral;
+}
+.MessLogin .Tellme-a:hover{
+background-color:whitesmoke;
+width: auto;
+border-radius: 15px;
+padding: 5px;
+width:auto;
+text-align: center;
+font-weight: bold;
+color:coral;
+}
+.MessLogin .Tellme-a:active {
+background-color:whitesmoke;
+width: auto;
+border-radius: 15px;
+padding: 5px;
+width:auto;
+text-align: center;
+font-weight: bold;
+color:coral;
+}
+.MessLogin .Tellme-a:visited {
+text-decoration: none;
+color:coral;
+}
+@media(max-width:960px){
+.container{
+padding-right:3rem;
+padding-left: 3rem;
+}
+}

@@ -43,10 +43,10 @@ router.route('/id:/registerstudent').post(function(req, res) {
 });
 
 
-router.route('/login').post(function(req, res) {
-    const firstname = req.body.firstname;
+router.route('/login').post((req, res) => {
+    const username = req.body.username;
     const password  = req.body.password;
-    messAuth.findOne({username : username, password: password}, function(err, messauth) {
+    MessAuthority.findOne({username: username, password: password}, function(err, messauth) {
         if(err) {
             console.log(err);
             return res.status(500).send();
