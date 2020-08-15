@@ -1,0 +1,25 @@
+* {
+    box-sizing: border-box;
+}
+body{
+    background-color:#f6f5f7;
+}
+
+table, th, tr {
+    border: 1px solid #000;
+    padding: 15px;
+}
+table {
+    position: absolute;
+    left:150px;
+    top:190px;
+    box-shadow:  0 14px 28px rgba(0,0,0,0.25),0 10px 10px rgba(0,0,0,0.22);
+    background-color:#fff;
+    font-family: 'Montserrat', sans-serif;
+    width:80%;
+    color:#000;
+}
+th,tr{
+    font-size: 20px;
+    text-align: center;
+}

@@ -12,7 +12,7 @@ text-align: center;
 .v-header {
 height:100vh;
 display:flex;
-color:lightcyan;
+color:#fff
 }
 .container {
 max-width: 960px;
@@ -50,14 +50,15 @@ display:block;
 }
 .Tellme-pre{
 font-size: 80px;
-font-family: "Comic Sans MS",cursive, sans-serif;
+font-family: 'Montserrat', sans-serif;
 text-align: center;
 font-weight: bold;
 margin: 0px 20px 20px 20px;
+color:#fff;
 }
 .WhoRu {
 text-align: center;
-font-family:"Comic Sans MS",cursive, sans-serif;
+font-family: 'Montserrat', sans-serif;
 z-index:3;
 font-size: 20px;										       
 background-color: #383838;
@@ -67,7 +68,7 @@ position :relative;
 width: 400px;
 left:250px;
 bottom:150px;
-color: lightcyan;
+color: #fff;
 padding-bottom: 30px;
 }
 
@@ -76,59 +77,59 @@ font-size: 22px;
 }
 .StuLogin .Tellme-a{
 text-decoration: none;
-color: coral;
+color:#ff416c;
 }
 .StuLogin .Tellme-a:hover{
-background-color:whitesmoke;
+background-color:#fff;
 width: auto;
 border-radius: 15px;
 padding: 5px;
 width:auto;
 text-align: center;
 font-weight: bold;
-color:coral;
+color:#ff416c;
 }																				     
 .StuLogin .Tellme-a:active{
-background-color:whitesmoke;
+background-color:#fff;
 width: auto;
 border-radius: 15px;
 padding: 5px;
 width:auto;
 text-align: center;
 font-weight: bold;
-color:coral;
+color:#ff416c;
 }
 .StuLogin .Tellme-a:visited{
 text-decoration: none;
-color:coral;
+color:#ff416c;
 }
 .MessLogin .Tellme-a{
 text-decoration: none;
-color: coral;
+color: #ff416c;
 }
 .MessLogin .Tellme-a:hover{
-background-color:whitesmoke;
+background-color:#fff;
 width: auto;
 border-radius: 15px;
 padding: 5px;
 width:auto;
 text-align: center;
 font-weight: bold;
-color:coral;
+color:#ff416c;
 }
 .MessLogin .Tellme-a:active {
-background-color:whitesmoke;
+background-color:#fff;
 width: auto;
 border-radius: 15px;
 padding: 5px;
 width:auto;
 text-align: center;
 font-weight: bold;
-color:coral;
+color:#ff416c;
 }
 .MessLogin .Tellme-a:visited {
 text-decoration: none;
-color:coral;
+color:#ff416c;
 }
 @media(max-width:960px){
 .container{
