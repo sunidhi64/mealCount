@@ -4,61 +4,112 @@ export default class Menu extends Component {
     render() {
         return (
             <body className="student-menu">
-            <div>
-                <table>
-                    
-                    <tr>
-                        <th className="meal-menu" colSpan="6" >Meal Menu</th>
-                    </tr>
-                    <tr>
-                        <th ></th>
-                        <th >Veg</th>
-                        <th >Non-veg</th>
-                        <th >Yes</th>
-                        <th >No</th>
-                    </tr>
-                    
-                    <tr>
-                        <th >Breakfast</th>
-                    
-                        <th></th>
-                        <th></th>
-                        <th></th>
-                        <th></th>
-                        
-                        
-                        
-                    </tr>
-                    <tr>
-                        <th >Lunch</th>
-                        <th></th>
-                        <th></th>
-                        <th></th>
-                        <th></th>
-                        
-                        
-                    </tr>
-                    <tr>
-                        <th >Snacks</th>
-                        <th></th>
-                        <th></th>
-                        <th></th>
-                        <th></th>
-                        
-                    </tr>
-                    <tr>
-                        <th >Dinner</th>
-                        <th></th>
-                        <th></th>
-                        <th></th>
-                        <th></th>
-                        
-                        
-                    </tr>
-                    
-                </table>
-            </div>
-            </body>
+            <div style={{overflowY:"auto"},{overflowX:"auto"}}>
+  <table className="center">
+      
+    
+      <tr><th colSpan="8" style={{textAlign:"center"}}>Meal Menu</th></tr>
+      <tr><th colSpan="8" style={{textAlign:"center"}}>Veg</th></tr>
+      
+      <tr>
+      <th>Meals</th>
+      <th>Monday</th>
+      <th>Tuesday</th>
+      <th>Wednesday</th>
+      <th>Thursday</th>
+      <th>Friday</th>
+      <th>Saturday</th>
+      <th>Sunday</th>
+    </tr>
+    
+    <tr>
+        <th>Breakfast</th>
+        <td><ul><li></li><li></li><li></li></ul></td>
+        <td><ul><li></li><li></li><li></li></ul></td>
+        <td><ul><li></li><li></li><li></li></ul></td>
+        <td><ul><li></li><li></li><li></li></ul></td>
+        <td><ul><li></li><li></li><li></li></ul></td>
+        <td><ul><li></li><li></li><li></li></ul></td>
+        <td><ul><li></li><li></li><li></li></ul></td>
+    </tr>
+    <tr>
+        <th>Lunch</th>
+        <td><ul><li></li><li></li><li></li></ul></td>
+        <td><ul><li></li><li></li><li></li></ul></td>
+        <td><ul><li></li><li></li><li></li></ul></td>
+        <td><ul><li></li><li></li><li></li></ul></td>
+        <td><ul><li></li><li></li><li></li></ul></td>
+        <td><ul><li></li><li></li><li></li></ul></td>
+        <td><ul><li></li><li></li><li></li></ul></td>
+    </tr>
+    <tr>
+        <th>Snacks</th>
+        <td><ul><li></li><li></li><li></li></ul></td>
+        <td><ul><li></li><li></li><li></li></ul></td>
+        <td><ul><li></li><li></li><li></li></ul></td>
+        <td><ul><li></li><li></li><li></li></ul></td>
+        <td><ul><li></li><li></li><li></li></ul></td>
+        <td><ul><li></li><li></li><li></li></ul></td>
+        <td><ul><li></li><li></li><li></li></ul></td>
+    </tr>
+    <tr>
+        <th>Dinner</th>
+        <td><ul><li></li><li></li><li></li></ul></td>
+        <td><ul><li></li><li></li><li></li></ul></td>
+        <td><ul><li></li><li></li><li></li></ul></td>
+        <td><ul><li></li><li></li><li></li></ul></td>
+        <td><ul><li></li><li></li><li></li></ul></td>
+        <td><ul><li></li><li></li><li></li></ul></td>
+        <td><ul><li></li><li></li><li></li></ul></td>
+    </tr>
+    
+    <tr>
+        <th colSpan="8" style={{textAlign:"center"}}>Non-veg</th>
+    </tr>
+    <tr>
+    <th>Breakfast</th>
+    <td><ul><li></li><li></li><li></li></ul></td>
+    <td><ul><li></li><li></li><li></li></ul></td>
+    <td><ul><li></li><li></li><li></li></ul></td>
+    <td><ul><li></li><li></li><li></li></ul></td>
+    <td><ul><li></li><li></li><li></li></ul></td>
+    <td><ul><li></li><li></li><li></li></ul></td>
+    <td><ul><li></li><li></li><li></li></ul></td>
+        
+    </tr>
+    <tr>
+        <th>Lunch</th>
+        <td><ul><li></li><li></li><li></li></ul></td>
+        <td><ul><li></li><li></li><li></li></ul></td>
+        <td><ul><li></li><li></li><li></li></ul></td>
+        <td><ul><li></li><li></li><li></li></ul></td>
+        <td><ul><li></li><li></li><li></li></ul></td>
+        <td><ul><li></li><li></li><li></li></ul></td>
+        <td><ul><li></li><li></li><li></li></ul></td>
+    </tr>
+    <tr>
+        <th>Snacks</th>
+        <td><ul><li></li><li></li><li></li></ul></td>
+        <td><ul><li></li><li></li><li></li></ul></td>
+        <td><ul><li></li><li></li><li></li></ul></td>
+        <td><ul><li></li><li></li><li></li></ul></td>
+        <td><ul><li></li><li></li><li></li></ul></td>
+        <td><ul><li></li><li></li><li></li></ul></td>
+        <td><ul><li></li><li></li><li></li></ul></td>
+    </tr>
+    <tr>
+        <th>Dinner</th>
+        <td><ul><li></li><li></li><li></li></ul></td>
+        <td><ul><li></li><li></li><li></li></ul></td>
+        <td><ul><li></li><li></li><li></li></ul></td>
+        <td><ul><li></li><li></li><li></li></ul></td>
+        <td><ul><li></li><li></li><li></li></ul></td>
+        <td><ul><li></li><li></li><li></li></ul></td>
+        <td><ul><li></li><li></li><li></li></ul></td>
+    </tr>
+  </table>
+</div>
+</body>
         )
     }
 }
