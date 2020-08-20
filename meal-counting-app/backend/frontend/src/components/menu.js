@@ -1,17 +1,18 @@
 import React, { Component } from "react";
-import "./menu.css"
+import "./menu.css";
+import axios from "axios";
 export default class Menu extends Component {
     constructor(){
         super();
         this.state={
-            breakfastVeg: [];
-            breakfastNonVeg: [];
-            lunchVeg: [];
-            lunchNonVeg: [];
-            snacksVeg: [];
-            snacksNonVeg: [];
-            dinnerVeg: [];
-            dinnerNonVeg: [];
+            breakfastVeg: [],
+            breakfastNonVeg: [],
+            lunchVeg: [],
+            lunchNonVeg: [],
+            snacksVeg: [],
+            snacksNonVeg: [],
+            dinnerVeg: [],
+            dinnerNonVeg: [],
         }
     }
 
@@ -51,89 +52,75 @@ export default class Menu extends Component {
 
             //window.location = '/messauth/dashboard'+this.props.match.params.id;
           }
+          handleTuesday(event){
 
+        }
+        handleWednesday(event){
+    
+        }
+        handleThursday(event){
+    
+        }
+        handleFriday(event){
+    
+        }
+        handleSaturday(event){
+    
+        }
+        handleSunday(event){
+    
+        }
 
-        ``
+        
 
-    }
-    handleTuesday(event){
+    
+    
 
-    }
-    handleWednesday(event){
-
-    }
-    handleThursday(event){
-
-    }
-    handleFriday(event){
-
-    }
-    handleSaturday(event){
-
-    }
-    handleSunday(event){
-
-    }
+    
     render() {
         return (
             <body className="student-menu">
-            <div>
-                <table class="center" width="50%">
-                    <tr>
-                        <th colSpan="5" style={{fontSize:"20px"}}>Weekly Meal Menu</th>
-                    </tr>
-                    <tr>
-                        <th rowSpan="5" >
-                            <ol>    
-                            <li><button className="monday">Monday</button></li>
-                            <br/>
-                            <li><button className="tuesday">Tuesday</button></li>
-                            <br/>
-                            <li><button className="wednesday">Wednesday</button></li>
-                            <br/>   
-                            <li><button className="thursday">Thursday</button></li>
-                            <br/>
-                            <li><button className="friday">Friday</button></li>
-                            <br/>
-                            <li><button className="saturday">Saturday</button></li>
-                            <br/>
-                            <li><button className="sunday">Sunday</button></li>
-                            </ol>
-                        </th>
-                        <th>Breakfast</th>
-                        <th>Lunch</th>
-                        <th>Snacks</th>
-                        <th>Dinner</th>
-                    </tr>
-                    <tr>
-                        <th>Veg</th>
-                        <th>Veg</th>
-                        <th>Veg</th>
-                        <th>Veg</th>
-                    </tr>
-                    <tr>
-                        <td><ol type="1"><li></li><li></li><li></li><li></li><li></li></ol></td>
-                        <td><ol type="1"><li></li><li></li><li></li><li></li><li></li></ol></td>
-                        <td><ol type="1"><li></li><li></li><li></li><li></li><li></li></ol></td>
-                        <td><ol type="1"><li></li><li></li><li></li><li></li><li></li></ol></td>
+    <div>
+    <table class="center" width="50%">
+            <tr><th colSpan="5" style={{fontSize:"20px"}}>Weekly Meal Menu</th></tr>
+  <tr>
+    <th rowSpan="5" ><ol><li><button className="monday">Monday</button></li><br/><li><button className="tuesday">Tuesday</button></li><br/><li><button className="wednesday">Wednesday</button></li><br/><li><button className="thursday">Thursday</button></li><br/><li><button className="friday">Friday</button></li><br/><li><button className="saturday">Saturday</button></li><br/><li><button className="sunday">Sunday</button></li></ol></th>
+    <th>Breakfast</th>
+    <th>Lunch</th>
+    <th>Snacks</th>
+    <th>Dinner</th>
+</tr>
+<tr>
+    <th>Veg</th>
+    <th>Veg</th>
+    <th>Veg</th>
+    <th>Veg</th>
     
-                    </tr>
-                    <tr>
-                        <th>NonVeg</th>
-                        <th>NonVeg</th>
-                        <th>NonVeg</th>
-                        <th>NonVeg</th>
-                    </tr>
-                    <tr>
-                        <td><ol type="1"><li></li><li></li><li></li><li></li><li></li></ol></td>
-                        <td><ol type="1"><li></li><li></li><li></li><li></li><li></li></ol></td>
-                        <td><ol type="1"><li></li><li></li><li></li><li></li><li></li></ol></td>
-                        <td><ol type="1"><li></li><li></li><li></li><li></li><li></li></ol></td>
-                    </tr>
-            </table>
+</tr>
+<tr>
+    <td>Dosa, Idli, Sambhar, Parotha, Milk</td>
+    <td>bhendi, sambhar, rice, curd, fry</td>
+    <td>Samosa, Milk, Cream bun, Noodles, Pani puri</td>
+    <td>Rasam, rice, curd, dal, khichdi</td>
+    
+</tr>
+<tr>
+    <th>NonVeg</th>
+    <th>NonVeg</th>
+    <th>NonVeg</th>
+    <th>NonVeg</th>
+</tr>
+<tr>
+<td>Dosa, Idli, Sambhar, Parotha, Milk</td>
+    <td>bhendi, sambhar, rice, curd, fry</td>
+    <td>Samosa, Milk, Cream bun, Noodles, Pani puri</td>
+    <td>Rasam, rice, curd, dal, khichdi</td>
+</tr>
+</table>
 
-        </div>
+    </div>
     </body>
     )
-    }
+    
+}
 }
