@@ -1,0 +1,77 @@
+body {
+    background: #f6f5f7;
+}
+table, th, td {
+    border-collapse:collapse;
+    border:1px solid black;
+    border-spacing: 0;
+    font-family: 'Montserrat', sans-serif ; 
+    text-align: center;
+    background: #fff;
+}
+th,td{
+    padding:15px;
+}
+table.center{
+    margin-top:auto;
+    margin-bottom:auto;
+    margin-left:auto;
+    margin-right:auto;
+    position:relative;
+     box-shadow:  0 14px 28px rgba(0,0,0,0.25),0 10px 10px rgba(0,0,0,0.22);
+}
+button {
+    border-radius: 20px;
+    
+    color: #fff;
+    font-size:12px;
+    font-weight: bold;
+    padding :10px 20px;
+    letter-spacing:1px;
+    text-transform:uppercase;
+    transition: transform 80ms ease-in;
+}
+button:active {
+    transform: scale(0.95);
+  }
+button:focus {
+    outline:none;
+}
+button.monday{
+    border:1px solid black;
+    background:#f60000;
+}
+button.tuesday{
+    border:1px solid black;
+    background:#ff8c00;
+}
+button.wednesday{
+    border:1px solid black;
+    background:#ffee00;
+}
+button.thursday{
+    border:1px solid black;
+    background:#4de94c;
+}
+button.friday{
+    border:1px solid black;
+    background:#43b8ff;
+}
+button.saturday{
+    border:1px solid black;
+    background:#3783ff;
+}
+button.sunday{
+    border:1px solid black;
+    background:#4815aa;
+}
+td{
+    line-height: 30px;
+}
+input{
+    background: #eee;
+    border: none;
+    padding: 12px 15px;
+    margin:8px 0;
+    width: 100%;
+}
