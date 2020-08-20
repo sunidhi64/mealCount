@@ -10,7 +10,7 @@ table, th, td {
     background: #fff;
 }
 th,td{
-    padding:20px;
+    padding:15px;
 }
 table.center{
     margin-top:auto;
@@ -20,7 +20,7 @@ table.center{
     position:relative;
      box-shadow:  0 14px 28px rgba(0,0,0,0.25),0 10px 10px rgba(0,0,0,0.22);
 }
-button {
+button,caption {
     border-radius: 20px;
     
     color: #fff;

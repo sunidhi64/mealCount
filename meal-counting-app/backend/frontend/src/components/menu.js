@@ -78,10 +78,14 @@ export default class Menu extends Component {
 
     
     render() {
+       
+        
         return (
             <body className="student-menu">
     <div>
     <table class="center" width="50%">
+        
+           
             <tr><th colSpan="5" style={{fontSize:"20px"}}>Weekly Meal Menu</th></tr>
   <tr>
     <th rowSpan="5" ><ol><li><button className="monday">Monday</button></li><br/><li><button className="tuesday">Tuesday</button></li><br/><li><button className="wednesday">Wednesday</button></li><br/><li><button className="thursday">Thursday</button></li><br/><li><button className="friday">Friday</button></li><br/><li><button className="saturday">Saturday</button></li><br/><li><button className="sunday">Sunday</button></li></ol></th>
