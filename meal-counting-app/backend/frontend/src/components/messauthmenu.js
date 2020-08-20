@@ -1,6 +1,44 @@
-import React, { Component } from "react";
-import "./messauthmenu.css";
+iimport React, { Component } from "react";
+iimport "./messauthmenu.css";
 export default class Messauthmenu extends Component {
+	constructor(){
+        super();
+        this.state={
+            breakfastVeg: [],
+            breakfastNonVeg: [],
+            lunchVeg: [],
+            lunchNonVeg: [],
+            snacksVeg: [],
+            snacksNonVeg: [],
+            dinnerVeg: [],
+            dinnerNonVeg: [],
+        }
+    }
+
+    componentDidMount() {
+        axios.post:('http://localhost:5000/mealmenu/')
+              .then(response => {
+                    if (response.data.length > 0) {
+                        this.setState({
+                            breakfastVeg: response.data.map(meal => meal.breafkfastVegMon),
+                            breakfastNonVeg: response.data.map(meal => meal.breafkfastNonVegMon),
+                            lunchVeg: response.data.map(meal => meal.lunchVegMon),
+                            lunchNonVeg: response.data.map(meal => meal.lunchNonVegMon),
+                            snacksVeg: response.data.map(meal => meal.snacksVegMon),
+                            snacksNonVeg: response.data.map(meal => meal.snacksNonVegMon),
+                            dinnerVeg: response.data.map(meal => meal.dinnerVegMon),
+                            dinnerNonVeg: response.data.map(meal => meal.dinnerNonVegMon),
+                                                      })
+                                      }
+                        })
+              .catch((error) => {
+                          console.log(error);
+                        })
+
+          }
+
+
+
     render(){
         return(
             <body className="student-menu">
