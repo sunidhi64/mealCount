@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./messauthmenu.css";
-export default class Messauthmenu extends Component {
+export default class MessauthMenu extends Component {
 	constructor(){
         super();
         this.state={
@@ -45,7 +45,7 @@ export default class Messauthmenu extends Component {
              </div>
             <div>
                  <table className="center" width="50%">
-                     <caption><button type="submit" className="submit"></button></caption>
+                     <caption><button type="submit" className="submit">SUBMIT</button></caption>
                      <tr>
                          <th></th>
                          <th>VEG</th>
