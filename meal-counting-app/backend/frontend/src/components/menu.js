@@ -43,14 +43,14 @@ export default class Menu extends Component {
               .then(response => {
                     if (response.data.length > 0) {
                         this.setState({
-                            breakfastVeg: response.data.breafkfastVegMon,
-                            breakfastNonVeg: response.data.breafkfastNonVegMon,
-                            lunchVeg: response.data.lunchVegMon,
-                            lunchNonVeg: response.data.lunchNonVegMon,
-                            snacksVeg: response.data.snacksVegMon,
-                            snacksNonVeg: response.data.snacksNonVegMon,
-                            dinnerVeg: response.data.dinnerVegMon,
-                            dinnerNonVeg: response.data.dinnerNonVegMon,
+                            breakfastVeg: response.data.map(meal => meal.breafkfastVegMon),
+                            breakfastNonVeg: response.data.map(meal => meal.breafkfastNonVegMon),
+                            lunchVeg: response.data.map(meal => meal.lunchVegMon),
+                            lunchNonVeg: response.data.map(meal => meal.lunchNonVegMon),
+                            snacksVeg: response.data.map(meal => meal.snacksVegMon),
+                            snacksNonVeg: response.data.map(meal => meal.snacksNonVegMon),
+                            dinnerVeg: response.data.map(meal => meal.dinnerVegMon),
+                            dinnerNonVeg: response.data.map(meal => meal.dinnerNonVegMon),
                                                       })
                                       }
                         })
@@ -65,14 +65,14 @@ export default class Menu extends Component {
               .then(response => {
                     if (response.data.length > 0) {
                         this.setState({
-                            breakfastVeg: response.data.breafkfastVegTue,
-                            breakfastNonVeg: response.breafkfastNonVegTue,
-                            lunchVeg: response.data.lunchVegTue,
-                            lunchNonVeg: response.data.lunchNonVegTue,
-                            snacksVeg: response.data.snacksVegTue,
-                            snacksNonVeg: response.data.snacksNonVegTue,
-                            dinnerVeg: response.data.dinnerVegMonTue,
-                            dinnerNonVeg: response.data.dinnerNonVegTue,
+                            breakfastVeg: response.data.map(meal => meal.breafkfastVegTue),
+                            breakfastNonVeg: response.data.map(meal => meal.breafkfastNonVegTue),
+                            lunchVeg: response.data.map(meal => meal.lunchVegTue),
+                            lunchNonVeg: response.data.map(meal => meal.lunchNonVegTue),
+                            snacksVeg: response.data.map(meal => meal.snacksVegTue),
+                            snacksNonVeg: response.data.map(meal => meal.snacksNonVegTue),
+                            dinnerVeg: response.data.map(meal => meal.dinnerVegMonTue),
+                            dinnerNonVeg: response.data.map(meal => meal.dinnerNonVegTue),
                                                       })
                                       }
                         })
@@ -90,14 +90,14 @@ export default class Menu extends Component {
               .then(response => {
                     if (response.data.length > 0) {
                         this.setState({
-                            breakfastVeg: response.data.breafkfastVegWed,
-                            breakfastNonVeg: response.data.breafkfastNonVegWed,
-                            lunchVeg: response.data.lunchVegWed,
-                            lunchNonVeg: response.data.lunchNonVegWed,
-                            snacksVeg: response.data.snacksVegWed,
-                            snacksNonVeg: response.data.snacksNonVegWed,
-                            dinnerVeg: response.data.dinnerVegWed,
-                            dinnerNonVeg: response.data.dinnerNonVegWed,
+                            breakfastVeg: response.data.map(meal => meal.breafkfastVegWed),
+                            breakfastNonVeg: response.data.map(meal => meal.breafkfastNonVegWed),
+                            lunchVeg: response.data.map(meal => meal.lunchVegWed),
+                            lunchNonVeg: response.data.map(meal => meal.lunchNonVegWed),
+                            snacksVeg: response.data.map(meal => meal.snacksVegWed),
+                            snacksNonVeg: response.data.map(meal => meal.snacksNonVegWed),
+                            dinnerVeg: response.data.map(meal => meal.dinnerVegWed),
+                            dinnerNonVeg: response.data.map(meal => meal.dinnerNonVegWed),
                                                       })
                                       }
                         })
@@ -115,14 +115,14 @@ export default class Menu extends Component {
               .then(response => {
                     if (response.data.length > 0) {
                         this.setState({
-                            breakfastVeg: response.data.breafkfastVegThur,
-                            breakfastNonVeg: response.data.breafkfastNonVegThur,
-                            lunchVeg: response.data.lunchVegThur,
-                            lunchNonVeg: response.data.lunchNonVegThur,
-                            snacksVeg: response.data.snacksVegThur,
-                            snacksNonVeg: response.data.snacksNonVegThur,
-                            dinnerVeg: response.data.dinnerVegThur,
-                            dinnerNonVeg: response.data.dinnerNonVegThur,
+                            breakfastVeg: response.data.map(meal => meal.breafkfastVegThur),
+                            breakfastNonVeg: response.data.map(meal => meal.breafkfastNonVegThur),
+                            lunchVeg: response.data.map(meal => meal.lunchVegThur),
+                            lunchNonVeg: response.data.map(meal => meal.lunchNonVegThur),
+                            snacksVeg: response.data.map(meal => meal.snacksVegThur),
+                            snacksNonVeg: response.data.map(meal => meal.snacksNonVegThur),
+                            dinnerVeg: response.data.map(meal => meal.dinnerVegThur),
+                            dinnerNonVeg: response.data.map(meal => meal.dinnerNonVegThur),
                                                       })
                                       }
                         })
@@ -140,14 +140,14 @@ export default class Menu extends Component {
               .then(response => {
                     if (response.data.length > 0) {
                         this.setState({
-                            breakfastVeg: response.data.breafkfastVegFri,
-                            breakfastNonVeg: response.data.breafkfastNonVegFri,
-                            lunchVeg: response.data.lunchVegFri,
-                            lunchNonVeg: response.data.lunchNonVegFri,
-                            snacksVeg: response.data.snacksVegFri,
-                            snacksNonVeg: response.data.snacksNonVegFri,
-                            dinnerVeg: response.data.dinnerVegFri,
-                            dinnerNonVeg: response.data.dinnerNonVegFri,
+                            breakfastVeg: response.data.map(meal => meal.breafkfastVegFri),
+                            breakfastNonVeg: response.data.map(meal => meal.breafkfastNonVegFri),
+                            lunchVeg: response.data.map(meal => meal.lunchVegFri),
+                            lunchNonVeg: response.data.map(meal => meal.lunchNonVegFri),
+                            snacksVeg: response.data.map(meal => meal.snacksVegFri),
+                            snacksNonVeg: response.data.map(meal => meal.snacksNonVegFri),
+                            dinnerVeg: response.data.map(meal => meal.dinnerVegFri),
+                            dinnerNonVeg: response.data.map(meal => meal.dinnerNonVegFri),
                                                       })
                                       }
                         })
@@ -165,14 +165,14 @@ export default class Menu extends Component {
               .then(response => {
                     if (response.data.length > 0) {
                         this.setState({
-                            breakfastVeg: response.data.breafkfastVegSat,
-                            breakfastNonVeg: response.data.breafkfastNonVegSat,
-                            lunchVeg: response.data.lunchVegSat,
-                            lunchNonVeg: response.data.lunchNonVegSat,
-                            snacksVeg: response.data.snacksVegSat,
-                            snacksNonVeg: response.data.snacksNonVegSat,
-                            dinnerVeg: response.data.dinnerVegSat,
-                            dinnerNonVeg: response.data.dinnerNonVegSat,
+                            breakfastVeg: response.data.map(meal => meal.breafkfastVegSat),
+                            breakfastNonVeg: response.data.map(meal => meal.breafkfastNonVegSat),
+                            lunchVeg: response.data.map(meal => meal.lunchVegSat),
+                            lunchNonVeg: response.data.map(meal => meal.lunchNonVegSat),
+                            snacksVeg: response.data.map(meal => meal.snacksVegSat),
+                            snacksNonVeg: response.data.map(meal => meal.snacksNonVegSat),
+                            dinnerVeg: response.data.map(meal => meal.dinnerVegSat),
+                            dinnerNonVeg: response.data.map(meal => meal.dinnerNonVegSat),
                                                       })
                                       }
                         })
@@ -190,14 +190,14 @@ export default class Menu extends Component {
               .then(response => {
                     if (response.data.length > 0) {
                         this.setState({
-                            breakfastVeg: response.data.breafkfastVegSun,
-                            breakfastNonVeg: response.data.breafkfastNonVegSun,
-                            lunchVeg: response.data.lunchVegSun,
-                            lunchNonVeg: response.data.lunchNonVegSun,
-                            snacksVeg: response.data.snacksVegSun,
-                            snacksNonVeg: response.data.snacksNonVegSun,
-                            dinnerVeg: response.data.dinnerVegSun,
-                            dinnerNonVeg: response.data.dinnerNonVegSun,
+                            breakfastVeg: response.data.map(meal => meal.breafkfastVegSun),
+                            breakfastNonVeg: response.data.map(meal => meal.breafkfastNonVegSun),
+                            lunchVeg: response.data.map(meal => meal.lunchVegSun),
+                            lunchNonVeg: response.data.map(meal => meal.lunchNonVegSun),
+                            snacksVeg: response.data.map(meal => meal.snacksVegSun),
+                            snacksNonVeg: response.data.map(meal => meal.snacksNonVegSun),
+                            dinnerVeg: response.data.map(meal => meal.dinnerVegSun),
+                            dinnerNonVeg: response.data.map(meal => meal.dinnerNonVegSun),
                                                       })
                                       }
                         })
@@ -221,49 +221,47 @@ export default class Menu extends Component {
        
         
         return (
-            <body className="student-menu">
-    <div>
-    <table class="center" width="50%">
-        
-           
-            <tr><th colSpan="5" style={{fontSize:"20px"}}>Weekly Meal Menu</th></tr>
-  <tr>
-    <th rowSpan="5" ><ol><li><button className="monday" onClick={this.handleMonday}>Monday</button></li><br/><li><button className="tuesday" onClick={this.handleTuesday}>Tuesday</button></li><br/><li><button className="wednesday" onClick={this.handleWednesday}>Wednesday</button></li><br/><li><button className="thursday" onClick={this.handleThursday}>Thursday</button></li><br/><li><button className="friday" onClick={this.handleFriday}>Friday</button></li><br/><li><button className="saturday" onClick={this.handleSaturday}>Saturday</button></li><br/><li><button className="sunday" onClick={this.handleSunday}>Sunday</button></li></ol></th>
-    <th>Breakfast</th>
-    <th>Lunch</th>
-    <th>Snacks</th>
-    <th>Dinner</th>
-</tr>
-<tr>
-    <th>Veg</th>
-    <th>Veg</th>
-    <th>Veg</th>
-    <th>Veg</th>
-    
-</tr>
-<tr>
-    <td>{this.state.breakfastVeg}</td>
-    <td>{this.state.lunchVeg}</td>
-    <td>{this.state.snacksVeg}</td>
-    <td>{this.state.dinnerVeg}</td>
-    
-</tr>
-<tr>
-    <th>NonVeg</th>
-    <th>NonVeg</th>
-    <th>NonVeg</th>
-    <th>NonVeg</th>
-</tr>
-<tr>
-<td>{this.state.breakfastNonVeg}</td>
-    <td>{this.state.lunchNonVeg}</td>
-    <td>{this.state.snacksNonVeg}</td>
-    <td>{this.state.dinnerNonVeg}</td>
-</tr>
-</table>
-
-    </div>
-    </body>
+           <body>
+               <div className="buttons">
+               <button className="monday" onClick={this.handleMonday}>Monday</button>
+                <button className="tuesday" onClick={this.handleTuesday}>Tuesday</button>
+                    <button className="wednesday" onClick={this.handleWednesday}>Wednesday</button>
+                        <button className="thursday" onClick={this.handleThursday}>Thursday</button>
+                            <button className="friday" onClick={this.handleFriday}>Friday</button>
+                                <button className="saturday" onClick={this.handleSaturday}>Saturday</button>
+                <button className="sunday" onClick={this.handleSunday}>Sunday</button>
+                </div>
+               <div>
+                    <table className="center1" width="50%">
+                        <tr>
+                            <th></th>
+                            <th>VEG</th>
+                            <th>NON-VEG</th>
+                        </tr>
+                        <tr>
+                            <th>BREAKFAST</th>
+                           <td></td>
+                           <td></td>
+                        </tr>
+                        <tr>
+                            <th>LUNCH</th>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th>SNACKS</th>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th>DINNER</th>
+                            <td></td>
+                            <td></td>
+                            
+                        </tr>
+                    </table>
+               </div>
+           </body>
     )
     
 }

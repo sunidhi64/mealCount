@@ -32,50 +32,49 @@ export default class Messauthmenu extends Component {
 
     render(){
         return(
-            <body className="student-menu">
+            
+            <body>
+            <div className="buttons">
+            <button className="monday" onClick={this.handleMonday}>Monday</button>
+             <button className="tuesday" onClick={this.handleTuesday}>Tuesday</button>
+                 <button className="wednesday" onClick={this.handleWednesday}>Wednesday</button>
+                     <button className="thursday" onClick={this.handleThursday}>Thursday</button>
+                         <button className="friday" onClick={this.handleFriday}>Friday</button>
+                             <button className="saturday" onClick={this.handleSaturday}>Saturday</button>
+             <button className="sunday" onClick={this.handleSunday}>Sunday</button>
+             </div>
             <div>
-            <table class="center" width="50%">
-                
-                   
-        <tr><th colSpan="5" style={{fontSize:"20px"}}>Weekly Meal Menu</th></tr>
-        <tr>
-            <th rowSpan="5" ><ol><li><button className="monday" onClick={this.handleMonday}>Monday</button></li><br/><li><button className="tuesday" onClick={this.handleTuesday}>Tuesday</button></li><br/><li><button className="wednesday" onClick={this.handleWednesday}>Wednesday</button></li><br/><li><button className="thursday" onClick={this.handleThursday}>Thursday</button></li><br/><li><button className="friday" onClick={this.handleFriday}>Friday</button></li><br/><li><button className="saturday" onClick={this.handleSaturday}>Saturday</button></li><br/><li><button className="sunday" onClick={this.handleSunday}>Sunday</button></li></ol></th>
-            <th>Breakfast</th>
-            <th>Lunch</th>
-            <th>Snacks</th>
-            <th>Dinner</th>
-        </tr>
-        <tr>
-            <th>Veg</th>
-            <th>Veg</th>
-            <th>Veg</th>
-            <th>Veg</th>
-            
-        </tr>
-        <tr>
-            <td><input type="text" placeholder="Enter you meal" name="breakfastVeg" onChange={this.handleChange}/></td>
-            <td><input type="text"placeholder="Enter you meal" name="lunchVeg" onChange={this.handleChange}/></td>
-            <td><input type="text"placeholder="Enter you meal" name="snacksNonVeg" onChange={this.handleChange}/></td>
-            <td><input type="text"placeholder="Enter you meal" name="dinnerVeg" onChange={this.handleChange}/></td>
-        
-            
-        </tr>
-        <tr>
-            <th>NonVeg</th>
-            <th>NonVeg</th>
-            <th>NonVeg</th>
-            <th>NonVeg</th>
-        </tr>
-        <tr>
-            <td><input type="text" placeholder="Enter you meal" name="breakfastNonVeg" onChange={this.handleChange}/></td>
-            <td><input type="text" placeholder="Enter you meal" name="lunchNonVeg" onChange={this.handleChange}/></td>
-            <td><input type="text" placeholder="Enter you meal" name="snacksNonVeg" onChange={this.handleChange}/></td>
-            <td><input type="text" placeholder="Enter you meal" name="dinnerNonVeg" onChange={this.handleChange}/></td>
-        </tr>
-        </table>
-        
+                 <table className="center" width="50%">
+                     <caption><button type="submit" className="submit"></button></caption>
+                     <tr>
+                         <th></th>
+                         <th>VEG</th>
+                         <th>NON-VEG</th>
+                     </tr>
+                     <tr>
+                         <th>BREAKFAST</th>
+                        <td><input type="text"></input></td>
+                        <td><input type="text"></input></td>
+                     </tr>
+                     <tr>
+                         <th>LUNCH</th>
+                         <td><input type="text"></input></td>
+                         <td><input type="text"></input></td>
+                     </tr>
+                     <tr>
+                         <th>SNACKS</th>
+                         <td><input type="text"></input></td>
+                         <td><input type="text"></input></td>
+                     </tr>
+                     <tr>
+                         <th>DINNER</th>
+                         <td><input type="text"></input></td>
+                         <td><input type="text"></input></td>
+                         
+                     </tr>
+                 </table>
             </div>
-            </body>
+        </body>
         )
     }
 }

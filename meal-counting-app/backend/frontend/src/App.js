@@ -15,8 +15,8 @@ import Attendance from "./components/attendance";
 import Suggestions from "./components/suggestions";
 import Dashboard from "./components/dashboard";
 import Messauthregister from "./components/messauthregister.js";
-import Tellme from "./components/Tellme"
-import Add from "./components/addmenu"
+import Tellme from "./components/Tellme";
+
 function App() {
       return(
           <div>
@@ -31,7 +31,7 @@ function App() {
                     <Route path='/messauth/register' component={Messauthregister}/>
                     <Route path='/messauth/MessMenu' component={MessauthMenu} />
                     <Route path='/student/dashboard' component={Navbar}/>
-                    <Route path='/addmenu' component={Add}/>
+                    
                     <Route path='/' component={Tellme} />
                 </Switch>
             </Router>
