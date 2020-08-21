@@ -1,7 +1,11 @@
-import React, { Component } from "react";
-import "./messauthmenu.css";
+iimport React, { Component } from "react";
+iimport "./messauthmenu.css";
 export default class Messauthmenu extends Component {
+<<<<<<< HEAD
     constructor(){
+=======
+	constructor(){
+>>>>>>> ef1e4e54c7af04cb03af736748fde8a79f523ddb
         super();
         this.state={
             breakfastVeg: [],
@@ -14,9 +18,15 @@ export default class Messauthmenu extends Component {
             dinnerNonVeg: [],
         }
     }
+<<<<<<< HEAD
     
     handleMonday(event){
         axios.get('http://localhost:5000/mealmenu/')
+=======
+
+    componentDidMount() {
+        axios.post:('http://localhost:5000/mealmenu/')
+>>>>>>> ef1e4e54c7af04cb03af736748fde8a79f523ddb
               .then(response => {
                     if (response.data.length > 0) {
                         this.setState({
@@ -35,6 +45,7 @@ export default class Messauthmenu extends Component {
                           console.log(error);
                         })
 
+<<<<<<< HEAD
           
     }
           handleTuesday(event){
@@ -178,6 +189,8 @@ export default class Messauthmenu extends Component {
                           console.log(error);
                         })
 
+=======
+>>>>>>> ef1e4e54c7af04cb03af736748fde8a79f523ddb
           }
 
 
