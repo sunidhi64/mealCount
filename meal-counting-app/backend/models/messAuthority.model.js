@@ -7,7 +7,7 @@ const messAuthSchema = new Schema({
     lastName: {type: String},
     username: {type: String},
     password: {type: String},
-   // students: [{type: Schema.Types.ObjectId, ref: 'student' }]
+    students: [{type: Schema.Types.ObjectId, ref: 'student' }]
 });
 
 

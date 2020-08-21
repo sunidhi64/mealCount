@@ -1,6 +1,6 @@
 const router = require('express').Router();
 let MessAuthority = require('../models/messAuthority.model');
-//let Student = require('../models/student.model');
+let Student = require('../models/student.model');
 
 
 
@@ -26,15 +26,20 @@ router.route('/register').post((req, res) => {
 });
 
 
-router.route('/id:/registerstudent').post(function(req, res) {
+router.route('/registerstudent/id:').post(function(req, res) {
     const firstName = req.body.firstName;
     const lastName = req.body.lastName;
+    const username = req.body.username;
     const password = req.body.password;
 
-    const newuser = new Student();
-    newuser.firstName = firstName;
-    newuser.lastName = lastName;
-    newuser.password = password;
+    const newuser = new Student({
+        firstName,
+        lastName,
+        username,
+        password,
+    });
+    
+    
     newuser.save()
         .then(() => res.json('Student added'))
         .catch(err => res.status(404).json('err' + err));

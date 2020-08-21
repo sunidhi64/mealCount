@@ -9,6 +9,7 @@ const studentSchema = new Schema({
     messAuth   : { type: mongoose.Schema.Types.ObjectId, ref: 'messauth' },
     choice     : { type: Boolean },
     choiceType : { type: String  },
+    meal: [{type: Schema.Types.ObjectId, ref: 'menu' }]
 });
 
 // url for student
