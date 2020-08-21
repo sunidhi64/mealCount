@@ -19,12 +19,12 @@ export default class Messauthmenu extends Component {
     handleChange(event){
         this.setState({
             [event.target.name]: event.target.value
-        )}
+        })
     }
 
     handleMonday(event){
         event.prevent.default();
-
+    }
 
 
     
@@ -54,9 +54,9 @@ export default class Messauthmenu extends Component {
         </tr>
         <tr>
             <td><input type="text" placeholder="Enter you meal" name="breakfastVeg" onChange={this.handleChange}/></td>
-            <td><input type="text"placeholder="Enter you meal" name="lunchVeg" onChange={this.handleChange}/></input></td>
-            <td><input type="text"placeholder="Enter you meal" name="snacksNonVeg" onChange={this.handleChange}/></input></td>
-            <td><input type="text"placeholder="Enter you meal" name="dinnerVeg" onChange={this.handleChange}/></input></td>
+            <td><input type="text"placeholder="Enter you meal" name="lunchVeg" onChange={this.handleChange}/></td>
+            <td><input type="text"placeholder="Enter you meal" name="snacksNonVeg" onChange={this.handleChange}/></td>
+            <td><input type="text"placeholder="Enter you meal" name="dinnerVeg" onChange={this.handleChange}/></td>
         
             
         </tr>
