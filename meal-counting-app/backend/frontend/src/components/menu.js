@@ -223,13 +223,13 @@ export default class Menu extends Component {
         return (
            <body>
                <div className="buttons">
-               <button className="monday" onClick={this.handleMonday}>Monday</button>
-                <button className="tuesday" onClick={this.handleTuesday}>Tuesday</button>
-                    <button className="wednesday" onClick={this.handleWednesday}>Wednesday</button>
-                        <button className="thursday" onClick={this.handleThursday}>Thursday</button>
-                            <button className="friday" onClick={this.handleFriday}>Friday</button>
-                                <button className="saturday" onClick={this.handleSaturday}>Saturday</button>
-                <button className="sunday" onClick={this.handleSunday}>Sunday</button>
+               <button className="monday1 student-menu-button" onClick={this.handleMonday}>Monday</button>
+                <button className="tuesday1 student-menu-button" onClick={this.handleTuesday}>Tuesday</button>
+                    <button className="wednesday1 student-menu-button " onClick={this.handleWednesday}>Wednesday</button>
+                        <button className="thursday1 student-menu-button" onClick={this.handleThursday}>Thursday</button>
+                            <button className="friday1 student-menu-button" onClick={this.handleFriday}>Friday</button>
+                                <button className="saturday1 student-menu-button" onClick={this.handleSaturday}>Saturday</button>
+                <button className="sunday1 student-menu-button" onClick={this.handleSunday}>Sunday</button>
                 </div>
                <div>
                     <table className="center1" width="50%">

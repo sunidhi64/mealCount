@@ -1,12 +1,10 @@
 body {
     background: #f6f5f7;
-    
 }
 .buttons  {
     position: absolute;
     top:80px;
     left:330px;
-    
 }
 table, th, td {
     border-collapse:collapse;
@@ -14,68 +12,61 @@ table, th, td {
     border-spacing: 0;
     font-family: 'Montserrat', sans-serif ; 
     text-align: center;
-    
     background: #fff;
 }
 th,td{
-
     padding:10px 5px;
-    
 }
 .center1{
-   
-     position: relative;
+    position: relative;
      top:150px;
      left:380px;
      box-shadow:  0 14px 28px rgba(0,0,0,0.25),0 10px 10px rgba(0,0,0,0.22);
 }
-button{
-    border-radius: 20px;
-    font-family: 'Montserrat', sans-serif ; 
+.student-menu-button{
+    font-family: 'Montserrat', sans-serif;
     color: #fff;
     font-size:12px;
-    
     font-weight: bold;
-    padding :10px 25px;
-    
+    padding :12px 45px;
     letter-spacing:1px;
     text-transform:uppercase;
-    transition: transform 80ms ease-in;
 }
-button:active {
-    transform: scale(0.95);
-  }
-button:focus {
-    outline:none;
-}
-button.monday{
-    border:1px solid black;
+button.monday1{
+    border:none;
     background:#f60000;
 }
-button.tuesday{
-    border:1px solid black;
+button.monday:visited{
+    outline:3px solid black;
+}
+button.tuesday1{
+    border:none;
     background:#ff8c00;
 }
-button.wednesday{
-    border:1px solid black;
+button.wednesday1{
+    border:none;
     background:#ffee00;
 }
-button.thursday{
-    border:1px solid black;
+button.thursday1{
+    border:none;
     background:#4de94c;
 }
-button.friday{
-    border:1px solid black;
+button.friday1{
+    border:none;
     background:#43b8ff;
 }
-button.saturday{
-    border:1px solid black;
+button.saturday1{
+    border:none;
     background:#3783ff;
 }
-button.sunday{
-    border:1px solid black;
+button.sunday1{
+    border:none;
     background:#4815aa;
+    
 }
 td{
     line-height: 30px;
 }
+
+
+
