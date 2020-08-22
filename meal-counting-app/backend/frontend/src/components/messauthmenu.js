@@ -246,15 +246,8 @@ export default class MessauthMenu extends Component {
  
         }
     }
-
-
-
-    
-
-
     render(){
         return(
-            
             <body>
             <div className="buttons">
             <button className="monday mess-menu-button" onClick={this.handleMonday}>Monday</button>
