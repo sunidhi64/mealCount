@@ -206,32 +206,19 @@ export default class Menu extends Component {
                         })
 
           }
-
-
-    
-        
-
-        
-
-    
-    
-
-    
     render() {
-       
-        
-        return (
-           <body>
-               <div className="buttons">
-               <button className="monday1 student-menu-button" onClick={this.handleMonday}>Monday</button>
+       return (
+            <body>
+                <div className="buttons">
+                <button className="monday1 student-menu-button" onClick={this.handleMonday}>Monday</button>
                 <button className="tuesday1 student-menu-button" onClick={this.handleTuesday}>Tuesday</button>
-                    <button className="wednesday1 student-menu-button " onClick={this.handleWednesday}>Wednesday</button>
-                        <button className="thursday1 student-menu-button" onClick={this.handleThursday}>Thursday</button>
-                            <button className="friday1 student-menu-button" onClick={this.handleFriday}>Friday</button>
-                                <button className="saturday1 student-menu-button" onClick={this.handleSaturday}>Saturday</button>
+                <button className="wednesday1 student-menu-button " onClick={this.handleWednesday}>Wednesday</button>
+                <button className="thursday1 student-menu-button" onClick={this.handleThursday}>Thursday</button>
+                <button className="friday1 student-menu-button" onClick={this.handleFriday}>Friday</button>
+                <button className="saturday1 student-menu-button" onClick={this.handleSaturday}>Saturday</button>
                 <button className="sunday1 student-menu-button" onClick={this.handleSunday}>Sunday</button>
                 </div>
-               <div>
+                <div>
                     <table className="center1" width="50%">
                         <tr>
                             <th></th>
@@ -260,8 +247,8 @@ export default class Menu extends Component {
                             
                         </tr>
                     </table>
-               </div>
-           </body>
+                </div>
+            </body>
     )
     
 }
