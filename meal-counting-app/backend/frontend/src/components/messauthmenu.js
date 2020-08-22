@@ -257,17 +257,17 @@ export default class MessauthMenu extends Component {
             
             <body>
             <div className="buttons">
-            <button className="monday" onClick={this.handleMonday}>Monday</button>
-             <button className="tuesday" onClick={this.handleTuesday}>Tuesday</button>
-                 <button className="wednesday" onClick={this.handleWednesday}>Wednesday</button>
-                     <button className="thursday" onClick={this.handleThursday}>Thursday</button>
-                         <button className="friday" onClick={this.handleFriday}>Friday</button>
-                             <button className="saturday" onClick={this.handleSaturday}>Saturday</button>
-             <button className="sunday" onClick={this.handleSunday}>Sunday</button>
+            <button className="monday mess-menu-button" onClick={this.handleMonday}>Monday</button>
+             <button className="tuesday mess-menu-button" onClick={this.handleTuesday}>Tuesday</button>
+                 <button className="wednesday mess-menu-button" onClick={this.handleWednesday}>Wednesday</button>
+                     <button className="thursday mess-menu-button " onClick={this.handleThursday}>Thursday</button>
+                         <button className="friday mess-menu-button" onClick={this.handleFriday}>Friday</button>
+                             <button className="saturday mess-menu-button " onClick={this.handleSaturday}>Saturday</button>
+             <button className="sunday mess-menu-button" onClick={this.handleSunday}>Sunday</button>
              </div>
             <div>
                  <table className="center" width="50%">
-                     <caption><button type="submit" className="submit">SUBMIT</button></caption>
+                     <caption><button type="submit" className="submit mess-menu-button">SUBMIT</button></caption>
                      <tr>
                          <th></th>
                          <th>VEG</th>
@@ -275,23 +275,23 @@ export default class MessauthMenu extends Component {
                      </tr>
                      <tr>
                          <th>BREAKFAST</th>
-                        <td><input type="text" placeholder="enter your meal" name="breakfastVeg" onChange={this.handleChange}/></td>
-                        <td><input type="text" placeholder="enter your meal" name="breakfastNonVeg" onChange={this.handleChange}/></td>
+                        <td><input className="mess-menu-input" type="text" placeholder="Enter your meal" name="breakfastVeg" onChange={this.handleChange}/></td>
+                        <td><input className="mess-menu-input" type="text" placeholder="Enter your meal" name="breakfastNonVeg" onChange={this.handleChange}/></td>
                      </tr>
                      <tr>
                          <th>LUNCH</th>
-                         <td><input type="text" placeholder="enter your meal" name="lunchVeg" onChange={this.handleChange}/></td>
-                         <td><input type="text" placeholder="enter your meal" name="lunchNonVeg" onChange={this.handleChange}/></td>
+                         <td><input className="mess-menu-input" type="text" placeholder="Enter your meal" name="lunchVeg" onChange={this.handleChange}/></td>
+                         <td><input className="mess-menu-input" type="text" placeholder="Enter your meal" name="lunchNonVeg" onChange={this.handleChange}/></td>
                      </tr>
                      <tr>
                          <th>SNACKS</th>
-                         <td><input type="text" placeholder="enter your meal" name="snacksVeg" onChange={this.handleChange}/></td>
-                         <td><input type="text" placeholder="enter your meal" name="snacksNonVeg" onChange={this.handleChange}/></td>
+                         <td><input className="mess-menu-input" type="text" placeholder="Enter your meal" name="snacksVeg" onChange={this.handleChange}/></td>
+                         <td><input className="mess-menu-input" type="text" placeholder="Enter your meal" name="snacksNonVeg" onChange={this.handleChange}/></td>
                      </tr>
                      <tr>
                          <th>DINNER</th>
-                         <td><input type="text" placeholder="enter your meal" name="dinnerVeg" onChange={this.handleChange}/></td>
-                         <td><input type="text" placeholder="enter your meal" name="dinnerNonVeg" onChange={this.handleChange}/></td>
+                         <td><input className="mess-menu-input" type="text" placeholder="Enter your meal" name="dinnerVeg" onChange={this.handleChange}/></td>
+                         <td><input className="mess-menu-input" type="text" placeholder="Enter your meal" name="dinnerNonVeg" onChange={this.handleChange}/></td>
                          
                      </tr>
                  </table>

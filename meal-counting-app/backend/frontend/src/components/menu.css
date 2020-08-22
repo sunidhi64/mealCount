@@ -4,7 +4,7 @@ body {
 .buttons  {
     position: absolute;
     top:80px;
-    left:330px;
+    left:340px;
 }
 table, th, td {
     border-collapse:collapse;
@@ -28,16 +28,13 @@ th,td{
     color: #fff;
     font-size:12px;
     font-weight: bold;
-    padding :12px 45px;
+    padding :12px 25px;
     letter-spacing:1px;
     text-transform:uppercase;
 }
 button.monday1{
     border:none;
     background:#f60000;
-}
-button.monday:visited{
-    outline:3px solid black;
 }
 button.tuesday1{
     border:none;
