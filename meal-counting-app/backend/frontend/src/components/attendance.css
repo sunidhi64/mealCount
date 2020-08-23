@@ -14,8 +14,9 @@ table, th, td {
     text-align: center;
     background: #fff;
 }
-th,td{
+.center2 th,td{
     padding:10px 5px;
+
 }
 .center2{
     position: relative;

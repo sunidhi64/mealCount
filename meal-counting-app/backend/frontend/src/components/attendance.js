@@ -24,28 +24,28 @@ export default class Attendance extends Component {
                      </tr>
                      <tr>
                          <th>BREAKFAST</th>
-                        <td><input className="student-checkbox" type="checkbox"/>I prefer veg</td>
-                        <td><input className="student-checkbox" type="checkbox" />I prefer non-veg</td>
-                        <td><input className="student-checkbox" type="checkbox" />No meal</td>
+                        <td><input className="student-checkbox" id="breakfast-veg-checkbox" type="checkbox"/><label for="breakfast-veg-checkbox">I prefer veg</label></td>
+                        <td><input className="student-checkbox" id="breakfast-nonveg-checkbox" type="checkbox" /><label for="breakfast-nonveg-checkbox">I prefer non-veg</label></td>
+                        <td><input className="student-checkbox" id="breakfast-nomeal-checkbox" type="checkbox" /><label for="breakfast-nomeal-checkbox">No meal</label></td>
                      </tr>
                      <tr>
                          <th>LUNCH</th>
-                         <td><input className="student-checkbox" type="checkbox"/>I prefer veg</td>
-                        <td><input className="student-checkbox" type="checkbox" />I prefer non-veg</td>
-                        <td><input className="student-checkbox" type="checkbox" />No meal</td>
+                         <td><input className="student-checkbox" id="lunch-veg-checkbox" type="checkbox"/><label for="lunch-veg-checkbox">I prefer veg</label></td>
+                        <td><input className="student-checkbox" id="lunch-nonveg-checkbox" type="checkbox" /><label for="lunch-nonveg-checkbox">I prefer non-veg</label></td>
+                        <td><input className="student-checkbox" id="lunch-nomeal-checkbox" type="checkbox" /><label for="lunch-nomeal-checkbox">No meal</label></td>
                      </tr>
                      <tr>
                          <th>SNACKS</th>
-                         <td><input className="student-checkbox" type="checkbox"/>I prefer veg</td>
-                        <td><input className="student-checkbox" type="checkbox" />I prefer non-veg</td>
-                        <td><input className="student-checkbox" type="checkbox" />No meal</td>
+                         <td><input className="student-checkbox" id="snacks-veg-checkbox" type="checkbox"/><label for="snacks-veg-checkbox">I prefer veg</label></td>
+                        <td><input className="student-checkbox" id="snacks-nonveg-checkbox" type="checkbox" /><label for="snacks-nonveg-checkbox">I prefer non-veg</label></td>
+                        <td><input className="student-checkbox" id="snacks-nomeal-checkbox" type="checkbox" /><label for="snacks-nomeal-checkbox">No meal</label></td>
                          
                      </tr>
                      <tr>
                          <th>DINNER</th>
-                         <td><input className="student-checkbox" type="checkbox"/>I prefer veg</td>
-                        <td><input className="student-checkbox" type="checkbox" />I prefer non-veg</td>
-                        <td><input className="student-checkbox" type="checkbox" />No meal</td>
+                         <td><input className="student-checkbox" id="dinner-veg-checkbox" type="checkbox"/><label for="dinner-veg-checkbox">I prefer veg</label></td>
+                        <td><input className="student-checkbox" id="dinner-nonveg-checkbox" type="checkbox" /><label for="dinner-nonveg-checkbox">I prefer non-veg</label></td>
+                        <td><input className="student-checkbox" id="dinner-nomeal-checkbox" type="checkbox" /><label for="dinner-nomeal-checkbox">No meal</label></td>
                      </tr>
                  </table>
             </div>
