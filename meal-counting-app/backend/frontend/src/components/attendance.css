@@ -1,10 +1,10 @@
 body {
     background: #f6f5f7;
 }
-.buttons1  {
+.buttons2  {
     position: absolute;
-    top:80px;
-    left:340px;
+    top:180px;
+    left: 340px;
 }
 table, th, td {
     border-collapse:collapse;
@@ -17,13 +17,13 @@ table, th, td {
 th,td{
     padding:10px 5px;
 }
-.center1{
+.center2{
     position: relative;
-     top:150px;
+     top:250px;
      left:380px;
      box-shadow:  0 14px 28px rgba(0,0,0,0.25),0 10px 10px rgba(0,0,0,0.22);
 }
-.student-menu-button{
+.student-attendance-button{
     font-family: 'Montserrat', sans-serif;
     color: #fff;
     font-size:12px;
@@ -32,38 +32,38 @@ th,td{
     letter-spacing:1px;
     text-transform:uppercase;
 }
-button.monday1{
-    border:none;
+button.monday2{
     background:#f60000;
+    border:none;
 }
-button.tuesday1{
+button.tuesday2{
     border:none;
     background:#ff8c00;
 }
-button.wednesday1{
+button.wednesday2{
     border:none;
     background:#ffee00;
 }
-button.thursday1{
+button.thursday2{
     border:none;
     background:#4de94c;
 }
-button.friday1{
+button.friday2{
     border:none;
     background:#43b8ff;
 }
-button.saturday1{
+button.saturday2{
     border:none;
     background:#3783ff;
 }
-button.sunday1{
+button.sunday2{
     border:none;
     background:#4815aa;
-    
 }
 td{
     line-height: 30px;
 }
-
-
-
+button.student-attendance-submit {
+    border:1px solid #ff4b2b;
+    background: #ff4b2b;
+}

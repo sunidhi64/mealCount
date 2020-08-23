@@ -21,4 +21,3 @@ export default class Student_list extends Component {
         )
     }
 }
-render

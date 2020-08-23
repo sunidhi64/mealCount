@@ -209,7 +209,7 @@ export default class Menu extends Component {
     render() {
        return (
             <body>
-                <div className="buttons">
+                <div className="buttons1">
                 <button className="monday1 student-menu-button" onClick={this.handleMonday}>Monday</button>
                 <button className="tuesday1 student-menu-button" onClick={this.handleTuesday}>Tuesday</button>
                 <button className="wednesday1 student-menu-button " onClick={this.handleWednesday}>Wednesday</button>
@@ -248,6 +248,7 @@ export default class Menu extends Component {
                         </tr>
                     </table>
                 </div>
+                
             </body>
     )
     

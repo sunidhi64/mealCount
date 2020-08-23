@@ -260,7 +260,7 @@ export default class MessauthMenu extends Component {
              </div>
             <div>
                  <table className="center" width="50%">
-                     <caption><button type="submit" className="submit mess-menu-button">SUBMIT</button></caption>
+                     <caption><button type="submit" className="mess-menu-submit mess-menu-button">SUBMIT</button></caption>
                      <tr>
                          <th></th>
                          <th>VEG</th>
