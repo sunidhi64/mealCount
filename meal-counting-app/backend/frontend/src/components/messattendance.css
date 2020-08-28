@@ -1,0 +1,66 @@
+body {
+    background: #f6f5f7;
+}
+.buttons3  {
+    position: absolute;
+    top:180px;
+    left: 340px;
+}
+table, th, td {
+    border-collapse:collapse;
+    border:1px solid black;
+    border-spacing: 0;
+    font-family: 'Montserrat', sans-serif ; 
+    text-align: center;
+    background: #fff;
+}
+.center3 th,td{
+    padding:10px 5px;
+
+}
+.center3{
+    position: relative;
+     top:250px;
+     left:380px;
+     box-shadow:  0 14px 28px rgba(0,0,0,0.25),0 10px 10px rgba(0,0,0,0.22);
+}
+.mess-attendance-button{
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    font-size:12px;
+    font-weight: bold;
+    padding :12px 25px;
+    letter-spacing:1px;
+    text-transform:uppercase;
+}
+.monday3{
+    background:#f60000;
+    border:none;
+}
+.tuesday3{
+    border:none;
+    background:#ff8c00;
+}
+.wednesday3{
+    border:none;
+    background:#ffee00;
+}
+.thursday3{
+    border:none;
+    background:#4de94c;
+}
+.friday3{
+    border:none;
+    background:#43b8ff;
+}
+.saturday3{
+    border:none;
+    background:#3783ff;
+}
+.sunday3{
+    border:none;
+    background:#4815aa;
+}
+td{
+    line-height: 30px;
+}
