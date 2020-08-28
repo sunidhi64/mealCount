@@ -37,7 +37,7 @@ class Messauthlogin extends Component {
             axios.post('http://localhost:5000/messauth/login', user)
               .then(res => console.log(res.data));
 
-            //window.location = '/messauth/dashboard'+this.props.match.params.id;
+            window.location = '/messauth/messmenu';
           }
 
 

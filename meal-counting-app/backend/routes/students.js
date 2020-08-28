@@ -1,6 +1,6 @@
 const router = require('express').Router();
 let Student = require('../models/student.model');
-let MealMenu = require('../models/meal_menu.model');
+let Menu = require('../models/meal_menu.model');
 
 
 router.route('/login').post((req, res) => {
@@ -36,8 +36,44 @@ router.route('/messmenu').get(function(req, res) {
     })
 });
 
-router.route('messmenu/:id').get((req, res) => {
-      Menu.findById(req.params.id)
+router.route('/messmenu/mon').get((req, res) => {
+      Menu.find()
+        .then(menu => res.json(menu))
+        .catch(err => res.status(400).json('Error: ' + err));
+});
+
+router.route('/messmenu/tue').get((req, res) => {
+      Menu.find()
+        .then(Menu => res.json(Menu))
+        .catch(err => res.status(400).json('Error: ' + err));
+});
+
+router.route('/messmenu/wed').get((req, res) => {
+      Menu.find()
+        .then(Menu => res.json(Menu))
+        .catch(err => res.status(400).json('Error: ' + err));
+});
+
+router.route('/messmenu/thu').get((req, res) => {
+      Menu.find()
+        .then(Menu => res.json(Menu))
+        .catch(err => res.status(400).json('Error: ' + err));
+});
+
+router.route('/messmenu/fri').get((req, res) => {
+      Menu.find()
+        .then(Menu => res.json(Menu))
+        .catch(err => res.status(400).json('Error: ' + err));
+});
+
+router.route('/messmenu/sat').get((req, res) => {
+      Menu.find()
+        .then(Menu => res.json(Menu))
+        .catch(err => res.status(400).json('Error: ' + err));
+});
+
+router.route('/messmenu/sun').get((req, res) => {
+      Menu.find()
         .then(Menu => res.json(Menu))
         .catch(err => res.status(400).json('Error: ' + err));
 });

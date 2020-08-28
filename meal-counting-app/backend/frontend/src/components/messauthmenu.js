@@ -22,6 +22,14 @@ export default class MessauthMenu extends Component {
             isSun: false,
         }
         this.handleChange=this.handleChange.bind(this)
+        this.handleMonday=this.handleMonday.bind(this)
+        this.handleTuesday=this.handleTuesday.bind(this)
+        this.handleWednesday=this.handleWednesday.bind(this)
+        this.handleThursday=this.handleThursday.bind(this)
+        this.handleFriday=this.handleFriday.bind(this)
+        this.handleSaturday=this.handleSaturday.bind(this)
+        this.handleSunday=this.handleSunday.bind(this)
+        this.handleSubmit=this.handleSubmit.bind(this)
     }
 
     handleChange(event){
@@ -31,11 +39,13 @@ export default class MessauthMenu extends Component {
     }
 
     handleMonday(event){
+        console.log("I am clicked");
         this.setState(prevState => ({
                         isMon: !prevState.isMon
                     }));
     } 
     handleTuesday(event){
+        console.log("I am clicked");
         this.setState(prevState => ({
                         isTue: !prevState.isTue
                     }));
@@ -67,6 +77,7 @@ export default class MessauthMenu extends Component {
     }
 
     handleSubmit(event){
+        event.preventDefault();
         if (this.state.isMon){
             const meal ={
                 breakfastVegMon: this.state.breakfastVeg,
@@ -78,21 +89,19 @@ export default class MessauthMenu extends Component {
                 dinnerVegMon: this.state.dinnerVeg,
                 dinnerNonVegMon: this.state.dinnerNonVeg,
             }
-            axios.post("http://localhost:3000/messauth/messmenu", meal)
+
+            console.log(meal);
+   
+            axios.post('http://localhost:5000/messauth/messmenu/mon', meal)
                 .then(res => console.log(res.data));
-            this.state={
-            breakfastVeg: "",
-            breakfastNonVeg: "" ,
-            lunchVeg: "",
-            lunchNonVeg: "" ,
-            snacksVeg: "",
-            snacksNonVeg: "",
-            dinnerVeg: "",
-            dinnerNonVeg: "",
-            isMon: false,
+
+            //window.location = "http://localhost:3000/messauth/messmenu";
+
+
+            
             }
  
-        }
+        
         if (this.state.isTue){
             const meal ={
                 breakfastVegTue: this.state.breakfastVeg,
@@ -104,21 +113,12 @@ export default class MessauthMenu extends Component {
                 dinnerVegTue: this.state.dinnerVeg,
                 dinnerNonVegTue: this.state.dinnerNonVeg,
             }
-            axios.post("http://localhost:3000/messauth/messmenu", meal)
+            axios.post("http://localhost:5000/messauth/messmenu/tue", meal)
                 .then(res => console.log(res.data));
-            this.state={
-            breakfastVeg: "",
-            breakfastNonVeg: "" ,
-            lunchVeg: "",
-            lunchNonVeg: "" ,
-            snacksVeg: "",
-            snacksNonVeg: "",
-            dinnerVeg: "",
-            dinnerNonVeg: "",
-            isTue: false,
+            window.location = "http://localhost:3000/messauth/messmenu";
             }
  
-        } 
+         
         if (this.state.isWed){
             const meal ={
                 breakfastVegWed: this.state.breakfastVeg,
@@ -130,21 +130,12 @@ export default class MessauthMenu extends Component {
                 dinnerVegWed: this.state.dinnerVeg,
                 dinnerNonVegWed: this.state.dinnerNonVeg,
             }
-            axios.post("http://localhost:3000/messauth/messmenu", meal)
+            axios.post("http://localhost:5000/messauth/messmenu/wed", meal)
                 .then(res => console.log(res.data));
-            this.state={
-            breakfastVeg: "",
-            breakfastNonVeg: "" ,
-            lunchVeg: "",
-            lunchNonVeg: "" ,
-            snacksVeg: "",
-            snacksNonVeg: "",
-            dinnerVeg: "",
-            dinnerNonVeg: "",
-            isWed: false,
+            window.location = "http://localhost:3000/messauth/messmenu";
             }
  
-        } 
+         
         if (this.state.isThu){
             const meal ={
                 breakfastVegThu: this.state.breakfastVeg,
@@ -156,21 +147,12 @@ export default class MessauthMenu extends Component {
                 dinnerVegThu: this.state.dinnerVeg,
                 dinnerNonVegThu: this.state.dinnerNonVeg,
             }
-            axios.post("http://localhost:3000/messauth/messmenu", meal)
+            axios.post("http://localhost:5000/messauth/messmenu/thu", meal)
                 .then(res => console.log(res.data));
-            this.state={
-            breakfastVeg: "",
-            breakfastNonVeg: "" ,
-            lunchVeg: "",
-            lunchNonVeg: "" ,
-            snacksVeg: "",
-            snacksNonVeg: "",
-            dinnerVeg: "",
-            dinnerNonVeg: "",
-            isThu: false,
+            window.location = "http://localhost:3000/messauth/messmenu";
             }
  
-        } 
+         
         if (this.state.isFri){
             const meal ={
                 breakfastVegFri: this.state.breakfastVeg,
@@ -182,20 +164,11 @@ export default class MessauthMenu extends Component {
                 dinnerVegFri: this.state.dinnerVeg,
                 dinnerNonVegFri: this.state.dinnerNonVeg,
             }
-            axios.post("http://localhost:3000/messauth/messmenu", meal)
+            axios.post("http://localhost:5000/messauth/messmenu/fri", meal)
                 .then(res => console.log(res.data));
-            this.state={
-            breakfastVeg: "",
-            breakfastNonVeg: "" ,
-            lunchVeg: "",
-            lunchNonVeg: "" ,
-            snacksVeg: "",
-            snacksNonVeg: "",
-            dinnerVeg: "",
-            dinnerNonVeg: "",
-            isFri: false,
+            window.location = "http://localhost:3000/messauth/messmenu";
             }
-        } if (this.state.isSat){
+         if (this.state.isSat){
             const meal ={
                 breakfastVegSat: this.state.breakfastVeg,
                 breakfastNonVegSat: this.state.breakfastNonVeg,
@@ -206,20 +179,11 @@ export default class MessauthMenu extends Component {
                 dinnerVegSat: this.state.dinnerVeg,
                 dinnerNonVegSat: this.state.dinnerNonVeg,
             }
-            axios.post("http://localhost:3000/messauth/messmenu", meal)
+            axios.post("http://localhost:5000/messauth/messmenu/sat", meal)
                 .then(res => console.log(res.data));
-            this.state={
-            breakfastVeg: "",
-            breakfastNonVeg: "" ,
-            lunchVeg: "",
-            lunchNonVeg: "" ,
-            snacksVeg: "",
-            snacksNonVeg: "",
-            dinnerVeg: "",
-            dinnerNonVeg: "",
-            isSat: false,
+            window.location = "http://localhost:3000/messauth/messmenu";
             }
-        } if (this.state.isSun){
+         if (this.state.isSun){
             const meal ={
                 breakfastVegSun: this.state.breakfastVeg,
                 breakfastNonVegSun: this.state.breakfastNonVeg,
@@ -230,21 +194,11 @@ export default class MessauthMenu extends Component {
                 dinnerVegSun: this.state.dinnerVeg,
                 dinnerNonVegSun: this.state.dinnerNonVeg,
             }
-            axios.post("http://localhost:3000/messauth/messmenu", meal)
+            axios.post("http://localhost:5000/messauth/messmenu/sun", meal)
                 .then(res => console.log(res.data));
-            this.state={
-            breakfastVeg: "",
-            breakfastNonVeg: "" ,
-            lunchVeg: "",
-            lunchNonVeg: "" ,
-            snacksVeg: "",
-            snacksNonVeg: "",
-            dinnerVeg: "",
-            dinnerNonVeg: "",
-            isSun: false,
+            window.location = "http://localhost:3000/messauth/messmenu";
             }
  
-        }
     }
     render(){
         return(
@@ -259,7 +213,9 @@ export default class MessauthMenu extends Component {
              <button className="sunday mess-menu-button" onClick={this.handleSunday}>Sunday</button>
              </div>
             <div>
+                <form onSubmit={this.handleSubmit}>
                  <table className="center" width="50%">
+
                      <caption><button type="submit" className="mess-menu-submit mess-menu-button">SUBMIT</button></caption>
                      <tr>
                          <th></th>
@@ -288,6 +244,7 @@ export default class MessauthMenu extends Component {
                          
                      </tr>
                  </table>
+                </form>
             </div>
         </body>
         )

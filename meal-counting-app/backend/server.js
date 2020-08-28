@@ -20,9 +20,11 @@ connection.once('open', () => {
 
 const studentsRouter = require('./routes/students');
 const messauthRouter = require('./routes/messauth');
+const meal_menu = require('./routes/meal_menu')
 
 app.use('/students', studentsRouter);
 app.use('/messauth', messauthRouter);
+app.use('/meal_menu', meal_menuRouter);
 
 
 app.listen(port, () => {
