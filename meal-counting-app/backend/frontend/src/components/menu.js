@@ -2,8 +2,8 @@ import React, { Component } from "react";
 import "./menu.css";
 import axios from "axios";
 export default class Menu extends Component {
-    constructor(){
-        super();
+    constructor(props){
+        super(props);
         this.state={
             breakfastVeg:"", 
             breakfastNonVeg: "",
@@ -13,37 +13,18 @@ export default class Menu extends Component {
             snacksNonVeg: "",
             dinnerVeg: "",
             dinnerNonVeg: "",
+            isMon: false,
         }
+        this.handleMonday=this.handleMonday.bind(this);
     }
 
+
     componentDidMount() {
-        axios.get('http://localhost:5000/mealmenu/')
+        if (this.state.isMon){
+        axios.get('http://localhost:5000/students/messmenu/mon')
               .then(response => {
-                    if (response.data.length > 0) {
                         this.setState({
-                            breakfastVeg: response.data.map(meal => meal.breafkfastVegMon),
-                            breakfastNonVeg: response.data.map(meal => meal.breafkfastNonVegMon),
-                            lunchVeg: response.data.map(meal => meal.lunchVegMon),
-                            lunchNonVeg: response.data.map(meal => meal.lunchNonVegMon),
-                            snacksVeg: response.data.map(meal => meal.snacksVegMon),
-                            snacksNonVeg: response.data.map(meal => meal.snacksNonVegMon),
-                            dinnerVeg: response.data.map(meal => meal.dinnerVegMon),
-                            dinnerNonVeg: response.data.map(meal => meal.dinnerNonVegMon),
-                                                      })
-                                      }
-                        })
-              .catch((error) => {
-                          console.log(error);
-                        })
-
-          }
-
-    handleMonday(event){
-        axios.get('http://localhost:5000/mealmenu/')
-              .then(response => {
-                    if (response.data.length > 0) {
-                        this.setState({
-                            breakfastVeg: response.data.breafkfastVegMon,
+                            breakfastVeg: response.data.breakfastVegMon,
                             breakfastNonVeg: response.breafkfastNonVegMon,
                             lunchVeg: response.data.lunchVegMon,
                             lunchNonVeg: response.data.lunchNonVegMon,
@@ -52,16 +33,51 @@ export default class Menu extends Component {
                             dinnerVeg: response.data.dinnerVegMon,
                             dinnerNonVeg: response.data.dinnerNonVegMon,
                                                       })
-                                      }
                         })
               .catch((error) => {
                           console.log(error);
                         })
+        }
+        }
+
+
+
+
+
+    handleMonday(event){
+        console.log("I am clicked");
+        this.setState(prevState => ({
+                        isMon: !prevState.isMon
+                    }));
+        
+        if (this.state.isMon){
+        axios.get('http://localhost:5000/students/messmenu/mon')
+              .then(response => {
+                        this.setState({
+                            breakfastVeg: response.data.breakfastVegMon,
+                            breakfastNonVeg: response.breafkfastNonVegMon,
+                            lunchVeg: response.data.lunchVegMon,
+                            lunchNonVeg: response.data.lunchNonVegMon,
+                            snacksVeg: response.data.snacksVegMon,
+                            snacksNonVeg: response.data.snacksNonVegMon,
+                            dinnerVeg: response.data.dinnerVegMon,
+                            dinnerNonVeg: response.data.dinnerNonVegMon,
+                                                      })
+                        })
+              .catch((error) => {
+                          console.log(error);
+                        })
+        }
+
+
+        }
+
+
+        
 
           
-    }
           handleTuesday(event){
-              axios.get('http://localhost:5000/mealmenu/')
+              axios.get('http://localhost:5000/mealmenu/tue')
               .then(response => {
                     if (response.data.length > 0) {
                         this.setState({
@@ -86,7 +102,7 @@ export default class Menu extends Component {
 
         }
         handleWednesday(event){
-            axios.get('http://localhost:5000/mealmenu/')
+            axios.get('http://localhost:5000/mealmenu/wed')
               .then(response => {
                     if (response.data.length > 0) {
                         this.setState({
@@ -111,7 +127,7 @@ export default class Menu extends Component {
     
         
         handleThursday(event){
-            axios.get('http://localhost:5000/mealmenu/')
+            axios.get('http://localhost:5000/mealmenu/thu')
               .then(response => {
                     if (response.data.length > 0) {
                         this.setState({
@@ -136,7 +152,7 @@ export default class Menu extends Component {
     
         }
         handleFriday(event){
-            axios.get('http://localhost:5000/mealmenu/')
+            axios.get('http://localhost:5000/mealmenu/fri')
               .then(response => {
                     if (response.data.length > 0) {
                         this.setState({
@@ -161,7 +177,7 @@ export default class Menu extends Component {
     
         
         handleSaturday(event){
-            axios.get('http://localhost:5000/mealmenu/')
+            axios.get('http://localhost:5000/mealmenu/sat')
               .then(response => {
                     if (response.data.length > 0) {
                         this.setState({
@@ -186,7 +202,7 @@ export default class Menu extends Component {
     
         
         handleSunday(event){
-            axios.get('http://localhost:5000/mealmenu/')
+            axios.get('http://localhost:5000/mealmenu/sun')
               .then(response => {
                     if (response.data.length > 0) {
                         this.setState({
@@ -210,6 +226,7 @@ export default class Menu extends Component {
        return (
             <body>
                 <div className="buttons1">
+                <h1> {this.state.breakfastVeg} </h1>
                 <button className="monday1 student-menu-button" onClick={this.handleMonday}>Monday</button>
                 <button className="tuesday1 student-menu-button" onClick={this.handleTuesday}>Tuesday</button>
                 <button className="wednesday1 student-menu-button " onClick={this.handleWednesday}>Wednesday</button>
