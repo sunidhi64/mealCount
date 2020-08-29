@@ -1,7 +1,18 @@
-import React from 'react';
+import React, { Component } from 'react';
 
-export default function Demo() {
-    return (
-        <h1> Hello there! </h1>
-    )
+export default class Demo extends Component{
+    constructor(){
+        super()
+        this.state={
+            hi:"hi"
+        }
+    }
+    render(){
+        return(
+            <div>
+                <h1>hi</h1>
+                <h1>{this.state.hi}</h1>
+            </div>
+        )
+    }
 }
