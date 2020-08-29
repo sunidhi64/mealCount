@@ -26,7 +26,7 @@ export default class Attendance extends Component {
             isSat: false,
             isSun: false,
         }
-        this.handleCheck=this.handleCheck.bind(this)
+        this.handleChange=this.handleChange.bind(this)
         this.handleMonday=this.handleMonday.bind(this)
         this.handleTuesday=this.handleTuesday.bind(this)
         this.handleWednesday=this.handleWednesday.bind(this)
@@ -76,7 +76,7 @@ export default class Attendance extends Component {
                     }));
     }
 
-    handleCheck(event){
+    handleChange(event){
         this.setState({ [event.target.name]: event.target.checked })
     }
     
@@ -100,10 +100,10 @@ export default class Attendance extends Component {
 
             console.log(meal);
    
-            axios.post('http://localhost:5000/messauth/messmenu/mon', meal)
+            axios.post('http://localhost:5000/students/attendance/mon', meal)
                 .then(res => console.log(res.data));
 
-            //window.location = "http://localhost:3000/messauth/messmenu";
+            window.location = "http://localhost:3000/student/attendance";
 
 
             
@@ -125,7 +125,7 @@ export default class Attendance extends Component {
                 dinnerNonVegTue: this.state.dinnerNonVeg,
                 noDinnerTue: this.state.noDinner,
             }
-            axios.post("http://localhost:5000/messauth/messmenu/tue", meal)
+            axios.post("http://localhost:5000/students/attendance/tue", meal)
                 .then(res => console.log(res.data));
             window.location = "http://localhost:3000/messauth/messmenu";
             }
@@ -145,7 +145,7 @@ export default class Attendance extends Component {
                 dinnerNonVegWed: this.state.dinnerNonVeg,
                 noDinnerWed: this.state.noDinner,
             }
-            axios.post("http://localhost:5000/messauth/messmenu/wed", meal)
+            axios.post("http://localhost:5000/students/attendance/wed", meal)
                 .then(res => console.log(res.data));
             window.location = "http://localhost:3000/messauth/messmenu";
             }
@@ -166,7 +166,7 @@ export default class Attendance extends Component {
                 dinnerNonVegThu: this.state.dinnerNonVeg,
                 noDinnerThu: this.state.noDinner,
             }
-            axios.post("http://localhost:5000/messauth/messmenu/thu", meal)
+            axios.post("http://localhost:5000/students/attendance/thu", meal)
                 .then(res => console.log(res.data));
             window.location = "http://localhost:3000/messauth/messmenu";
             }
@@ -186,7 +186,7 @@ export default class Attendance extends Component {
                 dinnerNonVegFri: this.state.dinnerNonVeg,
                 noDinnerFri: this.state.noDinner,
             }
-            axios.post("http://localhost:5000/messauth/messmenu/fri", meal)
+            axios.post("http://localhost:5000/student/attendance/fri", meal)
                 .then(res => console.log(res.data));
             window.location = "http://localhost:3000/messauth/messmenu";
             }
@@ -203,9 +203,9 @@ export default class Attendance extends Component {
                 noSnacksSat: this.state.noSnacks,
                 dinnerVegSat: this.state.dinnerVeg,
                 dinnerNonVegSat: this.state.dinnerNonVeg,
-                noSnacksSat: this.state.noSnacks,
+                noDinnerSat: this.state.noDinner,
             }
-            axios.post("http://localhost:5000/messauth/messmenu/sat", meal)
+            axios.post("http://localhost:5000/students/attendance/sat", meal)
                 .then(res => console.log(res.data));
             window.location = "http://localhost:3000/messauth/messmenu";
             }
@@ -219,12 +219,12 @@ export default class Attendance extends Component {
                 noLunchSun: this.state.noLunch,
                 snacksVegSun: this.state.snacksVeg,
                 snacksNonVegSun: this.state.snacksNonVeg,
-                noDinnerSun: this.state.noDinner,
+                noSnacksSun: this.state.noSnacks,
                 dinnerVegSun: this.state.dinnerVeg,
                 dinnerNonVegSun: this.state.dinnerNonVeg,
                 noDinnerSun: this.state.noDinner,
             }
-            axios.post("http://localhost:5000/messauth/messmenu/sun", meal)
+            axios.post("http://localhost:5000/students/attendance/sun", meal)
                 .then(res => console.log(res.data));
             window.location = "http://localhost:3000/messauth/messmenu";
             }
@@ -237,15 +237,16 @@ export default class Attendance extends Component {
         return(
             <body>
             <div className="buttons2">
-            <button className="monday2 student-attendance-button">Monday</button>
-             <button className="tuesday2 student-attendance-button">Tuesday</button>
-                 <button className="wednesday2 student-attendance-button">Wednesday</button>
-                     <button className="thursday2 student-attendance-button">Thursday</button>
-                         <button className="friday2 student-attendance-button">Friday</button>
-                             <button className="saturday2 student-attendance-button">Saturday</button>
-             <button className="sunday2 student-attendance-button">Sunday</button>
+            <button className="monday2 student-attendance-button" onClick={this.handleMonday}>Monday</button>
+             <button className="tuesday2 student-attendance-button" onClick={this.handleTuesday}>Tuesday</button>
+                 <button className="wednesday2 student-attendance-button"onClick={this.handleWednesday}>Wednesday</button>
+                     <button className="thursday2 student-attendance-button"onClick={this.handleThursday}>Thursday</button>
+                         <button className="friday2 student-attendance-button"onClick={this.handleFriday}>Friday</button>
+                             <button className="saturday2 student-attendance-button"onClick={this.handleSaturday}>Saturday</button>
+             <button className="sunday2 student-attendance-button"onClick={this.handleSunday}>Sunday</button>
              </div>
             <div>
+                <form onSubmit={this.handleSubmit}>
                  <table className="center2" width="50%">
                      <caption><button type="submit" className="student-attendance-button student-attendance-submit">SUBMIT</button></caption>
                      <tr>
@@ -362,6 +363,7 @@ export default class Attendance extends Component {
                             <label for="dinner-nomeal-checkbox">No meal</label></td>
                      </tr>
                  </table>
+                </form>
             </div>
         </body>
         )
