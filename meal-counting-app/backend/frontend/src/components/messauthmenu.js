@@ -115,7 +115,7 @@ export default class MessauthMenu extends Component {
             }
             axios.post("http://localhost:5000/messauth/messmenu/tue", meal)
                 .then(res => console.log(res.data));
-            window.location = "http://localhost:3000/messauth/messmenu";
+            //window.location = "http://localhost:3000/messauth/messmenu";
             }
  
          
