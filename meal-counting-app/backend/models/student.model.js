@@ -12,10 +12,6 @@ const studentSchema = new Schema({
     meal: [{type: Schema.Types.ObjectId, ref: 'menu' }]
 });
 
-// url for student
-studentSchema.virtual('url').get(function() {
-    return '/studentinfo/' + this._id;
-});
 
 const student = mongoose.model('student', studentSchema);
 module.exports = student;
