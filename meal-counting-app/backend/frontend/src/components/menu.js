@@ -1,96 +1,81 @@
 import React, { Component } from "react";
 import "./menu.css";
 import axios from "axios";
+
+
+
+
+
+
+
 export default class Menu extends Component {
     constructor(props){
         super(props);
         this.state={
-            breakfastVeg:"", 
-            breakfastNonVeg: "",
-            lunchVeg: "",
-            lunchNonVeg: "",
-            snacksVeg: "",
-            snacksNonVeg: "",
-            dinnerVeg: "",
-            dinnerNonVeg: "",
+            menuMon: [],
+            menuTue: [],
+            menuWed: [],
+            menuThu: [],
+            menuFri: [],
+            menuSat: [],
+            menuSun: [],
             isMon: false,
+            isTue: false,
+            isWed: false,
+            isThu: false,
+            isFri: false,
+            isSat: false,
+            isSun: false,
         }
         this.handleMonday=this.handleMonday.bind(this);
+        this.handleTuesday=this.handleTuesday.bind(this);
+        this.handleWednesday=this.handleWednesday.bind(this);
+        this.handleThursday=this.handleThursday.bind(this);
+        this.handleFriday=this.handleFriday.bind(this);
+        this.handleSaturday=this.handleSaturday.bind(this);
+        this.handleSunday=this.handleSunday.bind(this);
     }
 
 
-    componentDidMount() {
-        if (this.state.isMon){
-        axios.get('http://localhost:5000/students/messmenu/mon')
-              .then(response => {
-                        this.setState({
-                            breakfastVeg: response.data.breakfastVegMon,
-                            breakfastNonVeg: response.breafkfastNonVegMon,
-                            lunchVeg: response.data.lunchVegMon,
-                            lunchNonVeg: response.data.lunchNonVegMon,
-                            snacksVeg: response.data.snacksVegMon,
-                            snacksNonVeg: response.data.snacksNonVegMon,
-                            dinnerVeg: response.data.dinnerVegMon,
-                            dinnerNonVeg: response.data.dinnerNonVegMon,
-                                                      })
-                        })
-              .catch((error) => {
-                          console.log(error);
-                        })
-        }
-        }
 
 
 
 
 
     handleMonday(event){
-        console.log("I am clicked");
         this.setState(prevState => ({
                         isMon: !prevState.isMon
                     }));
-        
-        if (this.state.isMon){
+
         axios.get('http://localhost:5000/students/messmenu/mon')
               .then(response => {
                         this.setState({
-                            breakfastVeg: response.data.breakfastVegMon,
-                            breakfastNonVeg: response.breafkfastNonVegMon,
-                            lunchVeg: response.data.lunchVegMon,
-                            lunchNonVeg: response.data.lunchNonVegMon,
-                            snacksVeg: response.data.snacksVegMon,
-                            snacksNonVeg: response.data.snacksNonVegMon,
-                            dinnerVeg: response.data.dinnerVegMon,
-                            dinnerNonVeg: response.data.dinnerNonVegMon,
+                            menuMon: response.data
                                                       })
                         })
               .catch((error) => {
                           console.log(error);
-                        })
+                        });
+
+                
         }
 
 
-        }
 
 
         
 
           
           handleTuesday(event){
-              axios.get('http://localhost:5000/mealmenu/tue')
+              console.log('I am clicked');
+              this.setState(prevState => ({
+                        isTue: !prevState.isTue
+                    }));
+              axios.get('http://localhost:5000/students/messmenu/tue')
               .then(response => {
-                    if (response.data.length > 0) {
-                        this.setState({
-                            breakfastVeg: response.data.breafkfastVegTue,
-                            breakfastNonVeg: response.data.breafkfastNonVegTue,
-                            lunchVeg: response.data.lunchVegTue,
-                            lunchNonVeg: response.data.lunchNonVegTue,
-                            snacksVeg: response.data.snacksVegTue,
-                            snacksNonVeg: response.data.snacksNonVegTue,
-                            dinnerVeg: response.data.dinnerVegMonTue,
-                            dinnerNonVeg: response.data.dinnerNonVegTue,
+                  this.setState({
+                            menuTue: response.data
                                                       })
-                                      }
                         })
               .catch((error) => {
                           console.log(error);
@@ -102,20 +87,14 @@ export default class Menu extends Component {
 
         }
         handleWednesday(event){
-            axios.get('http://localhost:5000/mealmenu/wed')
+            this.setState(prevState => ({
+                        isWed: !prevState.isWed
+                    }));
+            axios.get('http://localhost:5000/students/messmenu/wed')
               .then(response => {
-                    if (response.data.length > 0) {
-                        this.setState({
-                            breakfastVeg: response.data.breafkfastVegWed,
-                            breakfastNonVeg: response.data.breafkfastNonVegWed,
-                            lunchVeg: response.data.lunchVegWed,
-                            lunchNonVeg: response.data.lunchNonVegWed,
-                            snacksVeg: response.data.snacksVegWed,
-                            snacksNonVeg: response.data.snacksNonVegWed,
-                            dinnerVeg: response.data.dinnerVegWed,
-                            dinnerNonVeg: response.data.dinnerNonVegWed,
+                  this.setState({
+                            menuWed: response.data
                                                       })
-                                      }
                         })
               .catch((error) => {
                           console.log(error);
@@ -127,20 +106,14 @@ export default class Menu extends Component {
     
         
         handleThursday(event){
-            axios.get('http://localhost:5000/mealmenu/thu')
+            this.setState(prevState => ({
+                        isThu: !prevState.isThu
+                    }));
+            axios.get('http://localhost:5000/students/messmenu/thu')
               .then(response => {
-                    if (response.data.length > 0) {
-                        this.setState({
-                            breakfastVeg: response.data.breafkfastVegThur,
-                            breakfastNonVeg: response.data.breafkfastNonVegThur,
-                            lunchVeg: response.data.lunchVegThur,
-                            lunchNonVeg: response.data.lunchNonVegThur,
-                            snacksVeg: response.data.snacksVegThur,
-                            snacksNonVeg: response.data.snacksNonVegThur,
-                            dinnerVeg: response.data.dinnerVegThur,
-                            dinnerNonVeg: response.data.dinnerNonVegThur,
+                  this.setState({
+                            menuFri: response.data
                                                       })
-                                      }
                         })
               .catch((error) => {
                           console.log(error);
@@ -152,20 +125,14 @@ export default class Menu extends Component {
     
         }
         handleFriday(event){
-            axios.get('http://localhost:5000/mealmenu/fri')
+            this.setState(prevState => ({
+                        isFri: !prevState.isFri
+                    }));
+            axios.get('http://localhost:5000/students/messmenu/fri')
               .then(response => {
-                    if (response.data.length > 0) {
-                        this.setState({
-                            breakfastVeg: response.data.breafkfastVegFri,
-                            breakfastNonVeg: response.data.breafkfastNonVegFri,
-                            lunchVeg: response.data.lunchVegFri,
-                            lunchNonVeg: response.data.lunchNonVegFri,
-                            snacksVeg: response.data.snacksVegFri,
-                            snacksNonVeg: response.data.snacksNonVegFri,
-                            dinnerVeg: response.data.dinnerVegFri,
-                            dinnerNonVeg: response.data.dinnerNonVegFri,
-                                                      })
-                                      }
+                  this.setState({
+                            menuFri: response.data
+                                                    })
                         })
               .catch((error) => {
                           console.log(error);
@@ -177,20 +144,14 @@ export default class Menu extends Component {
     
         
         handleSaturday(event){
-            axios.get('http://localhost:5000/mealmenu/sat')
+            this.setState(prevState => ({
+                        isSat: !prevState.isSat
+                    }));
+            axios.get('http://localhost:5000/students/messmenu/sat')
               .then(response => {
-                    if (response.data.length > 0) {
-                        this.setState({
-                            breakfastVeg: response.data.breafkfastVegSat,
-                            breakfastNonVeg: response.data.breafkfastNonVegSat,
-                            lunchVeg: response.data.lunchVegSat,
-                            lunchNonVeg: response.data.lunchNonVegSat,
-                            snacksVeg: response.data.snacksVegSat,
-                            snacksNonVeg: response.data.snacksNonVegSat,
-                            dinnerVeg: response.data.dinnerVegSat,
-                            dinnerNonVeg: response.data.dinnerNonVegSat,
-                                                      })
-                                      }
+                  this.setState({
+                            menuSat: response.data
+                                                })
                         })
               .catch((error) => {
                           console.log(error);
@@ -202,31 +163,34 @@ export default class Menu extends Component {
     
         
         handleSunday(event){
-            axios.get('http://localhost:5000/mealmenu/sun')
+            this.setState(prevState => ({
+                        isSun: !prevState.isSun
+                    }));
+            axios.get('http://localhost:5000/students/messmenu/sun')
               .then(response => {
-                    if (response.data.length > 0) {
-                        this.setState({
-                            breakfastVeg: response.data.breafkfastVegSun,
-                            breakfastNonVeg: response.data.breafkfastNonVegSun,
-                            lunchVeg: response.data.lunchVegSun,
-                            lunchNonVeg: response.data.lunchNonVegSun,
-                            snacksVeg: response.data.snacksVegSun,
-                            snacksNonVeg: response.data.snacksNonVegSun,
-                            dinnerVeg: response.data.dinnerVegSun,
-                            dinnerNonVeg: response.data.dinnerNonVegSun,
+                  this.setState({
+                            menuSun: response.data
                                                       })
-                                      }
                         })
               .catch((error) => {
                           console.log(error);
                         })
 
           }
+
+
+
     render() {
+            const isMon = this.state.isMon;
+            const isTue = this.state.isTue;
+            const isWed = this.state.isWed;
+            const isThu = this.state.isThu;
+            const isFri = this.state.isFri;
+            const isSat = this.state.isSat;
+            const isSun = this.state.isSun;
        return (
             <body>
                 <div className="buttons1">
-                <h1> {this.state.breakfastVeg} </h1>
                 <button className="monday1 student-menu-button" onClick={this.handleMonday}>Monday</button>
                 <button className="tuesday1 student-menu-button" onClick={this.handleTuesday}>Tuesday</button>
                 <button className="wednesday1 student-menu-button " onClick={this.handleWednesday}>Wednesday</button>
@@ -237,36 +201,362 @@ export default class Menu extends Component {
                 </div>
                 <div>
                     <table className="center1" width="50%">
-                        <tr>
-                            <th></th>
-                            <th>VEG</th>
-                            <th>NON-VEG</th>
-                        </tr>
-                        <tr>
-                            <th>BREAKFAST</th>
-                           <td>{this.state.breakfastVeg}</td>
-                           <td>{this.state.breakfastNonVeg}</td>
-                        </tr>
-                        <tr>
-                            <th>LUNCH</th>
-                            <td>{this.state.lunchVeg}</td>
-                            <td>{this.state.lunchNonVeg}</td>
-                        </tr>
-                        <tr>
-                            <th>SNACKS</th>
-                            <td>{this.state.snacksVeg}</td>
-                            <td>{this.state.snacksNonVeg}</td>
-                        </tr>
-                        <tr>
-                            <th>DINNER</th>
-                            <td>{this.state.dinnerVeg}</td>
-                            <td>{this.state.dinnerNonVeg}</td>
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>VEG</th>
+                                <th>NON-VEG</th>
+                            </tr>
+                        </thead>
+                            {isMon?
+                        <tbody>
+                            <tr>
+                                <th>BREAKFAST</th>
+                                <td>{this.state.menuMon.map((menu, index) =>( 
+                                    <p>{menu.breakfastVegMon}</p>
+                                ))} 
+                                </td>
+                                <td>{this.state.menuMon.map((menu, index) =>( 
+                                    <p>{menu.breakfastNonVegMon}</p> 
+                                ))}
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>LUNCH</th>
+                                <td>{this.state.menuMon.map((menu, index) =>( 
+                                    <p>{menu.lunchVegMon}</p>
+                                ))}
+                                </td>
+                                <td>{this.state.menuMon.map((menu, index) =>(
+                                    <p>{menu.lunchNonVegMon}</p> 
+                                ))} 
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>SNACKS</th>
+                                <td>{this.state.menuMon.map((menu, index) =>( 
+                                    <p>{menu.snacksVegMon}</p>
+                                ))} 
+                                </td>
+                                <td>{this.state.menuMon.map((menu, index) =>( 
+                                    <p>{menu.snacksNonVegMon}</p> 
+                                ))} 
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>DINNER</th>
+                                <td>{this.state.menuMon.map((menu, index) =>(
+                                    <p>{menu.dinnerVegMon}</p>
+                                ))}  
+                                </td>
+                                <td>{this.state.menuMon.map((menu, index) =>( 
+                                    <p>{menu.dinnerNonVegMon}</p> 
+                                ))} 
+ 
+                                </td>
+                            </tr>
+                    </tbody>
+                    :''}
+           
+                    {isTue?
+                        <tbody>
+                            <tr>
+                                <th>BREAKFAST</th>
+                                <td>{this.state.menuTue.map((menu, index) =>( 
+                                    <p>{menu.breakfastVegTue}</p>
+                                ))} 
+                                </td>
+                                <td>{this.state.menuTue.map((menu, index) =>( 
+                                    <p>{menu.breakfastNonVegTue}</p> 
+                                ))}
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>LUNCH</th>
+                                <td>{this.state.menuTue.map((menu, index) =>( 
+                                    <p>{menu.lunchVegTue}</p>
+                                ))}
+                                </td>
+                                <td>{this.state.menuTue.map((menu, index) =>(
+                                    <p>{menu.lunchNonVegTue}</p> 
+                                ))} 
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>SNACKS</th>
+                                <td>{this.state.menuTue.map((menu, index) =>( 
+                                    <p>{menu.snacksVegTue}</p>
+                                ))} 
+                                </td>
+                                <td>{this.state.menuTue.map((menu, index) =>( 
+                                    <p>{menu.snacksNonVegTue}</p> 
+                                ))} 
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>DINNER</th>
+                                <td>{this.state.menuTue.map((menu, index) =>(
+                                    <p>{menu.dinnerVegTue}</p>
+                                ))}  
+                                </td>
+                                <td>{this.state.menuTue.map((menu, index) =>( 
+                                    <p>{menu.dinnerNonVegTue}</p> 
+                                ))} 
+ 
+                                </td>
+                            </tr>
+                    </tbody>
+                    :''}
+                    {isWed?
+                        <tbody>
+                            <tr>
+                                <th>BREAKFAST</th>
+                                <td>{this.state.menuWed.map((menu, index) =>( 
+                                    <p>{menu.breakfastVegWed}</p>
+                                ))} 
+                                </td>
+                                <td>{this.state.menuWed.map((menu, index) =>( 
+                                    <p>{menu.breakfastNonVegWed}</p> 
+                                ))}
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>LUNCH</th>
+                                <td>{this.state.menuWed.map((menu, index) =>( 
+                                    <p>{menu.lunchVegWed}</p>
+                                ))}
+                                </td>
+                                <td>{this.state.menuWed.map((menu, index) =>(
+                                    <p>{menu.lunchNonVegWed}</p> 
+                                ))} 
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>SNACKS</th>
+                                <td>{this.state.menuWed.map((menu, index) =>( 
+                                    <p>{menu.snacksVegWed}</p>
+                                ))} 
+                                </td>
+                                <td>{this.state.menuWed.map((menu, index) =>( 
+                                    <p>{menu.snacksNonVegWed}</p> 
+                                ))} 
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>DINNER</th>
+                                <td>{this.state.menuWed.map((menu, index) =>(
+                                    <p>{menu.dinnerVegWed}</p>
+                                ))}  
+                                </td>
+                                <td>{this.state.menuWed.map((menu, index) =>( 
+                                    <p>{menu.dinnerNonVegWed}</p> 
+                                ))} 
+ 
+                                </td>
+                            </tr>
+                    </tbody>
+                    :''}
+                    {isThu?
+                        <tbody>
+                            <tr>
+                                <th>BREAKFAST</th>
+                                <td>{this.state.menuThu.map((menu, index) =>( 
+                                    <p>{menu.breakfastVegThu}</p>
+                                ))} 
+                                </td>
+                                <td>{this.state.menuThu.map((menu, index) =>( 
+                                    <p>{menu.breakfastNonVegThu}</p> 
+                                ))}
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>LUNCH</th>
+                                <td>{this.state.menuThu.map((menu, index) =>( 
+                                    <p>{menu.lunchVegThu}</p>
+                                ))}
+                                </td>
+                                <td>{this.state.menuThu.map((menu, index) =>(
+                                    <p>{menu.lunchNonVegThu}</p> 
+                                ))} 
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>SNACKS</th>
+                                <td>{this.state.menuThu.map((menu, index) =>( 
+                                    <p>{menu.snacksVegThu}</p>
+                                ))} 
+                                </td>
+                                <td>{this.state.menuThu.map((menu, index) =>( 
+                                    <p>{menu.snacksNonVegThu}</p> 
+                                ))} 
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>DINNER</th>
+                                <td>{this.state.menuThu.map((menu, index) =>(
+                                    <p>{menu.dinnerVegThu}</p>
+                                ))}  
+                                </td>
+                                <td>{this.state.menuThu.map((menu, index) =>( 
+                                    <p>{menu.dinnerNonVegThu}</p> 
+                                ))} 
+ 
+                                </td>
+                            </tr>
+                    </tbody>
+                    :''}
+                    {isFri?
+                        <tbody>
+                            <tr>
+                                <th>BREAKFAST</th>
+                                <td>{this.state.menuFri.map((menu, index) =>( 
+                                    <p>{menu.breakfastVegFri}</p>
+                                ))} 
+                                </td>
+                                <td>{this.state.menuFri.map((menu, index) =>( 
+                                    <p>{menu.breakfastNonVegFri}</p> 
+                                ))}
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>LUNCH</th>
+                                <td>{this.state.menuFri.map((menu, index) =>( 
+                                    <p>{menu.lunchVegFri}</p>
+                                ))}
+                                </td>
+                                <td>{this.state.menuFri.map((menu, index) =>(
+                                    <p>{menu.lunchNonVegFri}</p> 
+                                ))} 
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>SNACKS</th>
+                                <td>{this.state.menuFri.map((menu, index) =>( 
+                                    <p>{menu.snacksVegFri}</p>
+                                ))} 
+                                </td>
+                                <td>{this.state.menuFri.map((menu, index) =>( 
+                                    <p>{menu.snacksNonVegFri}</p> 
+                                ))} 
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>DINNER</th>
+                                <td>{this.state.menuFri.map((menu, index) =>(
+                                    <p>{menu.dinnerVegFri}</p>
+                                ))}  
+                                </td>
+                                <td>{this.state.menuFri.map((menu, index) =>( 
+                                    <p>{menu.dinnerNonVegFri}</p> 
+                                ))} 
+ 
+                                </td>
+                            </tr>
+                    </tbody>
+                    :''}
+                    {isSat?
+                        <tbody>
+                            <tr>
+                                <th>BREAKFAST</th>
+                                <td>{this.state.menuSat.map((menu, index) =>( 
+                                    <p>{menu.breakfastVegSat}</p>
+                                ))} 
+                                </td>
+                                <td>{this.state.menuSat.map((menu, index) =>( 
+                                    <p>{menu.breakfastNonVegSat}</p> 
+                                ))}
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>LUNCH</th>
+                                <td>{this.state.menuSat.map((menu, index) =>( 
+                                    <p>{menu.lunchVegSat}</p>
+                                ))}
+                                </td>
+                                <td>{this.state.menuSat.map((menu, index) =>(
+                                    <p>{menu.lunchNonVegSat}</p> 
+                                ))} 
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>SNACKS</th>
+                                <td>{this.state.menuSat.map((menu, index) =>( 
+                                    <p>{menu.snacksVegSat}</p>
+                                ))} 
+                                </td>
+                                <td>{this.state.menuSat.map((menu, index) =>( 
+                                    <p>{menu.snacksNonVegSat}</p> 
+                                ))} 
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>DINNER</th>
+                                <td>{this.state.menuSat.map((menu, index) =>(
+                                    <p>{menu.dinnerVegSat}</p>
+                                ))}  
+                                </td>
+                                <td>{this.state.menuSat.map((menu, index) =>( 
+                                    <p>{menu.dinnerNonVegSat}</p> 
+                                ))} 
+ 
+                                </td>
+                            </tr>
+                    </tbody>
+                    :''}
+                    {isSun?
+                        <tbody>
+                            <tr>
+                                <th>BREAKFAST</th>
+                                <td>{this.state.menuSun.map((menu, index) =>( 
+                                    <p>{menu.breakfastVegSun}</p>
+                                ))} 
+                                </td>
+                                <td>{this.state.menuSun.map((menu, index) =>( 
+                                    <p>{menu.breakfastNonVegSun}</p> 
+                                ))}
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>LUNCH</th>
+                                <td>{this.state.menuSun.map((menu, index) =>( 
+                                    <p>{menu.lunchVegSun}</p>
+                                ))}
+                                </td>
+                                <td>{this.state.menuSun.map((menu, index) =>(
+                                    <p>{menu.lunchNonVegSun}</p> 
+                                ))} 
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>SNACKS</th>
+                                <td>{this.state.menuSun.map((menu, index) =>( 
+                                    <p>{menu.snacksVegSun}</p>
+                                ))} 
+                                </td>
+                                <td>{this.state.menuSun.map((menu, index) =>( 
+                                    <p>{menu.snacksNonVegSun}</p> 
+                                ))} 
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>DINNER</th>
+                                <td>{this.state.menuSun.map((menu, index) =>(
+                                    <p>{menu.dinnerVegSun}</p>
+                                ))}  
+                                </td>
+                                <td>{this.state.menuSun.map((menu, index) =>( 
+                                    <p>{menu.dinnerNonVegSun}</p> 
+                                ))} 
+ 
+                                </td>
+                            </tr>
+                    </tbody>
+                    :''}
+
                             
-                        </tr>
-                    </table>
-                </div>
-                
-            </body>
+                </table>
+            </div>
+        </body>
     )
     
 }

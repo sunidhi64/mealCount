@@ -73,7 +73,7 @@ router.route('/messmenu/tue').post((req, res) => {
         dinnerNonVegTue,
     })
     meal.save()
-    .then(() => res.json('Menu Added for monday'))
+    .then(() => res.json('Menu Added for Tuesday'))
     .catch(err => res.status(400).json('error: ' + err));
 });
 
