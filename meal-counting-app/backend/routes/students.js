@@ -12,7 +12,7 @@ router.route('/login').post((req, res) => {
             console.log(err);
             return res.status(500).send();
         }
-        if(!messauth) {
+        if(!student) {
             return res.status(404).send();
         }
         return res.status(200).send();
@@ -22,9 +22,9 @@ router.route('/login').post((req, res) => {
 
 
 
-router.route('/messmenu/mon').get((req, res) => {
-      Menu.find()
-        .then(menu => res.json(menu))
+router.route('/attendance/mon').get((req, res) => {
+      Attendance.find()
+        .then(attendance => res.json(attendance))
         .catch(err => res.status(400).json('Error: ' + err));
 });
 
@@ -98,6 +98,8 @@ router.route('/attendance/mon').post((req, res) => {
     .catch(err => res.status(400).json('error: ' + err));
 });
 
+
+    
 router.route('/attendance/tue').post((req, res) => {
     const breakfastVegTue = req.body.breakfastVegTue;
     const breakfastNonVegTue = req.body.breakfastNonVegTue;
