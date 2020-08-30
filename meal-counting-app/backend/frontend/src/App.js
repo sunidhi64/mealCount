@@ -36,6 +36,7 @@ function App() {
                     <Route path='/student/register' component={Studentregister}/>
                     <Route path='/messauth/attendance' component={Messattendance}/>
                     <Route path='/' component={Tellme} />
+
                 </Switch>
             </Router>
           </div>
