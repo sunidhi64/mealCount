@@ -2,6 +2,7 @@ const router = require('express').Router();
 let MessAuthority = require('../models/messAuthority.model');
 let Student = require('../models/student.model');
 let Menu = require('../models/meal_menu.model');
+let Attendance = require('../models/attendanceF.model');
 
 
 
@@ -26,11 +27,53 @@ router.route('/register').post((req, res) => {
     
 });
 
+router.route('/attendance/mon').get((req, res) => {
+      Attendance.find()
+        .then(menu => res.json(menu))
+        .catch(err => res.status(400).json('Error: ' + err));
+});
+
+router.route('/attendance/tue').get((req, res) => {
+      Attendance.find()
+        .then(menu => res.json(menu))
+        .catch(err => res.status(400).json('Error: ' + err));
+});
+
+router.route('/attendance/wed').get((req, res) => {
+      Attendance.find()
+        .then(menu => res.json(menu))
+        .catch(err => res.status(400).json('Error: ' + err));
+});
+
+router.route('/attendance/thu').get((req, res) => {
+      Attendance.find()
+        .then(menu => res.json(menu))
+        .catch(err => res.status(400).json('Error: ' + err));
+});
+
+router.route('/attendance/fri').get((req, res) => {
+      Attendance.find()
+        .then(menu => res.json(menu))
+        .catch(err => res.status(400).json('Error: ' + err));
+});
+
+router.route('/attendance/sat').get((req, res) => {
+      Attendance.find()
+        .then(menu => res.json(menu))
+        .catch(err => res.status(400).json('Error: ' + err));
+});
+
+router.route('/attendance/sun').get((req, res) => {
+      Attendance.find()
+        .then(menu => res.json(menu))
+        .catch(err => res.status(400).json('Error: ' + err));
+});
+
 
 router.route('/messmenu/mon').post((req, res) => {
     const breakfastVegMon = req.body.breakfastVegMon;
     const breakfastNonVegMon = req.body.breakfastNonVegMon;
-    const lunchVegMon = req.body.lunchVegMon;
+   const lunchVegMon = req.body.lunchVegMon;
     const lunchNonVegMon = req.body.lunchNonVegMon;
     const snacksVegMon = req.body.snacksVegMon;
     const snacksNonVegMon = req.body.snacksNonVegMon;
@@ -230,13 +273,13 @@ router.route('/messmenu/sun').post((req, res) => {
 
 
 
-router.route('/registerstudent/id:').post(function(req, res) {
+router.route('/registerstudent').post(function(req, res) {
     const firstName = req.body.firstName;
     const lastName = req.body.lastName;
     const username = req.body.username;
     const password = req.body.password;
 
-    const newuser = new Student({
+    const newUser = new Student({
         firstName,
         lastName,
         username,
@@ -244,9 +287,9 @@ router.route('/registerstudent/id:').post(function(req, res) {
     });
     
     
-    newuser.save()
+    newUser.save()
         .then(() => res.json('Student added'))
-        .catch(err => res.status(404).json('err' + err));
+        .catch(err => res.status(400).json('err' + err));
 
 
 });

@@ -35,10 +35,10 @@ export default class Studentregister extends Component {
 
             console.log(user);
 
-            axios.post('http://localhost:5000/messauth/studentregister', user)
+            axios.post('http://localhost:5000/messauth/registerstudent', user)
               .then(res => console.log(res.data));
 
-            window.location = '/messauth/studentregister';
+            //window.location = '/messauth/studentregister';
           }
 
     render(){

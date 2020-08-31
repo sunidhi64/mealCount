@@ -40,7 +40,7 @@ class Messauthregister extends Component {
             axios.post('http://localhost:5000/messauth/register', user)
               .then(res => console.log(res.data));
 
-            window.location = '/messauth/login';
+            //window.location = '/messauth/login';
           }
 
     render() {

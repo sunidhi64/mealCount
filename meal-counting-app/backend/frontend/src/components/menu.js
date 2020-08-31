@@ -188,6 +188,8 @@ export default class Menu extends Component {
             const isFri = this.state.isFri;
             const isSat = this.state.isSat;
             const isSun = this.state.isSun;
+            const length = this.state.menuMon.length;
+            const len = length - 1;
        return (
             <body>
         <div className="menu-logout-position"><button className="menu-logout">Logout</button></div>
@@ -196,6 +198,7 @@ export default class Menu extends Component {
                     <div className="menu-heading"><h1 style={{color:"#fff"}}>MEAL MENU</h1></div>
                     <div className="menu-logout-position"><button className="menu-logout">Logout</button></div>
                 </div>
+                {len}
                 <div className="buttons1">
                 <button className="monday1 student-menu-button" onClick={this.handleMonday}>Monday</button>
                 <button className="tuesday1 student-menu-button" onClick={this.handleTuesday}>Tuesday</button>
@@ -218,8 +221,10 @@ export default class Menu extends Component {
                         <tbody>
                             <tr>
                                 <th>BREAKFAST</th>
-                                <td>{this.state.menuMon.map((menu, index) =>( 
-                                    <p>{menu.breakfastVegMon}</p>
+                                <td>{this.state.menuMon.map((menu, index, arr) =>(
+                                    <div>
+                                    {{index} === {len}?<p>{menu.breakfastVegMon}</p>:''}
+                                    </div>
                                 ))} 
                                 </td>
                                 <td>{this.state.menuMon.map((menu, index) =>( 

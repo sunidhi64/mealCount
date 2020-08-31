@@ -100,10 +100,10 @@ export default class Attendance extends Component {
 
             console.log(meal);
    
-            axios.post('http://localhost:5000/students/attendance/mon', meal)
+            axios.post('http://localhost:5000/students/attendance/mon'+this.props.match.params.id, meal)
                 .then(res => console.log(res.data));
 
-            window.location = "http://localhost:3000/student/attendance";
+            //window.location = "http://localhost:3000/student/attendance";
 
 
             
