@@ -190,6 +190,12 @@ export default class Menu extends Component {
             const isSun = this.state.isSun;
        return (
             <body>
+        <div className="menu-logout-position"><button className="menu-logout">Logout</button></div>
+                <div className="navigation">
+                    <button className="stu-attendance-nav">Attendance</button>
+                    <div className="menu-heading"><h1 style={{color:"#fff"}}>MEAL MENU</h1></div>
+                    <div className="menu-logout-position"><button className="menu-logout">Logout</button></div>
+                </div>
                 <div className="buttons1">
                 <button className="monday1 student-menu-button" onClick={this.handleMonday}>Monday</button>
                 <button className="tuesday1 student-menu-button" onClick={this.handleTuesday}>Tuesday</button>

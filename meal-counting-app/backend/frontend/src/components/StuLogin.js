@@ -43,8 +43,10 @@ class StuLogin extends Component {
 
     render() {
         return(
-            <div>
-                <body className="StuLogin2">
+            <div className="StuLogin-background">
+            
+                <div className="StuLogin2">
+            
                     <div className="StuLogin2-container" id="StuLogin2-container">
                         <div className="Stu-form-container Stu-sign-in-container">
 					    <form action="#" onSubmit={this.handleLogin}>
@@ -59,12 +61,12 @@ class StuLogin extends Component {
                         <div class="Stu-overlay">
                         <div class="Stu-overlay-panel Stu-overlay-right">
 		    				<h1>Hello!</h1>
-		    				<p>To keep connected with us please login with your personal info</p>
+		    				<p className="p-StuLogin">To keep connected with us please login with your personal info</p>
 		    			</div>
                         </div>
                     </div>
 					</div>
-                </body>
+                </div>
             </div>
         )
     }

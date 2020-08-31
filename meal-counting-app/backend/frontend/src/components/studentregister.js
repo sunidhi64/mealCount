@@ -45,6 +45,13 @@ export default class Studentregister extends Component {
         return(
             <body>
                 <div>
+                <div className="stureg-logout-position"><button className="stureg-logout">Logout</button></div>
+                <div className="navigation">
+                    <button className="auth-menu-nav">Meal Menu</button>
+                    <div className="auth-count-position"><button className="auth-count">Meal Count</button></div>
+                    <div className="stureg-heading"><h1 style={{color:"#fff"}}>STUDENT REGISTER</h1></div>
+                    <div className="stureg-logout-position"><button className="stureg-logout">Logout</button></div>
+                </div>
                 <body className="Studentregister">
                     <div className="Studentregister-container" id="Studentregister-container">
                         <div className="Studentregister-form-container Studentregister-sign-in-container">

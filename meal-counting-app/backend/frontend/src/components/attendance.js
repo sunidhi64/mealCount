@@ -236,6 +236,12 @@ export default class Attendance extends Component {
     render() {
         return(
             <body>
+                <div className="attendance-logout-position"><button className="attendance-logout">Logout</button></div>
+                <div className="navigation">
+                    <button className="stu-menu-nav">Meal Menu</button>
+                    <div className="attendance-heading"><h1 style={{color:"#fff"}}>ATTENDANCE</h1></div>
+                    <div className="attendance-logout-position"><button className="attendance-logout">Logout</button></div>
+                </div>
             <div className="buttons2">
             <button className="monday2 student-attendance-button" onClick={this.handleMonday}>Monday</button>
              <button className="tuesday2 student-attendance-button" onClick={this.handleTuesday}>Tuesday</button>

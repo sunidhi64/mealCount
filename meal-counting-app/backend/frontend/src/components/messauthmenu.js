@@ -203,6 +203,13 @@ export default class MessauthMenu extends Component {
     render(){
         return(
             <body>
+                <div className="menu-logout-position"><button className="menu-logout">Logout</button></div>
+                <div className="navigation">
+                    <button className="stu-attendance-nav">Meal Count</button>
+                    <div className="stu-reg-position"><button className="stu-reg">Student Register</button></div>
+                    <div className="menu-heading"><h1 style={{color:"#fff"}}>MEAL MENU</h1></div>
+                    <div className="menu-logout-position"><button className="menu-logout">Logout</button></div>
+                </div>
             <div className="buttons">
             <button className="monday mess-menu-button" onClick={this.handleMonday}>Monday</button>
              <button className="tuesday mess-menu-button" onClick={this.handleTuesday}>Tuesday</button>

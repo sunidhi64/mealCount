@@ -2,7 +2,7 @@ import React, {Component} from "react"
 import "./Tellme.css"
 import {Redirect} from 'react-router-dom';
 import { Route, Link, browserHistory } from 'react-router-dom';
-
+import "./eating.mp4"
 import Messauthlogin from "./messauthlogin.js"
 import StuLogin from "./StuLogin.js"
 class Tellme extends Component {
@@ -12,9 +12,10 @@ class Tellme extends Component {
             <body className="Tellme-body">
            <header className="v-header container">
             <div className="fullscreen-video-wrap">
-                <video autoPlay loop muted className="Tellme-video">
-                <source src={"https://media.istockphoto.com/videos/teenage-students-being-served-meal-in-school-canteen-video-id942400270"} type="video/mp4" /> 
+            <video autoPlay loop muted className="Tellme-video">
+                <source src="https://media.istockphoto.com/videos/teenage-students-being-served-meal-in-school-canteen-video-id942400270" type="video/mp4" /> 
                 </video> 
+                
             </div>
             <div className="header-overlay"></div>
             <div className="header-content">

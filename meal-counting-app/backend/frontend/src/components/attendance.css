@@ -1,10 +1,85 @@
-body {
-    background: #f6f5f7;
-}
+
 .buttons2  {
     position: absolute;
     top:180px;
     left: 340px;
+}
+.buttons1  {
+    position: absolute;
+    top:140px;
+    left:340px;
+}
+.navigation{
+    position: absolute;
+    width:1535px;
+    background:#38acec;
+    height:70px;
+    padding:16px;
+    margin:0;
+    font-family: 'Montserrat', sans-serif;
+    align-items: center;
+}
+.attendance-heading{
+    position: absolute;
+    top:16px;
+    left:640px;
+}
+.stu-menu-nav{
+    border-radius: 20px;
+    border:1px solid #fff;
+    background: #fff;
+    color: #000;
+    font-size:12px;
+    font-weight: bold;
+    padding :10px 25px;
+    letter-spacing:1px;
+    text-transform:uppercase;
+    transition: transform 80ms ease-in;
+    text-decoration: none;
+    border-color: #fff;
+}
+.stu-menu-nav:active {
+    transform: scale(0.95);
+    text-decoration: none;
+  }
+  .stu-menu-nav:hover {
+    color: #000;
+    text-decoration: none;
+  }
+.stu-menu-nav:focus {
+    outline:none;
+    text-decoration: none;
+}
+.attendance-logout-position{
+    position: absolute;
+    left:1406px;
+    top:16px;
+}
+.attendance-logout{
+    border-radius: 20px;
+    border:1px solid #fff;
+    background: #fff;
+    color: #000;
+    font-size:12px;
+    font-weight: bold;
+    padding :10px 25px;
+    letter-spacing:1px;
+    text-transform:uppercase;
+    transition: transform 80ms ease-in;
+    text-decoration: none;
+    border-color: #fff;
+}
+.attendance-logout:active {
+    transform: scale(0.95);
+    text-decoration: none;
+  }
+  .attendance-logout:hover {
+    color: #000;
+    text-decoration: none;
+  }
+  .attendance-logout:focus {
+    outline:none;
+    text-decoration: none;
 }
 table, th, td {
     border-collapse:collapse;

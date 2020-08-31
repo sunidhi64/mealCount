@@ -2,6 +2,111 @@
     box-sizing: border-box;
   }
   
+  .navigation{
+    position: absolute;
+    width:1535px;
+    background:#38acec;
+    height:70px;
+    padding:16px;
+    margin:0;
+    font-family: 'Montserrat', sans-serif;
+    align-items: center;
+}
+.stureg-heading{
+    position: absolute;
+    top:13px;
+    left:565px;
+}
+.auth-menu-nav{
+    border-radius: 20px;
+    border:1px solid #fff;
+    background: #fff;
+    color: #000;
+    font-size:12px;
+    font-weight: bold;
+    padding :10px 25px;
+    letter-spacing:1px;
+    text-transform:uppercase;
+    transition: transform 80ms ease-in;
+    text-decoration: none;
+    border-color: #fff;
+}
+.auth-menu-nav:active {
+    transform: scale(0.95);
+    text-decoration: none;
+  }
+  .auth-menu-nav:hover {
+    color: #000;
+    text-decoration: none;
+  }
+.auth-menu-nav:focus {
+    outline:none;
+    text-decoration: none;
+}
+.auth-count-position{
+    position: absolute;
+    top:16px;
+    left:170px;
+}
+.auth-count{
+border-radius: 20px;
+    border:1px solid #fff;
+    background: #fff;
+    color: #000;
+    font-size:12px;
+    font-weight: bold;
+    padding :10px 25px;
+    letter-spacing:1px;
+    text-transform:uppercase;
+    transition: transform 80ms ease-in;
+    text-decoration: none;
+    border-color: #fff;
+}
+.auth-count:active {
+    transform: scale(0.95);
+    text-decoration: none;
+  }
+  .auth-count:hover {
+    color: #000;
+    text-decoration: none;
+  }
+.auth-count:focus {
+    outline:none;
+    text-decoration: none;
+}
+.stureg-logout-position{
+    position: absolute;
+    left:1406px;
+    top:16px;
+}
+.stureg-logout{
+    border-radius: 20px;
+    border:1px solid #fff;
+    background: #fff;
+    color: #000;
+    font-size:12px;
+    font-weight: bold;
+    padding :10px 25px;
+    letter-spacing:1px;
+    text-transform:uppercase;
+    transition: transform 80ms ease-in;
+    text-decoration: none;
+    border-color: #fff;
+}
+.stureg-logout:active {
+    transform: scale(0.95);
+    text-decoration: none;
+  }
+  .stureg-logout:hover {
+    color: #000;
+    text-decoration: none;
+  }
+.stureg-logout:focus {
+    outline:none;
+    text-decoration: none;
+}
+
+
   .Studentregister {
     font-family: 'Montserrat', sans-serif;
     background: #f6f5f7;
@@ -10,7 +115,7 @@
     justify-content: center;
     align-items:center;
     height: 100vh;
-    margin:-20px 0 50px;
+    
   }
   
   h1 {
@@ -56,8 +161,8 @@
   
   .Studentregister-button {
       border-radius: 20px;
-      border:1px solid #ff4b2b;
-      background: #ff4b2b;
+      border:1px solid #38acec;
+      background: #38acec;
       color: #fff;
       font-size:12px;
       font-weight: bold;
@@ -98,8 +203,8 @@
       z-index:100;
     }
   .Studentregister-overlay {
-      background: #ff416c;
-      background:linear-gradient(to right, #ff4b2b, #ff416c) no-repeat 0 0 / cover;
+      background: #38acec;
+      background:linear-gradient(to right, #1569c7, #38acec) no-repeat 0 0 / cover;
       color: #fff;
       position:relative;
       left: -100%;
@@ -129,8 +234,8 @@
     }
     .Studentregister-link{
       border-radius: 20px;
-      border:1px solid #ff4b2b;
-      background: #ff4b2b;
+      border:1px solid #1569c7;
+      background: #1569c7;
       
       color: #fff;
       font-size:12px;

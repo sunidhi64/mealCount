@@ -4,15 +4,21 @@
   box-sizing: border-box;
 }
 
+.frankie{
+  position:absolute;
+  top:200px;
+
+}
 .StuLogin2 {
   font-family: 'Montserrat', sans-serif;
-  background: #f6f5f7;
-  display: flex;
+  background:#f6f5f7;
+  
+  display:flex;
   flex-direction:column;
   justify-content: center;
   align-items:center;
   height: 100vh;
-  margin:-20px 0 50px;
+  
 }
 
 h1 {
@@ -20,7 +26,7 @@ h1 {
     margin: 0;
   }
   
-p {
+.p-StuLogin {
     font-size:14px;
     font-weight:100;
     line-height: 20px;
@@ -58,8 +64,8 @@ p {
 
 .StuLogin2-button {
     border-radius: 20px;
-    border:1px solid #ff4b2b;
-    background: #ff4b2b;
+    border:1px solid #38acec;
+    background: #38acec;
     color: #fff;
     font-size:12px;
     font-weight: bold;
@@ -96,8 +102,8 @@ p {
     z-index:100;
   }
 .Stu-overlay {
-    background: #ff416c;
-    background:linear-gradient(to right, #ff4b2b, #ff416c) no-repeat 0 0 / cover;
+    background: #38acec;
+    background:linear-gradient(to right, #1569c7, #38acec) no-repeat 0 0 / cover;
     color: #fff;
     position:relative;
     left: -100%;

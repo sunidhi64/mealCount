@@ -57,8 +57,8 @@ p {
 
 .Messauthregister-button {
     border-radius: 20px;
-    border:1px solid #ff4b2b;
-    background: #ff4b2b;
+    border:1px solid #1569c7;
+    background: #1569c7;
     color: #fff;
     font-size:12px;
     font-weight: bold;
@@ -99,8 +99,8 @@ button.ghost {
     z-index:100;
   }
 .Messauthregister-overlay {
-    background: #ff416c;
-    background:linear-gradient(to right, #ff4b2b, #ff416c) no-repeat 0 0 / cover;
+    background: #38acec;
+    background:linear-gradient(to right, #1569c7, #38acec) no-repeat 0 0 / cover;
     color: #fff;
     position:relative;
     left: -100%;
@@ -130,8 +130,8 @@ button.ghost {
   }
   .Messauthregister-link{
     border-radius: 20px;
-    border:1px solid #ff4b2b;
-    background: #ff4b2b;
+    border:1px solid #1569c7;
+    background: #1569c7;
     
     color: #fff;
     font-size:12px;

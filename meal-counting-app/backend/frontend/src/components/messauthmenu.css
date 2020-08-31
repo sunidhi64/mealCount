@@ -1,10 +1,111 @@
-body {
-    background: #f6f5f7;
-}
+
 .buttons  {
     position: absolute;
-    top:80px;
+    top:130px;
     left: 340px;
+}
+.navigation{
+    position: absolute;
+    width:1535px;
+    background:#38acec;
+    height:70px;
+    padding:16px;
+    margin:0;
+    font-family: 'Montserrat', sans-serif;
+    align-items: center;
+}
+.menu-heading{
+    position: absolute;
+    top:16px;
+    left:640px;
+}
+.stu-attendance-nav{
+    border-radius: 20px;
+    border:1px solid #fff;
+    background: #fff;
+    color: #000;
+    font-size:12px;
+    font-weight: bold;
+    padding :10px 25px;
+    letter-spacing:1px;
+    text-transform:uppercase;
+    transition: transform 80ms ease-in;
+    text-decoration: none;
+    border-color: #fff;
+}
+.stu-attendance-nav:active {
+    transform: scale(0.95);
+    text-decoration: none;
+  }
+  .stu-attendance-nav:hover {
+    color: #000;
+    text-decoration: none;
+  }
+.stu-attendance-nav:focus {
+    outline:none;
+    text-decoration: none;
+}
+.stu-reg-position{
+    position: absolute;
+    top:16px;
+    left:180px;
+}
+.stu-reg{
+border-radius: 20px;
+    border:1px solid #fff;
+    background: #fff;
+    color: #000;
+    font-size:12px;
+    font-weight: bold;
+    padding :10px 25px;
+    letter-spacing:1px;
+    text-transform:uppercase;
+    transition: transform 80ms ease-in;
+    text-decoration: none;
+    border-color: #fff;
+}
+.stu-reg:active {
+    transform: scale(0.95);
+    text-decoration: none;
+  }
+  .stu-reg:hover {
+    color: #000;
+    text-decoration: none;
+  }
+.stu-reg:focus {
+    outline:none;
+    text-decoration: none;
+}
+.menu-logout-position{
+    position: absolute;
+    left:1406px;
+    top:16px;
+}
+.menu-logout{
+    border-radius: 20px;
+    border:1px solid #fff;
+    background: #fff;
+    color: #000;
+    font-size:12px;
+    font-weight: bold;
+    padding :10px 25px;
+    letter-spacing:1px;
+    text-transform:uppercase;
+    transition: transform 80ms ease-in;
+    text-decoration: none;
+    border-color: #fff;
+}
+.menu-logout:active {
+    transform: scale(0.95);
+    text-decoration: none;
+  }
+  .menu-logout:hover {
+    color: #000;
+    text-decoration: none;
+  }
+.menu-logout:focus {
+    outline:none;
+    text-decoration: none;
 }
 table, th, td {
     border-collapse:collapse;
@@ -19,10 +120,11 @@ th,td{
 }
 .center{
     position: relative;
-     top:150px;
+     top:200px;
      left:380px;
      box-shadow:  0 14px 28px rgba(0,0,0,0.25),0 10px 10px rgba(0,0,0,0.22);
 }
+
 .mess-menu-button{
     font-family: 'Montserrat', sans-serif;
     color: #fff;
