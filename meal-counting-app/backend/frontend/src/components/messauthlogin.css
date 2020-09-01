@@ -12,7 +12,7 @@
   justify-content: center;
   align-items:center;
   height: 100vh;
-  margin:-20px 0 50px;
+
 }
 
 h1 {
@@ -58,8 +58,8 @@ p {
 
 .Messauthlogin-button {
     border-radius: 20px;
-    border:1px solid #1569c7;
-    background: #1569c7;
+    border:1px solid #38acec;
+    background: #38acec;
     color: #fff;
     font-size:12px;
     font-weight: bold;

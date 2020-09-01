@@ -39,7 +39,7 @@ class StuLogin extends Component {
                 console.log(res.data)
                 window.location = '/student/messmenu';
               });
-
+              
           }
 
 
