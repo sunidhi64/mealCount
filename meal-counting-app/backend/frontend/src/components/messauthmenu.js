@@ -30,6 +30,9 @@ export default class MessauthMenu extends Component {
         this.handleSaturday=this.handleSaturday.bind(this)
         this.handleSunday=this.handleSunday.bind(this)
         this.handleSubmit=this.handleSubmit.bind(this)
+        this.handleLogout=this.handleLogout.bind(this)
+        this.handleMeal=this.handleMeal.bind(this)
+        this.handleRegister=this.handleRegister.bind(this)
     }
 
     handleChange(event){
@@ -95,7 +98,8 @@ export default class MessauthMenu extends Component {
             axios.post('http://localhost:5000/messauth/messmenu/mon', meal)
                 .then(res => console.log(res.data));
 
-            //window.location = "http://localhost:3000/messauth/messmenu";
+            window.location = "http://localhost:3000/messauth/messmenu";
+            alert("Menu for Monday added")
 
 
             
@@ -115,7 +119,8 @@ export default class MessauthMenu extends Component {
             }
             axios.post("http://localhost:5000/messauth/messmenu/tue", meal)
                 .then(res => console.log(res.data));
-            //window.location = "http://localhost:3000/messauth/messmenu";
+            window.location = "http://localhost:3000/messauth/messmenu";
+            alert("Menu for Tuesday added")
             }
  
          
@@ -133,6 +138,7 @@ export default class MessauthMenu extends Component {
             axios.post("http://localhost:5000/messauth/messmenu/wed", meal)
                 .then(res => console.log(res.data));
             window.location = "http://localhost:3000/messauth/messmenu";
+            alert("Menu for Wednesday added")
             }
  
          
@@ -150,6 +156,7 @@ export default class MessauthMenu extends Component {
             axios.post("http://localhost:5000/messauth/messmenu/thu", meal)
                 .then(res => console.log(res.data));
             window.location = "http://localhost:3000/messauth/messmenu";
+            alert("Menu for Thursday added")
             }
  
          
@@ -167,6 +174,7 @@ export default class MessauthMenu extends Component {
             axios.post("http://localhost:5000/messauth/messmenu/fri", meal)
                 .then(res => console.log(res.data));
             window.location = "http://localhost:3000/messauth/messmenu";
+            alert("Menu for Friday added")
             }
          if (this.state.isSat){
             const meal ={
@@ -182,6 +190,7 @@ export default class MessauthMenu extends Component {
             axios.post("http://localhost:5000/messauth/messmenu/sat", meal)
                 .then(res => console.log(res.data));
             window.location = "http://localhost:3000/messauth/messmenu";
+            alert("Menu for Saturday added")
             }
          if (this.state.isSun){
             const meal ={
@@ -197,18 +206,29 @@ export default class MessauthMenu extends Component {
             axios.post("http://localhost:5000/messauth/messmenu/sun", meal)
                 .then(res => console.log(res.data));
             window.location = "http://localhost:3000/messauth/messmenu";
+            alert("Menu for Sunday added")
             }
  
+    }
+
+    handleLogout(){
+        window.location = "http://localhost:3000"
+    }
+    handleMeal(){
+        window.location = "http://localhost:3000/messauth/attendance";
+    }
+    handleRegister(){
+        window.location = "http://localhost:3000/messauth/registerstudent";
     }
     render(){
         return(
             <body>
-                <div className="menu-logout-position"><button className="menu-logout">Logout</button></div>
+                <div className="menu-logout-position"><button className="menu-logout" onClick={this.handleLogout}>Logout</button></div>
                 <div className="navigation">
-                    <button className="stu-attendance-nav">Meal Count</button>
-                    <div className="stu-reg-position"><button className="stu-reg">Student Register</button></div>
+                    <button className="stu-attendance-nav"onClick={this.handleMeal}>Meal Count</button>
+                    <div className="stu-reg-position"><button className="stu-reg" onClick={this.handleRegister}>Student Register</button></div>
                     <div className="menu-heading"><h1 style={{color:"#fff"}}>MEAL MENU</h1></div>
-                    <div className="menu-logout-position"><button className="menu-logout">Logout</button></div>
+                    <div className="menu-logout-position"><button className="menu-logout"onClick={this.handleLogout}>Logout</button></div>
                 </div>
             <div className="buttons">
             <button className="monday mess-menu-button" onClick={this.handleMonday}>Monday</button>

@@ -35,6 +35,8 @@ export default class Attendance extends Component {
         this.handleSaturday=this.handleSaturday.bind(this)
         this.handleSunday=this.handleSunday.bind(this)
         this.handleSubmit=this.handleSubmit.bind(this)
+        this.handleLogout=this.handleLogout.bind(this)
+        this.handleMeal=this.handleMeal.bind(this)
     }
     
 
@@ -100,10 +102,11 @@ export default class Attendance extends Component {
 
             console.log(meal);
    
-            axios.post('http://localhost:5000/students/attendance/mon'+this.props.match.params.id, meal)
+            axios.post('http://localhost:5000/students/attendance/mon', meal)
                 .then(res => console.log(res.data));
 
-            //window.location = "http://localhost:3000/student/attendance";
+            window.location ="http://localhost:3000/student/attendance";
+            alert("Attendance for Monday added")
 
 
             
@@ -127,7 +130,8 @@ export default class Attendance extends Component {
             }
             axios.post("http://localhost:5000/students/attendance/tue", meal)
                 .then(res => console.log(res.data));
-            window.location = "http://localhost:3000/messauth/messmenu";
+            window.location='http://localhost:3000/student/attendance';
+            alert("Attendance for Tuesday added");
             }
         
         if (this.state.isWed){
@@ -147,7 +151,8 @@ export default class Attendance extends Component {
             }
             axios.post("http://localhost:5000/students/attendance/wed", meal)
                 .then(res => console.log(res.data));
-            window.location = "http://localhost:3000/messauth/messmenu";
+            window.location='http://localhost:3000/student/attendance';
+            alert("Attendance for Wednesday added");
             }
  
          
@@ -168,7 +173,8 @@ export default class Attendance extends Component {
             }
             axios.post("http://localhost:5000/students/attendance/thu", meal)
                 .then(res => console.log(res.data));
-            window.location = "http://localhost:3000/messauth/messmenu";
+            window.location='http://localhost:3000/student/attendance';
+            alert("Attendance for Thursday added")
             }
         
         if (this.state.isFri){
@@ -188,7 +194,8 @@ export default class Attendance extends Component {
             }
             axios.post("http://localhost:5000/student/attendance/fri", meal)
                 .then(res => console.log(res.data));
-            window.location = "http://localhost:3000/messauth/messmenu";
+            window.location='http://localhost:3000/student/attendance';
+            alert("Attendance for Friday added")
             }
          if (this.state.isSat){
             const meal ={
@@ -207,7 +214,8 @@ export default class Attendance extends Component {
             }
             axios.post("http://localhost:5000/students/attendance/sat", meal)
                 .then(res => console.log(res.data));
-            window.location = "http://localhost:3000/messauth/messmenu";
+            window.location='http://localhost:3000/student/attendance';
+             alert("Attendance for Saturday added")
             }
          if (this.state.isSun){
             const meal ={
@@ -226,21 +234,30 @@ export default class Attendance extends Component {
             }
             axios.post("http://localhost:5000/students/attendance/sun", meal)
                 .then(res => console.log(res.data));
-            window.location = "http://localhost:3000/messauth/messmenu";
+            window.location='http://localhost:3000/student/attendance';
+            alert("Attendance for Sunday added")
             }
+        
  
     }
+    
+    handleLogout(){
+            window.location = 'http://localhost:3000/';
+        }
+        handleMeal(){
+            window.location = 'http://localhost:3000/student/messmenu';
+        }
 
 
 
     render() {
         return(
             <body>
-                <div className="attendance-logout-position"><button className="attendance-logout">Logout</button></div>
+                <div className="attendance-logout-position"><button className="attendance-logout" onClick={this.handleLogout}>Logout</button></div>
                 <div className="navigation">
-                    <button className="stu-menu-nav">Meal Menu</button>
+                    <button className="stu-menu-nav"onClick={this.handleMeal}>Meal Menu</button>
                     <div className="attendance-heading"><h1 style={{color:"#fff"}}>ATTENDANCE</h1></div>
-                    <div className="attendance-logout-position"><button className="attendance-logout">Logout</button></div>
+                    <div className="attendance-logout-position"><button className="attendance-logout" onClick={this.handleLogout}>Logout</button></div>
                 </div>
             <div className="buttons2">
             <button className="monday2 student-attendance-button" onClick={this.handleMonday}>Monday</button>

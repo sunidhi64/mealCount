@@ -33,7 +33,7 @@ function App() {
                     <Route path='/messauth/register' component={Messauthregister}/>
                     <Route path='/messauth/messmenu' component={MessauthMenu} />
                     <Route path='/student/dashboard' component={Navbar}/>
-                    <Route path='/student/register' component={Studentregister}/>
+                    <Route path='/messauth/registerstudent' component={Studentregister}/>
                     <Route path='/messauth/attendance' component={Messattendance}/>
                     <Route path='/' component={Tellme2} />
                     

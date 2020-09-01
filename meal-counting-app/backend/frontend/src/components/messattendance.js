@@ -30,6 +30,9 @@ export default class Messattendance extends Component {
         this.handleFriday=this.handleFriday.bind(this);
         this.handleSaturday=this.handleSaturday.bind(this);
         this.handleSunday=this.handleSunday.bind(this);
+        this.handleLogout=this.handleLogout.bind(this);
+        this.handleRegister=this.handleRegister.bind(this);
+        this.handleAttendance=this.handleAttendance.bind(this);
     }
         
         
@@ -175,6 +178,17 @@ export default class Messattendance extends Component {
                 console.log(this.state.menuMon);
 
                 
+        }
+    
+    handleLogout(){
+            window.location = 'http://localhost:3000';
+        }
+        handleAttendance(){
+            window.location = 'http://localhost:3000/messauth/messmenu';
+        
+        }
+        handleRegister(){
+            window.location = 'http://localhost:3000/messauth/registerstudent';
         }
 
 
@@ -390,23 +404,25 @@ export default class Messattendance extends Component {
                 </div>
             ))}
         
+
+
+        
         return(
             <body>
-                <div className="meal-logout-position"><button className="meal-logout">Logout</button></div>
                 <div className="navigation">
-                    <button className="stu-attendance-nav">Meal Menu</button>
-                    <div className="stu-reg-position"><button className="stu-reg">Student Register</button></div>
+                    <button className="stu-attendance-nav"onClick={this.handleAttendance}>Meal Menu</button>
+                    <div className="stu-reg-position"><button className="stu-reg"onClick={this.handleRegister}>Student Register</button></div>
                     <div className="menu-heading"><h1 style={{color:"#fff"}}>MEAL COUNT</h1></div>
-                    <div className="menu-logout-position"><button className="menu-logout">Logout</button></div>
+                    <div className="menu-logout-position"><button className="menu-logout"onClick={this.handleLogout}>Logout</button></div>
                 </div>
             <div className="buttons3">
-            <button className="monday3 mess-attendance-button">Monday</button>
-            <button className="tuesday3 mess-attendance-button">Tuesday</button>
-                 <button className="wednesday3 mess-attendance-button">Wednesday</button>
-                     <button className="thursday3 mess-attendance-button">Thursday</button>
-                         <button className="friday3 mess-attendance-button">Friday</button>
-                             <button className="saturday3 mess-attendance-button">Saturday</button>
-            <button className="sunday3 mess-attendance-button">Sunday</button>
+            <button className="monday3 mess-attendance-button"onClick={this.handleMonday}>Monday</button>
+            <button className="tuesday3 mess-attendance-button"onClick={this.handleTuesday}>Tuesday</button>
+                 <button className="wednesday3 mess-attendance-button"onClick={this.handleWednesday}>Wednesday</button>
+                     <button className="thursday3 mess-attendance-button"onClick={this.handleThursday}>Thursday</button>
+                         <button className="friday3 mess-attendance-button"onClick={this.handleFriday}>Friday</button>
+                             <button className="saturday3 mess-attendance-button"onClick={this.handleSaturday}>Saturday</button>
+            <button className="sunday3 mess-attendance-button"onClick={this.handleSunday}>Sunday</button>
             </div>
             <div>
                  <table className="center3" width="50%">

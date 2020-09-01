@@ -34,6 +34,15 @@ export default class Menu extends Component {
         this.handleFriday=this.handleFriday.bind(this);
         this.handleSaturday=this.handleSaturday.bind(this);
         this.handleSunday=this.handleSunday.bind(this);
+        this.handleLogout=this.handleLogout.bind(this);
+        this.handleAttendance=this.handleAttendance.bind(this);
+    }
+
+    handleLogout(){
+        window.location = "http://localhost:3000";
+    }
+    handleAttendance(){
+        window.location = 'http://localhost:3000/student/attendance';
     }
 
 
@@ -188,17 +197,14 @@ export default class Menu extends Component {
             const isFri = this.state.isFri;
             const isSat = this.state.isSat;
             const isSun = this.state.isSun;
-            const length = this.state.menuMon.length;
-            const len = length - 1;
        return (
             <body>
-        <div className="menu-logout-position"><button className="menu-logout">Logout</button></div>
+        <div className="menu-logout-position"><button className="menu-logout" onClick={this.handleLogout}>Logout</button></div>
                 <div className="navigation">
-                    <button className="stu-attendance-nav">Attendance</button>
+                    <button className="stu-attendance-nav" onClick={this.handleAttendance}>Attendance</button>
                     <div className="menu-heading"><h1 style={{color:"#fff"}}>MEAL MENU</h1></div>
-                    <div className="menu-logout-position"><button className="menu-logout">Logout</button></div>
+                    <div className="menu-logout-position"><button className="menu-logout" onClick={this.handleLogout}>Logout</button></div>
                 </div>
-                {len}
                 <div className="buttons1">
                 <button className="monday1 student-menu-button" onClick={this.handleMonday}>Monday</button>
                 <button className="tuesday1 student-menu-button" onClick={this.handleTuesday}>Tuesday</button>
@@ -223,7 +229,7 @@ export default class Menu extends Component {
                                 <th>BREAKFAST</th>
                                 <td>{this.state.menuMon.map((menu, index, arr) =>(
                                     <div>
-                                    {{index} === {len}?<p>{menu.breakfastVegMon}</p>:''}
+                                    <p>{menu.breakfastVegMon}</p>
                                     </div>
                                 ))} 
                                 </td>
