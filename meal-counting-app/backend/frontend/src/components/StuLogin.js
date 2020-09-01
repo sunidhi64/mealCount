@@ -37,9 +37,9 @@ class StuLogin extends Component {
             axios.post('http://localhost:5000/students/login', user)
               .then(res => {
                 console.log(res.data)
-                window.location = '/student/messmenu';
+                
               });
-              
+              window.location = '/student/messmenu';
           }
 
 
