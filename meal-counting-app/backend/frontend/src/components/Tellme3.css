@@ -1,11 +1,15 @@
 
 .applogo{
     position: absolute;
-    width: 600px;
-    height: 600px;
-    left:220px;
-    top:140px;
+    width: 850px;
+    height: 750px;
     font-family:  'Montserrat', sans-serif;
+    background:#38acec
+}
+.applogo-pos{
+    top:180px;
+    left:150px;
+    position: absolute;
 }
 .right-side{
     position: absolute;

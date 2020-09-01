@@ -16,7 +16,7 @@ export default class Tellme3 extends Component{
             <body>
                 <div className="applogo">
                     
-                    <img  src={applogo} width="550px"></img>
+                    <div className="applogo-pos"><img  src={applogo} width="550px" style={{borderRadius:"50%"}}></img></div>
                 </div>
                 <div className="right-side">
                     <img src={students} width="200px"className="students"></img>
