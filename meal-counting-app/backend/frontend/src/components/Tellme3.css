@@ -1,0 +1,90 @@
+
+.applogo{
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    left:220px;
+    top:140px;
+    font-family:  'Montserrat', sans-serif;
+}
+.right-side{
+    position: absolute;
+    left:920px;
+    width:550px;
+    height:751px;
+  
+}
+.students{
+    position: absolute;
+    left:175px;
+    top:60px;
+}
+.Student{
+    border-radius: 20px;
+    border:1px solid #38acec;
+    background: #38acec;
+    
+    color: #fff;
+    font-size:12px;
+    font-weight: bold;
+    padding :12px 45px;
+    letter-spacing:1px;
+    text-transform:uppercase;
+    transition: transform 80ms ease-in;
+    text-decoration: none;
+    border-color: #fff;
+}
+.Student:active {
+    transform: scale(0.95);
+    text-decoration: none;
+  }
+.Student:hover {
+    color: #fff;
+    text-decoration: none;
+  }
+.Student:focus {
+    outline:none;
+    text-decoration: none;
+}
+.Student{
+    position: absolute;
+    top:240px;
+    left:205px;
+}
+.cooks{
+    position: absolute;
+    top:365px;
+    left:175px;
+}
+.Messauth{
+    border-radius: 20px;
+    border:1px solid #38acec;
+    background: #38acec;
+    
+    color: #fff;
+    font-size:12px;
+    font-weight: bold;
+    padding :12px 45px;
+    letter-spacing:1px;
+    text-transform:uppercase;
+    transition: transform 80ms ease-in;
+    text-decoration: none;
+    border-color: #fff;
+}
+.Messauth:active {
+    transform: scale(0.95);
+    text-decoration: none;
+  }
+  .Messauth:hover {
+    color: #fff;
+    text-decoration: none;
+  }
+.Messauth:focus {
+    outline:none;
+    text-decoration: none;
+}
+.Messauth{
+    position: absolute;
+    top:585px;
+    left:170px;
+}
